@@ -1,10 +1,10 @@
-const $ = document.querySelector.bind(document);
 (function($){
   $(document).ready(function () {
     $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
     $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
   });
 })(jQuery);
+const $ = document.querySelector.bind(document);
 const tabs = document.querySelectorAll(".tab-item");
 const panes = document.querySelectorAll(".tab-pane");
 const tabActive = $(".tab-item.active");
@@ -309,6 +309,16 @@ productItems.forEach((tab, index) => {
       nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
     });
   }
+  $(document).ready(function () {
+    $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
+    $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
+  });
+  // $('.product-list').simpleLoadMore({
+  //   itemsToLoad: 4,
+  //   count: 10,
+  //   item:'div',
+  //   btnHTML:'<a href="#" class="load-more__btn">View More <i class="fas fa-angle-down"></i></a>',
+  // });
 
 })(jQuery);
 
