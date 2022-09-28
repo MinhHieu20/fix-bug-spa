@@ -1,0 +1,214 @@
+.booking {
+    background-color: $background-booking;
+    width: 100%;
+    height: auto;
+    margin-top: 20rem;
+    padding-bottom: 10rem;
+    position: relative;
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        text-align: center;
+
+        h2 {
+            font-size: 3.4rem;
+            font-family: Gilroy-Bold;
+        }
+    }
+
+    &-form {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    &-forms {
+        &-image {
+            img {
+                width: 7rem;
+            }
+        }
+
+        &-text {
+            p {
+                font-size: 2rem;
+                line-height: 1.2em;
+            }
+        }
+
+        &-line {
+            padding: 0rem 8rem;
+        }
+
+        &-client {
+            line-height: 3em;
+
+            &-text {
+                font-size: 3rem;
+            }
+
+            &-name {
+                font-size: 3rem;
+            }
+        }
+
+        &-time {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &-thank {
+            p {
+                font-size: 1.4rem;
+                font-style: italic;
+            }
+        }
+    }
+
+    .send-contact-mobiles {
+        display: none
+    }
+
+    .send-contact__btn {
+        @include buttonStyle();
+        text-transform: uppercase;
+        color: $white;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: $more-color;
+        position: relative;
+        margin-top: 1rem;
+        font-family: Gilroy-Bold;
+        border-radius: 2rem;
+        font-size: 2rem;
+        padding: 1rem 4.2rem;
+    }
+
+    .send-contact__btn::after {
+        @include buttonAfter();
+        border-radius: 2rem;
+    }
+
+    &-after::after {
+        content: "";
+        position: absolute;
+        top: -5.8rem;
+        width: 43.8rem;
+        height: 5.8rem;
+        background-color: #fef7d9;
+        border-top-left-radius: 150px 100px;
+        border-top-right-radius: 150px 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.result-booking {
+    background-color: $background-booking;
+    width: 100%;
+    height: 58rem;
+    margin-top: 20rem;
+    position: relative;
+
+    &-title {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        text-align: center;
+
+        h2 {
+            font-size: 3.4rem;
+            font-family: Gilroy-Bold;
+        }
+    }
+
+    .booking-forms {
+        width: 31%;
+        margin: 2rem auto 0;
+
+        &-image {
+            img {
+                width: 7rem;
+            }
+        }
+
+        &-text {
+            p {
+                font-size: 2rem;
+                line-height: 1.2em;
+            }
+        }
+
+        &-line {
+            padding: 0rem 8rem;
+        }
+
+        &-client {
+            line-height: 3em;
+
+            &-text {
+                font-size: 3rem;
+            }
+
+            &-name {
+                font-size: 3rem;
+            }
+        }
+
+        &-time {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &-thank {
+            p {
+                font-size: 1.4rem;
+                font-style: italic;
+            }
+        }
+    }
+    .send-repair-btn {
+        margin-top: 3rem !important;
+    }
+
+    .send-contact__btn {
+        @include buttonStyle();
+        text-transform: uppercase;
+        color: $white;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: $more-color;
+        position: relative;
+        margin-top: 1rem;
+        font-family: Gilroy-Bold;
+        border-radius: 2rem;
+        font-size: 2rem;
+        padding: 1rem 4.2rem;
+    }
+
+    .send-contact__btn::after {
+        @include buttonAfter();
+        border-radius: 2rem;
+    }
+
+    &-after::after {
+        content: "";
+        position: absolute;
+        top: -5.8rem;
+        width: 43.8rem;
+        height: 5.8rem;
+        background-color: #fef7d9;
+        border-top-left-radius: 150px 100px;
+        border-top-right-radius: 150px 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.address{
+    display: block;
+}
+.address-image-booking {
+    width: 7rem;
+}

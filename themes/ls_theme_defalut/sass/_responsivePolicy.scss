@@ -1,0 +1,55 @@
+@include responsive_mobile{
+    .main-policy{
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        &-content{
+            width: unset;
+            padding: 0rem 2rem;
+            margin: 0 1.5rem;
+            &__title{
+                text-align: center;
+            }
+            &__heading{
+                padding-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            &__text{
+                padding-bottom: 3rem;
+            }
+        }
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@include responsive_tablet{
+    // .container-policy{
+    //     padding-left: 0rem;
+    //     padding-right: 0rem;
+    // }
+    .main-policy{
+        padding-top: 3rem;
+        padding-bottom: 20rem; 
+        &-content{
+            width: 100%;
+            padding: 5.8rem 2rem;
+        }
+    }
+}
+
+// @include responsive_pclow{
+//     .container-policy{
+//         padding-left: 0rem;
+//         padding-right: 0rem;
+//     }
+//     .main-policy{
+//         padding-top: 4rem;
+//         padding-bottom: 22rem; 
+//         &-content{
+//             width: 100%;
+//             padding: 5.8rem 3rem;
+//         }
+//     }
+// }

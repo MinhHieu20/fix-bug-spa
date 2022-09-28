@@ -1,0 +1,99 @@
+@include responsive_mobile{
+    .promotion__heading{
+        width: 35rem;
+    }
+    .advise-contact{
+        display: none;
+    }
+    .promotion {
+        &--container {
+            background: $background-content;
+            padding-top: 2rem;
+            &--body {
+                background: $white;
+                width: 90%;
+                &__list {
+                    padding: 1rem;
+                    &--item {
+                        border: none;
+                        background: none;
+                        padding-bottom: 0;
+                        padding-right: 1.38rem;
+                        margin: 0;
+                        &--content {
+                            &--images {
+                                height: auto;
+                            }
+                            &--text {
+                                padding-top: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//tablet
+@include responsive_tablet {
+    .promotion {
+        margin-top: 7rem;
+    
+        &__heading {
+            font-size: 3.5rem;
+            text-align: center;
+            padding-top: 4.35rem;
+            width: 45.5rem;
+            margin: 0 auto;
+        }
+    
+        &--container {
+            &--body {
+                &__list {
+                    padding-top: 4.65rem;
+                    padding-bottom: 5.5rem;
+    
+                    &--item {
+                        margin: 0 0.5rem 2.95rem 0.5rem;
+                        border-radius: 2rem;
+                        padding: 0.7rem 2rem 1.5rem 1.38rem;
+    
+                        &--content {
+                            height: 100%;
+                            align-items: center;
+                            &--images {
+                                width: 20.5rem;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+    
+                            &--text {
+                                &--title {
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0;
+                                    padding-bottom: 2rem;
+                                }
+    
+                                &--desc {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .promotion-news{
+        padding-bottom: 7.5rem;
+        .tips-new-item__heading--title{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

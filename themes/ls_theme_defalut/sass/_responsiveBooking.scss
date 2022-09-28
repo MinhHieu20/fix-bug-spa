@@ -1,0 +1,76 @@
+@include responsive_mobile{
+    .main-logo{
+        height: 100%;
+    }
+    .booking{
+        margin-top: 10rem;
+        height: 62rem;
+        &-title{
+            font-size: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+        }
+        &-form{
+            width: 100%;
+        }
+        &-forms{
+            display: none;
+            width: 88%;
+            &-text{
+                p{
+                    padding: 0rem 9rem;
+                }
+            }
+            &-image{
+                padding:2rem 0 ;
+            }
+            &-client-text{
+                font-size: 2.4rem;
+            }
+            &-client-name{
+                font-size: 2.4rem;
+            }
+            &-thank{
+                p{
+                    padding: 0 10rem;
+                }
+            }
+        }
+    }
+    .booking-after::after{
+        width: 34.8rem;
+    }
+    .send-contact-mobiles{
+        margin-top: 3rem !important;
+        padding: 0.8rem 3rem !important;
+        display: none;
+    }
+    
+    .none-mobile{
+        display: none;
+    }
+}
+
+@include responsive_tablet{
+    .main{
+        &-logo{
+            height: 40rem;
+        }
+    }
+    .booking-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+// @include responsive_pclow{
+//     .main{
+//         &-logo{
+//             height: 40rem;
+//         }
+//     }
+//     .booking-form {
+//         width: 90%;
+//         margin: 0 auto;
+//     }
+// }

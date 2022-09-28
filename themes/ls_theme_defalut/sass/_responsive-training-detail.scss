@@ -1,0 +1,166 @@
+@include responsive_pclow {
+    .training-detail {
+    padding-bottom: 18rem;
+
+    }
+    .home-training {
+        border-radius: 2rem;
+        .single-training-title {
+            padding: 0 7rem;
+            font-size: 4rem;
+        }
+        .details-header,
+        .details-content,
+        .details-reason,
+        .details-expert,
+        .details-courses,
+        .details-graduate,
+        .details-rated{
+            padding: 0 7rem;
+        }
+
+        .details-expert {
+            margin-top: 3rem;
+
+            &-title {
+                font-size: 3rem;
+
+            }
+        }
+        .details-graduate,
+        .details-courses {
+            &-title {
+                font-size: 3rem;
+
+            }
+        }
+        .details-courses::after{
+            width: 70%;
+
+        }
+        .details-graduate{
+            &-outstanding{
+                &__list{
+                    &--item{
+                        &--text{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+    .address-training{
+        display: none;
+    }
+}
+
+@include responsive_mobile {
+    .address { 
+        // margin-left: 0 !important;
+        // margin-right: 0 !important;
+        &-nav,
+        .location-details {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+    .training-detail-container {
+        flex-direction: column-reverse;
+        
+        padding: 0 2rem;
+        background-color: $background-home;
+        .home-training {
+            background-color: $white;
+
+            > .heading-mobile {
+                display: block;
+                padding: 0 10rem;
+                margin-bottom: 5rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .details-reason-img,
+            .details-expert-img__one {
+                width: 100%;
+            }
+            .details-rated-title {
+                font-size: 2.5rem;
+            }
+
+            .details-header,
+            .details-content,
+            .details-reason,
+            .details-expert,
+            .details-courses,
+            .details-graduate,
+             .details-rated{
+                padding: 0 1rem;
+            }
+            .details-graduate,
+            .details-expert {
+                &-title {
+                    font-size: 2rem;
+
+                }
+            }
+            .details-courses {
+                &-title {
+                    font-size: 2rem;
+                }
+            }
+            .details-courses::after{
+                width: 100%;
+    
+            }
+            .details-graduate{
+                &-outstanding{
+                    &__list{
+                        &--item{
+                            &--text{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .training-detail {
+        background: #fdf9e8;
+    }
+    .address-training{
+       margin-left: 0!important;
+       margin-right: 0!important;
+        background-color: #fff;
+    }
+    .details-menu-mobile {
+        display: block;
+        padding-bottom: 4rem;
+
+        .details-menu-list {
+            &__item {
+                margin: 0 1rem 1rem 0;
+    
+                &--link {
+                    padding: 0.5rem 1rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .details-news {
+        display: none;
+    }
+    .details-graduate-outstanding .slick-prev {
+        top: 25%;
+        left: -1rem;
+    }
+    .details-graduate-outstanding .slick-next {
+        top: 24%;
+        right: -1rem;
+    }
+}
