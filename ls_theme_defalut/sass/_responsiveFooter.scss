@@ -39,6 +39,7 @@
                     transform: translateX(-50%);
                     font-size: 1.4rem;
                     padding: 0;
+                    line-height: 1.7em;
                 }
                 .interactive-image {
                     display: block !important;
@@ -188,8 +189,7 @@
 
             &-interactive {
                 .interactive-logo {
-                    margin-left: 50%;
-                    transform: translateX(-50%);
+                    margin-left: 1%;
                     width: 20.4rem;
                     height: 8.8rem;
                     top: -16rem;
@@ -204,13 +204,14 @@
                     width: 19.8rem;
                     font-size: 1.2rem;
                     padding: 0;
+                    line-height: 1.5em;
                 }
 
                 .interactive-image {
                     display: block !important;
                     padding-top: 1rem;
                     position: relative;
-                    top: 0;
+                    top: 1rem;
                     left: -1rem;
                     height: 14rem;
                     width: 23rem;

@@ -9,15 +9,18 @@
         position: relative;
         text-align: center;
         &__one{
+            width: auto;
             height: 26rem;
         }
         &__two{
+            width: auto;
             height: 31.4rem;
             position: absolute;
             margin-left: -8rem;
             margin-top: -3rem;
         }
         &__three{
+            width: auto;
             height: 40rem;
             z-index: 1;
             position: absolute;
@@ -27,12 +30,14 @@
             border-radius: 3rem;
         }
         &__four{
+            width: auto;
             height: 31.4rem;
             padding-left: 27.6rem;
             position: absolute;
             margin-top: -3rem;
         }
         &__five{
+            width: auto;
             height: 26rem;
             padding-left:44.2rem;
         }
