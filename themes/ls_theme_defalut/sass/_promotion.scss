@@ -1,0 +1,122 @@
+.promotion {
+    margin-top: 7rem;
+
+    &__heading {
+        font-size: 3.5rem;
+        font-family: K2D-ExtraBold;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $background-content;
+        color: $more-color;
+        padding-top: 4.35rem;
+        width: 45.5rem;
+        margin: 0 auto;
+        border-top-left-radius: 70rem;
+        border-top-right-radius: 70rem;
+    }
+
+    &--container {
+        background-color: $background-home;
+
+        &--body {
+            &__list {
+                justify-content: center;
+                padding-top: 4.65rem;
+                padding-bottom: 5.5rem;
+
+                &--item {
+                    cursor: pointer;
+                    margin: 0 0.5rem 2.95rem 0.5rem;
+                    background-color: $white;
+                    border-radius: 2rem;
+                    border: 2px solid $orange;
+                    padding: 0.7rem 5rem 3.5rem 1.38rem;
+
+                    &--content {
+                        // align-items: center;
+                        &--images {
+                            width: 20.5rem;
+                            height: 20.6rem;
+                            img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 2rem;
+                            }
+                        }
+
+                        &--text {
+                            &--title {
+                                font-size: 1.6rem;
+                                font-family: K2D-Bold;
+                                text-transform: uppercase;
+                                letter-spacing: 0.11rem;
+                            }
+
+                            &--desc {
+                                font-size: 1.4rem;
+                                font-family: K2D-ExtraLigh;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.paging-promotion {
+    margin-top: 3rem;
+    margin-bottom: 13.85rem;
+    .product-pagination {
+        font-family: Gilroy-Heavy;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        .current {
+            border: 0.1rem solid #ffd00f;
+            border-radius: 1.2rem;
+            margin-right: 0.6rem;
+            background-color: #fff !important;
+            padding: 1.8rem 2.3rem ;
+            font-size: 3.5rem;
+            color: $white;
+            display: block;
+            color: #a1710f !important;
+        }
+        .page-numbers {
+            background-color: #ffd00f;
+            border: 0.1rem solid #ffd00f;
+            border-radius: 1.2rem;
+            margin-right: 0.6rem;
+            padding: 2.5rem 2.3rem 1.5rem 2.3rem;
+            font-size: 3.5rem;
+            color: $white;
+            display: block;
+        }
+        .next {
+            margin: 0;
+            padding: 0;
+            background: none;
+            border: none;
+            img {
+                width: 1.8rem;
+                height:1.7rem;
+                margin-left: 1rem;
+            }
+        }
+        .prev {
+            margin: 0;
+            padding: 0;
+            background: none;
+            border: none;
+            img {
+                width: 1.8rem;
+                height:1.7rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+.promotion--advise-contact{
+    margin-bottom: 22rem;
+}

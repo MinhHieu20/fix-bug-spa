@@ -1,0 +1,397 @@
+@include responsive_pclow{
+    .main {
+        .product-details { 
+            margin: 0 1.5rem;
+            .product-one { 
+                &-border::after {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+@include responsive_mobile {
+    .header {
+        &-contact {
+            &-right {
+                &__cart {
+                    .mobile-cart {
+                        .header-cart-notify__mobile {
+                            position: absolute;
+                            top: 8rem!important;
+                            right: 0;
+                            width: 36.4rem;
+                            height: 111.8rem;
+                            padding: 2rem;
+                            background-color: #fff;
+                            z-index: 4;
+                            display: none;
+                            .header-cart--notify {
+                                border-radius: 1rem;
+                                &__info {
+                                    width:  100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    box-shadow: none;
+                                    border-radius: 2rem;
+
+                                    &--heading {
+                                        font-size: 2.4rem;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        margin-top: 7.7rem;
+                                        margin-bottom: 1rem;
+                                    }
+                                    &--top{
+                                        position: relative;
+                                        &-image{
+                                            margin-left: 1rem;
+                                            margin-top: 1.6rem;
+                                            height: 9rem;
+                                            width: 7rem;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        &-icon {
+                                            position: absolute;
+                                            top: -9rem;
+                                            right: 1.6rem;
+                                            width: 4rem;
+                                            button {
+                                                color: $color-text;
+                                                border:none;
+                                                padding: 0;
+                                                background-color: transparent;
+                                                width: 100% !important;
+                                                height: 100% !important;
+                                                svg {
+                                                    padding: 0.5rem;
+                                                    background-color: #fff;
+                                                }
+                                            }
+                                        }
+                                        &-detail{
+                                            padding-right: 2rem;
+                                            padding-top: 2.2rem;
+                                            text-align: left;
+                                            h3{
+                                                font-weight: 600;
+                                                font-size: 1.6rem;
+                                            }
+                                            .top-detail-amount {
+                                                color: $color-text;
+                                                font-weight: 600;
+                                                margin-top: 1.2rem;
+                                                font-size: 1.8rem;
+                                            }
+                                        }
+                                    }
+                                    &--main {
+                                        margin-left: 0 !important;
+                                        margin-top: 0.8rem;
+                                        margin-bottom: 0.6rem;
+                                        &-heading {
+                                            font-weight: 600;
+                                            font-size: 2rem;
+                                            margin-top: 3.5rem;
+                                            margin-bottom: 2.5rem;
+                                        }
+                                    }
+                                    &--bottom {
+                                        &-view{
+                                            width: 23rem !important;
+                                            height: 3.8rem !important;
+                                            border-radius: 0;
+                                            padding: 0;
+                                            font-size: 1.8rem;
+                                            margin-bottom: 1.6rem;
+                                        }
+                                        &-pay {
+                                            width: 23rem !important;
+                                            height: 3.8rem !important;
+                                            border-radius: 0;
+                                            padding: 0;
+                                            font-size: 1.8rem;
+                                            margin-bottom: 1.5rem;
+                                            background-color: $more-color;
+                                            color: $white
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .mobile-cart-overlay {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-logo {
+            margin-top: 0;
+        }
+    }
+    .main {
+        .product-details {
+            .product-one {
+                &-border {
+                    border: none;
+                    margin-top: 8rem;
+                }
+                &-border::after,
+                &-border::before {
+                    display:none;
+                }
+                .product-briefing {
+                    &-left {
+                        &__image {
+                            &-sub {
+                                width: 101%;
+                                margin-bottom: 0;
+                                &--item {
+                                    padding: 0 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                    &-right { 
+                        margin:0 2rem;
+
+                        &__title {
+                            font-size: 2rem;
+                            margin-top: 3rem;
+                            margin-right: 16.2rem;
+                            margin-bottom: 0;
+                            line-height: 1.2;
+                        }
+                        > span {
+                            margin-top: 2.2rem;
+                            margin-bottom: 2.1rem;
+                            font-weight: 600;
+                        }
+                        &__list {
+                            margin-top: 0.8rem;
+                            margin-bottom: 0.6rem;
+                        }
+                        &__amount {
+                            margin-bottom: 3.3rem;
+                            &--number {
+                                &-add,
+                                &-delete {
+                                    padding: 1.2rem 1.2rem;
+                                    font-size: 2rem;
+                                }
+                                > span {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                        &__add-cart {
+                            padding: 1rem 2.6rem;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .product-info {
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+
+                    &-btn{
+                        margin-bottom: 1.5rem;
+
+                        &__describe {
+                            border-radius: 1.6rem;
+                            margin-right: 1.2rem;
+                        }
+                    }
+                    &-detail {
+                        border: none;
+
+                        &__list {
+                            background-color: $backgroundMobile;
+                        }
+                    }
+                }
+            }
+        }
+        .product-similar { 
+            &-list {
+                width: 42rem;
+                height: 33rem !important;
+                margin: 0 auto;
+                margin-bottom: 13.6rem;
+
+                .product-similar-one::before,
+                .product-similar-two::before,
+                .product-similar-two::after,
+                .product-similar-one::after { 
+                    display: none;
+                }
+
+                &__item {
+                    border: 0.1rem solid $orange;
+                    width: 0;
+                    height: 100% !important;
+                    margin-right: -0.4rem;
+                    margin-left: -0.4rem;
+                    &--image {
+                        padding-top: 0 !important;
+                    }
+                    &--money {
+                        &-price {
+                            font-weight: 800;
+                            color: $more-color !important;
+                        }
+                    }
+                }
+            }
+            &-title {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+@include responsive_tablet {
+    .main {
+        .product-details {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            .product-one {
+                &-border::before {
+                    top: 0;
+                    right: 0;
+                    height: 1rem;
+                    width: 50.5%;
+                }
+
+                &-border::after {
+                    top: 38%;
+                    left: 0rem;
+                    height: 62%;
+                }
+                
+                .product-briefing {
+                    &-left {
+                        &__image {
+                            height: 22.5rem;
+
+                            &-sub {
+                                width: 100%;
+                                margin-bottom: 0;
+
+                                &--item {
+                                    background-color: #f3e59f;
+                                }
+                            }
+                        }
+                    }
+
+                    &-right { 
+                        &__title {
+                            font-size: 2rem;
+                            margin-top: 3rem;
+                            margin-right: 8.2rem;
+                            margin-bottom: 0;
+                            line-height: 1.2;
+                        }
+
+                        > span {
+                            margin-top: 2.2rem;
+                            margin-bottom: 2.1rem;
+                            font-weight: 600;
+                        }
+
+                        &__list {
+                            margin-top: 0.8rem;
+                            margin-bottom: 0.6rem;
+                        }
+
+                        &__amount {
+                            margin-bottom: 3.3rem;
+                            &--number {
+                                &-add,
+                                &-delete {
+                                    padding: 1.2rem 1.2rem;
+                                    font-size: 2rem;
+                                }
+                                > span {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+
+                        &__add-cart {
+                            padding: 1rem 1.6rem;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .product-info {
+                    margin-top: 2rem;
+                
+                    &-btn{
+                        margin-bottom: 1.5rem;
+
+                        &__describe {
+                            border-radius: 1.6rem;
+                            margin-right: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .product-similar { 
+            &-list {
+                width: 100%;
+                height: 33rem !important;
+                margin-bottom: 13.6rem;
+
+                &__item {
+                    margin-right: -0.4rem;
+                    margin-left: -0.4rem;
+                    max-width: 17rem !important;
+                    height: 30.4rem !important;
+
+                    &--image {
+                        padding-top: 0 !important;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    &--name {
+                        margin-top: 0 !important;
+                    }
+
+                    &--money {
+                        &-price {
+                            font-weight: 800;
+                            color: $more-color !important;
+                        }
+                    }
+                }
+
+                &__item:nth-child(3),
+                &__item:nth-child(4) { 
+                    .product-similar-list__item--image { 
+                        height: 16rem;
+                        margin-top: 1.9rem;
+
+                        img {
+                            height: 100%;
+                        }
+
+                    }
+                    .product-similar-list__item--name {
+                        margin-top: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

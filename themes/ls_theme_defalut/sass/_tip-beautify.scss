@@ -1,0 +1,153 @@
+.beautify-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+.beautify {
+    &-program {
+        &-list {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__item {
+                position: relative;
+                width: 20.5rem;
+                margin-bottom: 5rem;
+
+                &--image {
+                    width: 90%;
+                    height: 24rem;
+                    position: relative;
+
+                    &--product {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .image-pseudo--tips::after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    border-right: 2px solid $black;
+                    height: 16.5rem;
+                    right: -3rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &--text {
+                    width: 90%;
+                    &--title {
+                        text-transform: uppercase;
+                        font-family: Gilroy-Heavy;
+                        font-size: 1.5rem;
+                        padding: 3.5rem 0 1.5rem 0;
+                        max-height: 7rem;
+                        color: $black;
+                    }
+
+                    &--desc {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        margin-top: 1rem;
+                    }
+                }
+
+                &--calendar {
+                    position: absolute;
+                    top: -3.8rem;
+                    right: 3.8rem;
+                    width: 6.2rem;
+                    height: 6.2rem;
+                    border-radius: 50%;
+                    background-color: $orange;
+
+                    &--date {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        font-size: 2.6rem;
+                        font-family: Gilroy-XBold;
+                        display: flex;
+                        align-items: center;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .product-pagination {
+            font-family: Gilroy-Heavy;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            .current {
+                border: 0.1rem solid #ffd00f;
+                border-radius: 1.2rem;
+                margin-right: 0.6rem;
+                background-color: #fff !important;
+                padding: 1.8rem 2.3rem ;
+                font-size: 3.5rem;
+                color: $white;
+                display: block;
+                color: #a1710f !important;
+            }
+            .page-numbers {
+                background-color: #ffd00f;
+                border: 0.1rem solid #ffd00f;
+                border-radius: 1.2rem;
+                margin-right: 0.6rem;
+                padding: 2.5rem 2.3rem 1.5rem 2.3rem;
+                font-size: 3.5rem;
+                color: $white;
+                display: block;
+            }
+            .next {
+                margin: 0;
+                padding: 0;
+                background: none;
+                border: none;
+                img {
+                    width: 1.8rem;
+                    height:1.7rem;
+                    margin-left: 1rem;
+                }
+            }
+            .prev {
+                margin: 0;
+                padding: 0;
+                background: none;
+                border: none;
+                img {
+                    width: 1.8rem;
+                    height:1.7rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    &--program{
+        &__category{
+            &--list{
+                &-item{
+                    margin: 1.25rem 0;
+                    &-link{
+                        color: $color-text;
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                        border-radius: 1rem;
+                        font-family: Gilroy-Regular;
+                        padding: 0.7rem 2rem 0.5rem 1rem;
+                        cursor: pointer;
+                    }
+                    &-link.active{
+                        color: $black !important;
+                        font-family: Gilroy-XBold !important;
+                        // cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,143 @@
+.main-recruit {
+    .mb-27 {
+        margin-bottom: 2.7rem;
+    }
+    .mb-25 {
+        margin-bottom: 2.5rem;
+    }
+    background-color: $background-content;
+    padding-top: 12.6rem;
+    padding-bottom: 10rem;
+    margin-top: 5.6rem;
+    &-content {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 4.9rem 9.4rem 3.8rem 6.3rem;
+        background-color:$white;
+        border-radius: 2rem;
+        &__heading {
+            font-size: 2.2rem;
+            font-family: K2D-Bold;
+            color: $more-color;
+            margin-bottom: 1.8rem;
+            margin-right: 33rem;
+            text-transform: uppercase;
+            line-height: 1.24em;
+        }
+        &__text {
+            line-height: 1.3em;
+            margin: 0;
+            font-size: 1.6rem;
+            font-family:  K2D-ExtraLight;
+        }
+        &__image {
+            width: 48.7rem;
+            height: 48.8rem;
+            position: relative;
+            margin: 2.7rem auto 2.7rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__list{
+            display: none;
+        }
+        &__skin {
+            padding-left: 1.3rem;
+            border-radius: 1.2rem;
+            border: 1px solid $more-color;
+            &--title{
+                font-size: 2rem;
+                color: $more-color;           
+                font-family: K2D-Bold;
+                margin-top: 1.7rem;
+                margin-bottom: 1.2rem;
+            }
+            span {
+                display: block;
+                margin-bottom: 3rem;
+                font-family:  K2D-ExtraLight;
+                font-size: 1.6rem;
+                color: $color-text;
+            }
+            &--list {
+                line-height: 1.3em;
+                font-family:  K2D-ExtraLight;
+                font-size: 1.6rem;
+            }
+            &--btn {
+                border: none;
+                outline: none;
+                display: block;
+                position: relative;
+                margin: 1.2rem auto 1.4rem;
+                color: $more-color;
+                background-image: linear-gradient(to right,#f3e59c,#ffd113);
+                border-radius: 1.6rem;
+                padding: 0.5rem 1rem;
+                font-family: K2D-Bold;
+                font-size: 1.8rem;
+            }
+            &--btn:hover { 
+                color: $more-color;
+            }
+        }
+        &__skin + &__skin {
+            margin-top: 3.8rem;
+        }
+        .recruit-pagination {
+            margin-top: 6rem;
+            margin-left: 5rem;
+            .product-pagination {
+                font-family: Gilroy-Heavy;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                .current {
+                    border: 0.1rem solid #ffd00f;
+                    border-radius: 1.2rem;
+                    margin-right: 0.6rem;
+                    background-color: #fff !important;
+                    padding: 1.8rem 2.3rem ;
+                    font-size: 3.5rem;
+                    color: $white;
+                    display: block;
+                    color: #a1710f !important;
+                }
+                .page-numbers {
+                    background-color: #ffd00f;
+                    border: 0.1rem solid #ffd00f;
+                    border-radius: 1.2rem;
+                    margin-right: 0.6rem;
+                    padding: 2.5rem 2.3rem 1.5rem 2.3rem;
+                    font-size: 3.5rem;
+                    color: $white;
+                    display: block;
+                }
+                .next {
+                    margin: 0;
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    img {
+                        width: 1.8rem;
+                        height:1.7rem;
+                        margin-left: 1rem;
+                    }
+                }
+                .prev {
+                    margin: 0;
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    img {
+                        width: 1.8rem;
+                        height:1.7rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
