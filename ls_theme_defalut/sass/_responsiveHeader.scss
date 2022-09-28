@@ -297,6 +297,7 @@
                 &__list {
                     &--item {
                         padding: 0 1rem;
+                        z-index: 3;
 
                         //&-link {
                         //    font-size: 1.4rem;
@@ -324,11 +325,11 @@
     }
     ul#primary-menu>li>ul.sub-menu {
         position: absolute;
-        top: 0;
-        left: 12rem;
+        top: 4rem;
+        left: 3rem;
         background-color: #fff;
         min-width: 46rem;
-        z-index: 2;
+        z-index: 3;
         padding: 2rem;
         border-radius: 2rem;
         border: 1px solid #ffd00f;

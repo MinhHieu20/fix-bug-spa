@@ -41,6 +41,38 @@
     }
 }
 @include responsive_tablet {
+    .container-max {
+        .top-banner {
+            display: none;
+        }
+    }
+    .headers {
+        &-image{
+            position: relative;
+            text-align: center;
+            &__one{
+                height: 24rem;
+                position: absolute;
+                left: 2rem;
+            }
+            &__two{
+                height: 31.4rem;
+                left: 18rem;
+            }
+            &__three{
+                height: 38rem;
+                margin-left: 21rem;
+            }
+            &__four{
+                height: 31.4rem;
+                padding-left: 38.6rem;
+            }
+            &__five{
+                height: 24rem;
+                padding-left: 54.2rem;
+            }
+        }
+    }
     .container-item {
         .container-body {
             .container-service {
@@ -52,7 +84,6 @@
                             }
                         }
                     }
-
                 }
             }
         }
