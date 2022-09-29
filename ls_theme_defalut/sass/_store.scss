@@ -59,6 +59,7 @@
         &-cat{
             &__menu {
                 list-style: none;
+                flex-wrap: wrap;
                 padding: 0;
                 margin-bottom: 4rem;
                 justify-content: center;
@@ -110,11 +111,9 @@
                 &-item {
                     border:0.1rem solid $orange;
                     border-radius: 0.8rem;
-                    margin-bottom: 3.4rem;
-                    max-width: 29rem;
-                    height: 37.4rem;
+                    margin: 0 -0.5rem 3rem;
                     &__image {
-                        height: 22rem;
+                        // height: 22rem;
                         img {
                             display: block;
                             margin-left: auto;
@@ -123,9 +122,9 @@
                         }
                     }
                     &__name {
-                        max-height: 2rem;
-                        height: 2rem;
-                        margin-top: 2.4rem;
+                        // max-height: 2rem;
+                        // height: 2rem;
+                        margin-top: 1.8rem;
                         font-size: 1.8rem;
                         color: $black;
                     }
@@ -133,7 +132,7 @@
                         display:flex;
                         justify-content: space-between;
                         align-items: center;
-                        margin-top: 2.2rem;
+                        margin-top: 1.8rem;
                         &--price {
                             color: $more-color;
                             font-size: 1.8rem;
