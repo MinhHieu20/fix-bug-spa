@@ -51,7 +51,59 @@
         }
     }
 }
+@include responsive_pcsmall {
+    .header-contact{
+        padding: 0 1.7rem;
+        &-left{
+            form {
+                width: 100%;
+                float: left;
+            }
+            &__search {
+                height: 5rem;
+                font-size: 1.6rem;
+                padding: 0 2rem;
+            }
+        }
+        &-right{
+            &__cart {
+                &--btn {
+                    width: 5rem;
+                    height: 5rem;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+                &--number {
+                    top: -1.7rem;
+                    right: -1rem;
+                }
 
+            }
+            &__tel {
+                height: 5rem;
+                &--number {
+                    padding: 0 1rem;
+                    font-size: 1.4rem;
+                    line-height: 5rem;
+                }
+            }
+        }
+    }
+    .header-main {
+        &-nav {
+            &__list {
+                &--item {
+                    padding: 1rem 1.5rem;
+                    a {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
 @include responsive_tablet {
     .header {
         &-container { 
