@@ -75,10 +75,12 @@ global $ls_options, $post;
     </div>
     <!-- advise-contact -->
     <div class="advise-contact advise-contactIndex none-pc">
-        <div class="advise-contact__body grid wide">
-            <div class="contact-body row">
+
+        <div class="advise-contact__body">
+            <div class="contact-body container">
+
                 <div class="contact-body__left col l-5">
-                    <div class="contact-body__column">
+                    <div class="contact-body__column col-6 col-sm-6">
                         <div class="contact-logo">
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                         </div>
@@ -86,7 +88,7 @@ global $ls_options, $post;
                         <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
                         <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                     </div>
-                    <div class="contact-body__column">
+                    <div class="contact-body__column col-6 col-sm-6">
                         <div class="contact-logo">
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/calendar.png" alt="" class="icon__call">
                         </div>

@@ -77,7 +77,7 @@
 
     .content-container {
         padding: 10rem 0 14rem;
-        margin: 18rem 0 29rem 0;
+        // margin: 18rem 0 29rem 0;
     }
 
     .container-item {
@@ -614,7 +614,8 @@
         }
     }
     .advise-contactIndex{
-        margin-top: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 8rem;
     }
     .modal--maps{
         &--address{
@@ -957,7 +958,6 @@
         display: block !important;
     }
     .advise-contact {
-        height: 70.7rem;
 
         &__body {
             .contact-body {
@@ -1006,7 +1006,7 @@
 
                         .contact__title {
                             font-size: 1.4rem !important;
-                            margin-top: 0.8rem !important;
+                            margin-top: 1.6rem;
                         }
 
                         .contact__name {
