@@ -15,28 +15,23 @@
         .container-body {
             .container-service {
                 .training--item {
-                    margin-bottom: 5.5rem;
+                    margin-bottom: 15rem;
                     a{
                         background-color: #faf5da;
-                        padding-bottom: 1.2rem;
-                        border-radius: 4rem 4rem 2rem 2rem;
-                        display: block;
+                        padding-bottom: 10rem;
+                        padding-top: 5rem;
+                        border-radius: 0 0 2rem 2rem;
                         .container-service-item__note{
-                            &--image{
-                                width: 6.6rem;
-                            }
+                            bottom: -8rem;
+                            left: 1rem;
                             &--desc{
                                 display: none;
-                                font-size: 1.6rem;
                             }
                             .training--desc{
                                 display: block;
-                                line-height: 2.2rem;
+                                line-height: 2.4rem;
                                 padding: 0 1rem 0 3rem;
                                 max-width: 22rem;
-                                border-radius: 5rem;
-                                text-align: center;
-                                margin-left: -3.5rem;
                             }
                         }
                     }
@@ -52,54 +47,33 @@
         }
     }
     .headers {
-        display: none;
-    }
-     .banner-training{
-        display: block;
-     }  
-     .content-container{
-        .container-item{
-            .container-heading{
-                .container-item-logo{
-                    height: 5.5rem;
-                }
+        &-image{
+            position: relative;
+            text-align: center;
+            &__one{
+                height: 24rem;
+                position: absolute;
+                left: 2rem;
             }
-            .container-body{
-                .container-service{
-                    .training--item{
-                        a{
-                            position: relative;
-                            .service-image{
-                                width: 100%;
-                            }
-                            .container-service-item__note{
-                               position: absolute;
-                               bottom: 0.5rem;
-                               left: 0.5rem;
-                                &--image{
-                                    width: 4rem;
-                                    height: 4rem;
-                                    z-index: 1;
-                                }
-                                &--desc{
-                                    font-size: 1.1rem;
-                                    line-height: 2.6rem;
-                                    padding: 0 1rem 0 2rem;
-                                    border-radius: 2rem;
-                                    margin-left: -2rem;
-                                    text-align: center;
-                                    min-width: 14rem;
-                                }
-                                .training--desc{
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
+            &__two{
+                height: 31.4rem;
+                left: 18rem;
+            }
+            &__three{
+                height: 38rem;
+                margin-left: 21rem;
+            }
+            &__four{
+                height: 31.4rem;
+                padding-left: 38.6rem;
+            }
+            &__five{
+                height: 24rem;
+                padding-left: 54.2rem;
             }
         }
     }
+
     .advise-contact{
         &__body{
            .contact-body{
@@ -171,6 +145,7 @@
                                 .training--desc{
                                     display: none;
                                 }
+
                             }
                         }
                     }
@@ -236,37 +211,14 @@
     .pd-05{
         padding: 0.5rem;
     }
-    .content-container{
-        .container-item{
-            .container-body{
-                .container-service{
-                    .training--item{
-                        a{
-                            position: relative;
-                            .service-image{
-                                width: 100%;
-                            }
-                            .container-service-item__note{
-                               position: absolute;
-                               bottom: 0.5rem;
-                               left: 0;
-                                &--image{
-                                    width: 4rem;
-                                    height: 4rem;
-                                    z-index: 1;
-                                }
-                                &--desc{
-                                    font-size: 1.1rem;
-                                    line-height: 2.6rem;
-                                    padding: 0 1rem 0 2rem;
-                                    border-radius: 2rem;
-                                    margin-left: -2rem;
-                                    text-align: center;
-                                    min-width: 14rem;
-                                }
-                                .training--desc{
-                                    display: none;
-                                }
+    .container-item {
+        .container-body {
+            .container-service {
+                .training--item {
+                    a {
+                        .container-service-item__note {
+                            .training--desc {
+                                display: none;
                             }
                         }
                     }
@@ -317,55 +269,5 @@
     }
     .advise-space {
         height: 10rem;
-    }
-    .advise-contact{
-        &__body{
-           .contact-body{
-                display: flex;
-                &__left{
-                    .contact-body__column{
-                        background-image: url('../images/contact/_Path_.png');
-                        @include backgroundImage();
-                    }
-                }
-           }
-        }
-    }
-}
-@include responsive_mobile_small{
-    .content-container{
-        .container-item{
-            .container-body{
-                .container-service{
-                    .training--item{
-                        a{
-                            position: relative;
-                            .service-image{
-                                width: 100%;
-                            }
-                            .container-service-item__note{
-                               position: absolute;
-                               bottom: 0.5rem;
-                               left: 0;
-                                &--image{
-                                    width: 4rem;
-                                    height: 4rem;
-                                    z-index: 1;
-                                }
-                                &--desc{
-                                    font-size: 1.1rem;
-                                    line-height: 2.6rem;
-                                    padding: 0 1rem 0 2rem;
-                                    border-radius: 2rem;
-                                    margin-left: -2rem;
-                                    text-align: center;
-                                    min-width: 14rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
