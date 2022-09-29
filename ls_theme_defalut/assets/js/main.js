@@ -1,9 +1,9 @@
 const $ = document.querySelector.bind(document);
 
-$(document).ready(function () {
-  $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
-  $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
-});
+// $(document).ready(function () {
+//   $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
+//   $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
+// });
 const tabs = document.querySelectorAll(".tab-item");
 const panes = document.querySelectorAll(".tab-pane");
 const tabActive = $(".tab-item.active");
