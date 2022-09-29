@@ -14,7 +14,7 @@ global $ls_options;
     <div class="footer-top">
         <div class="container footer-width">
             <div class="row footer-after">
-                <div class="col-lg-4 pd-top12">
+                <div class="col-lg-4 col-md-4 col-12 pd-top12">
                     <div class="footer-top-interactive">
                         <div class="interactive-logo d-flex">
                             <a href="<?php echo home_url(); ?>"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
@@ -30,7 +30,7 @@ global $ls_options;
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="footer-top-contact">
                         <div class="footer-top-contact__tel">
                             <p class="contact-title"> HOTLINE </p>
@@ -64,7 +64,7 @@ global $ls_options;
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-12">
                     <div class="footer-top-menu">
                         <p class="contact-title"> Menu </p>
                         <ul class="footer-top-menu__list">
