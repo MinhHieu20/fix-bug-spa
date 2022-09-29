@@ -111,10 +111,16 @@
                         background-image: url('../images/contact/_Path_.png');
                         @include backgroundImage();
                         height: 20rem;
+                        .contact-logo{
+
+                        }
                     }
                 }
                 &__right{
                     &-heading{
+                        width: 90%;
+                        margin: 0 auto;
+                        height: auto;
                     }
                 }
            }
@@ -154,7 +160,7 @@
                                     z-index: 1;
                                 }
                                 &--desc{
-                                    font-size: 1.4rem;
+                                    font-size: 1.2rem;
                                     line-height: 2.6rem;
                                     padding: 0 1rem 0 2rem;
                                     border-radius: 2rem;
@@ -170,6 +176,53 @@
                     }
                 }
             }
+        }
+    }
+    .advise-contact{
+        margin-bottom: 10rem;
+        margin-top: 6rem;
+        &__body{
+           .contact-body{
+                display: flex;
+                flex-direction: column-reverse;
+                &__left{
+                    display: flex;
+                    .contact-body__column{
+                        background-image: url('../images/contact/_Path_.png');
+                        @include backgroundImage();
+                        height: 25rem;
+                        .contact-logo{
+                            width: 5rem;
+                        }
+                        .contact__title{
+                            font-size: 1.8rem;
+                            margin-top: 2rem;
+                        }
+                        .contact__name{
+                            font-size: 2.1rem;
+                            padding: 1rem 0;
+                        }
+                        .contact__desc{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                &__right{
+                    &-heading{
+                        width: 90%;
+                        margin: 0 auto;
+                        height: auto;
+                    }
+                    &-info{
+                        .form-group{
+                            .form-control{
+                                width: 50%;
+                                height: 7rem;
+                            }
+                        }
+                    }
+                }
+           }
         }
     }
 }

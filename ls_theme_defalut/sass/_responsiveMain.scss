@@ -3,7 +3,6 @@
         display: none;
     }
     .advise-contact {
-        height: 70.7rem;
         &__body {
             .contact-body {
                 &__right {
@@ -138,7 +137,7 @@
 //Tablet
 @include responsive_tablet {
     .advise-contact {
-        height: 57.7rem;
+        // height: 57.7rem;
         &__body {
             .contact-body {
                 &__right {
@@ -154,7 +153,7 @@
                             .form-control{
                                 position: relative;
                                 margin: 0 auto;
-                                width: 25rem;
+                                width: 50rem;
                                 height: 5.1rem;
                                 font-size: 1.4rem;
                             } 
@@ -180,10 +179,10 @@
                         }
                         .contact__title {
                             font-size: 1.4rem;
-                            margin-top: 1.2rem;
+                            margin-top: 1.9rem;
                         }
                         .contact__name {
-                            font-size: 3.5rem ;
+                            font-size: 2.5rem ;
                             padding: 1rem ;
                         }
                         .contact__desc {
