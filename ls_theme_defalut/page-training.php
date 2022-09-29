@@ -28,9 +28,9 @@ global $ls_options, $post;
                 <img src="<?php bloginfo('template_directory'); ?>/images/banner1.png" alt="">
             </div>
         </div>
-        <div class="content-container grid wide">
+        <div class="content-container container">
             <div class="container-item ">
-                <div class="container-heading">
+                <div class="container-heading text-center">
                     <div class="container-item-logo">
                         <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
                     </div>
@@ -51,7 +51,7 @@ global $ls_options, $post;
                             while ( $loop->have_posts() ) : $loop->the_post();
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'single-post-thumbnail' );
                         ?>
-                        <div class="container-service-item training--item col-lg-3 col-sm-3 col-6 pd-05">
+                        <div class="training--item col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6 pd-05">
                             <a href="<?php the_permalink(); ?>">
                                 <img src="<?php echo $image[0]; ?>" alt="" class="service-image">
                                 <div class="container-service-item__note">
@@ -75,8 +75,8 @@ global $ls_options, $post;
     </div>
     <!-- advise-contact -->
     <div class="advise-contact advise-contactIndex none-pc">
-        <div class="advise-contact__body grid wide">
-            <div class="contact-body row">
+        <div class="advise-contact__body">
+            <div class="contact-body ">
                 <div class="contact-body__left col l-5">
                     <div class="contact-body__column">
                         <div class="contact-logo">

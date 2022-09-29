@@ -1,6 +1,7 @@
 $res_mobile_small : "(min-width: 375px) and (max-width: 479px)";
 $res_mobile : "(max-width: 480px)";
 $res_tablet : "(min-width: 481px) and (max-width: 768px)";
+$res_tablet_small: "(min-width: 769px) and (max-width: 990px)"; 
 $res_pclow : "(min-width: 991px)";
 $res_pcmedium : "(max-width: 1366px)";
 
@@ -19,7 +20,11 @@ $res_pcmedium : "(max-width: 1366px)";
     @content;
   }
 }
-
+@mixin responsive_tablet_small() {
+  @media #{$res_tablet_small} {
+    @content;
+  }
+}
 @mixin responsive_pclow() {
   @media #{$res_pclow} {
     @content;

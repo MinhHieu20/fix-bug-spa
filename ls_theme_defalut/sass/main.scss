@@ -72,6 +72,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
     }
 }
@@ -532,15 +533,10 @@
     height: 76.7rem;
 
     .advise-contact__body {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        right: 0;
+        
         .contact-body {
             .contact-body__left {
                 .contact-body__column {
-                    width: 37.6rem;
                     height: 26.5rem;
                     margin: 1.5rem 0;
                     text-align: center;
@@ -585,7 +581,6 @@
 
                 .contact-body__right-heading {
                     width: auto;
-                    height: 20.7rem;
                     object-fit: cover;
 
                     .contact__heading {

@@ -138,3 +138,29 @@
         margin-bottom: 6rem;
     }
 }
+.content-container{
+    .container-item{
+        .container-body{
+            .container-service{
+                .training--item{
+                    a{
+                        .service-image{
+                            width: 100%;
+                        }
+                        .container-service-item__note{
+                            display: flex;
+                            align-items: center;
+                            &--image{
+                                z-index: 1;
+                            }
+                            &--desc{
+                                font-weight: 600;
+                                background-color: $orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
