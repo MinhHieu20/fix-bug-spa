@@ -14,7 +14,7 @@
 global $ls_options, $post, $WP_Query, $product;
 get_header();
 ?>
-<div class="content">
+<div class="content content-main">
     <div class="top-banner">
         <div class="top-banner-1">
             <img src="<?php echo $ls_options['banner-main-main']['url']; ?>" alt="">
