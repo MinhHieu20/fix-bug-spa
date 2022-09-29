@@ -9,6 +9,58 @@
             }
         }
     }
+    .product-similar{
+        margin-bottom: 10rem;
+        &-list{
+            &__item{
+                padding: 0 1rem;
+
+                &--image{
+                    margin: 0.5rem auto 0;
+                }
+                &--name{
+                    margin: 1rem 0;
+                    min-height: 4.4rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+@include responsive_mobile_small{
+    .product-briefing-right__amount{
+        .cart{
+            flex-wrap: wrap;
+            .product-briefing-right__amount--number{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .product-similar{
+        .product-similar-list{
+            &__item{
+                &--image{
+                    margin: 0.5rem auto 0;
+                }
+                &--name{
+                    margin-top: 1.6rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    min-height: 4.2rem;
+                    overflow: hidden;
+                }
+                &--money{
+                    margin-top: 1.4rem;
+                }
+            }
+        }
+    }
 }
 @include responsive_mobile {
     .header {
@@ -236,7 +288,7 @@
                     margin-right: -0.4rem;
                     margin-left: -0.4rem;
                     &--image {
-                        padding-top: 0 !important;
+                        padding-top: 0 ;
                     }
                     &--money {
                         &-price {
@@ -343,20 +395,16 @@
             }
         }
         .product-similar { 
+            margin-bottom: 10rem;
             &-list {
-                width: 100%;
-                height: 33rem !important;
-                margin-bottom: 13.6rem;
-
+               
                 &__item {
                     margin-right: -0.4rem;
                     margin-left: -0.4rem;
-                    max-width: 17rem !important;
-                    height: 30.4rem !important;
+                    
 
                     &--image {
-                        padding-top: 0 !important;
-
+                        margin: 0.5rem auto 0;
                         img {
                             width: 100%;
                             height: 100%;
@@ -365,10 +413,17 @@
                     }
 
                     &--name {
-                        margin-top: 0 !important;
+                        min-height: 4.4rem;
+                        overflow: hidden;
+                        margin-top: 1.2rem;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
                     }
 
                     &--money {
+                        margin-top: 1rem;
                         &-price {
                             font-weight: 800;
                             color: $more-color !important;
@@ -376,20 +431,50 @@
                     }
                 }
 
-                &__item:nth-child(3),
-                &__item:nth-child(4) { 
-                    .product-similar-list__item--image { 
-                        height: 16rem;
-                        margin-top: 1.9rem;
+               
+            }
+        }
+    }
 
-                        img {
-                            height: 100%;
+   
+}
+@include responsive_tablet_small{
+    .product-details{
+        margin: 3rem 0.5rem 0 0.5rem;
+    }
+    .product-briefing{
+        &-right{
+            &__amount{
+                .cart{
+                    .product-briefing-right__amount--number{
+                        .quantity-button{
+                            padding: 0.5rem;
                         }
+                        .input-text{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-similar{
+        margin-bottom: 10rem;
+        &-list{
+            &__item{
+                padding: 0 1rem;
 
-                    }
-                    .product-similar-list__item--name {
-                        margin-top: 2rem !important;
-                    }
+                &--image{
+                    margin: 0.5rem auto 0;
+                }
+                &--name{
+                    margin: 1rem 0;
+                    min-height: 4.4rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
         }
