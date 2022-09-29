@@ -189,7 +189,8 @@
 
             &-interactive {
                 .interactive-logo {
-                    margin-left: 1%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
                     width: 20.4rem;
                     height: 8.8rem;
                     top: -16rem;
@@ -204,14 +205,14 @@
                     width: 19.8rem;
                     font-size: 1.2rem;
                     padding: 0;
-                    line-height: 1.5em;
+                    line-height: 1.7em;
                 }
 
                 .interactive-image {
                     display: block !important;
                     padding-top: 1rem;
                     position: relative;
-                    top: 1rem;
+                    top: 0;
                     left: -1rem;
                     height: 14rem;
                     width: 23rem;
@@ -322,7 +323,6 @@
             padding-right: 1.5rem;
 
             .footer-title {
-                padding-right: 36%;
                 padding-bottom: 1.5rem;
                 font-size: 1.6rem;
             }

@@ -329,31 +329,6 @@
             width: 60.38rem;
         }
     }
-    .advise-contact {
-        height: 76.7rem;
-    
-        .advise-contact__body {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            right: 0;
-            .contact-body {
-                .contact-body__left {
-                    .contact-body__column {
-                        width: 37.6rem;
-                    }
-                }
-                .contact-body__right{
-                    &-heading{
-                        height: 20.7rem;
-
-                    }
-                }
-            }
-        }
-    
-    }
 }
 
 @include responsive_tablet {
@@ -372,7 +347,6 @@
 
             .container-item-logo {
                 height: 7.6rem;
-
             }
 
             .container-item-title {
@@ -609,11 +583,11 @@
         background-color: #fdf9e8;    
         .sale-heading{
             background-color: #fdf9e8;
-            top: 3.8rem;
+            top: 3.8rem !important;
         }
         .sale-heading-nav {
             position: absolute;
-            top: 6rem;
+            top: 6rem !important;
         }
     }
     .sale-container {
@@ -678,13 +652,11 @@
                         }
                         &--desc{
                             font-size: 1.4rem;
-
-
-                            line-height: 2rem;
-                            min-width: 18rem;
-                            margin-left: -2.5rem;
-
-
+                            line-height: 4rem;
+                            padding: 0 1rem 0 3rem;
+                            min-width: 17rem;
+                            margin-left: -3.5rem;
+                            border-radius: 1.6rem;
                         }
                     }
                     .service-information {
@@ -1044,7 +1016,7 @@
 
                         .contact__desc {
                             max-width: 15rem !important;
-                            font-size: 1.1rem !important;
+                            font-size: 1.2rem !important;
                         }
                     }
                 }
@@ -1148,10 +1120,7 @@
             .container-service {
                 .container-service-item {
                     .container-service-item__note{
-
-
                         bottom: 2rem;
-
                         left: 1rem;
                         &--image{
                             width: 4rem;
@@ -1159,9 +1128,10 @@
                         }
                         &--desc{
                             font-size: 1.1rem;
-                            line-height: 2rem;
+                            line-height: 4rem;
+                            padding: 0 1rem 0 4rem;
                             min-width: 14rem;
-                            margin-left: -1.5rem;
+                            margin-left: -3.5rem;
                         }
                     }
                     .service-information {
