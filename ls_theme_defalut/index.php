@@ -70,7 +70,7 @@ get_header();
         </div>
 
         <div class="system-introduction row">
-            <div class="introduction-info col-lg-6 col-12">
+            <div class="introduction-info col-lg-6 col-md-6 col-12">
                 <div class="introduction-info-logo">
                     <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" alt="" class="info-logo-img">
                 </div>
@@ -80,7 +80,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="introduction-image col-lg-6">
+            <div class="introduction-image col-lg-6 col-md-6">
                 <img src="<?php echo $ls_options['intro-main-vc-img-1']['url']; ?>" alt="" class="introduction-image-1">
                 <img src="<?php echo $ls_options['intro-main-vc-img-2']['url']; ?>" alt="" class="introduction-image-2">
                 <img src="<?php echo $ls_options['intro-main-vc-img-3']['url']; ?>" alt="" class="introduction-image-3">
@@ -456,7 +456,7 @@ get_header();
                         while ( $loop->have_posts() ) : $loop->the_post();
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     ?>
-                    <div class="event-item col-lg-3 col-sm-12">
+                    <div class="event-item col-lg-3 col-md-4 col-sm-12">
                         <?php
                             if ($count == 2) {
                         if(wp_is_mobile()) {
@@ -526,7 +526,7 @@ get_header();
                         while ( $loop->have_posts() ) : $loop->the_post();
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     ?>
-                    <div class="event-item col-lg-3 col-sm-12">
+                    <div class="event-item col-lg-3 col-md-4 col-sm-12">
                     <?php
                         if ($count == 2) {
                         if(wp_is_mobile()) {

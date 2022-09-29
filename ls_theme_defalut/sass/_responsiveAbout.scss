@@ -215,7 +215,217 @@
         }
     }
 }
+@include responsive_mobile_small {
+    .main {
+        &-logo {
+            height: 22rem;
+        }
 
+        &-info { 
+            &-image {
+                height: 146rem;
+                .main-content { 
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+
+                    &--logo {
+                        margin-top: 3.9rem;
+                        margin-bottom: 5rem;
+                        margin-left: 2rem;
+                    }
+
+                    &-heading{
+                        font-size: 2rem;
+                        padding: 0 14%;
+                        line-height: 1.2em;
+                        margin-bottom: 5.6rem;
+                    }
+
+                    &-right {
+                        height: 62.1rem;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 4rem;
+                        &__one { 
+                            width: 26.1rem;
+                            height: 28.6rem;
+                            margin: 0;
+                        }
+
+                        &__two {
+                            left: 1.6rem;
+                            bottom: 24.2rem;
+                            width: 16.3rem;
+                            height: 17.4rem;
+                        }
+
+                        &__three {
+                            right: 4.5rem;
+                            bottom: 21.5rem;
+                            width: 11.2rem;
+                            height: 11.1rem;
+                        }
+                    }
+                }
+            }
+            .main-inftras {
+                bottom: -203rem;
+                &-image {
+                    height: 305rem;
+                    &__above {
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+
+                    &__below {
+                        position: absolute;
+                        top: 0;
+                        height:100%;
+                        width: 100%;
+                    }
+                }
+
+                &-content {
+                    top: 96rem;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+
+                    &__heading{ 
+                        padding: 0;    
+                        margin-bottom: 9.6rem;
+                    }
+
+                    .main-mobile {
+                        .main-inftras-content__right{
+                            display: flex;
+                            justify-content: center;
+                            height: 53.6rem;    
+                            margin-top: 4rem;
+                            &--one{
+                                width: 26.1rem;
+                                height: 28.6rem;
+                            }
+
+                            &--two {
+                                position: absolute;
+                                left: 1.6rem;
+                                bottom: 15.2rem;
+                                width: 16.3rem;
+                                height: 17.4rem;
+                            }
+
+                            &--three {
+                                position: absolute;
+                                right: 4.6rem;
+                                bottom: 13.1rem;
+                                width: 12.2rem;
+                                height: 11.1rem;
+                            }
+                        }
+                        .main-inftras-content__left{
+                            text-align: justify;
+                            line-height: 1.4em;
+                            &--list {
+                                &-item {
+                                    font-size: 1.8rem;
+                                    margin-top: 2.5rem;
+                                    line-height: 1.25;
+                                    span {
+                                        font-family: Gilroy-XBold;
+                                    }
+                                }
+
+                                &-item:first-child {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-device {
+            height: 74.2rem;
+            margin-top: 203rem;
+            background-image: linear-gradient(#fffdf6,#ffe98c);
+            .device-mobile {
+                height:100%;
+                .main-device-left {
+                    &__list {
+                        position: relative;
+                        top: 15rem;
+                        width: 100%;
+                        height: 100%;
+                        &--item {
+                            position: absolute;
+                            top: -3.4rem;
+                            left: 1rem;
+                            height: 26.6rem;
+                            img {
+                                height: 100%;
+                            }
+                        }
+
+                        &--item1{
+                            position: absolute;
+                            top: -7rem;
+                            left: 15.5rem;
+                            height: 20.8rem;
+                            img{
+                                height: 100%;
+                            }
+                        }
+
+                        &--item2{
+                            position: absolute;
+                            top: 15.9rem;
+                            left: 3rem;
+                            width: 16.6rem;
+                            height: 16.8rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 3rem;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &--item3{
+                            position: absolute;
+                            top: 5.2rem;
+                            left: 20.8rem;
+                            width: 15.1rem;
+                            height: 27.3rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                
+                .main-device-right {
+                    &__image {
+                        position: relative;
+                        top: 5rem;
+                        width: 32rem;
+                        height: 100%;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &-team {
+            height: 14.9rem;
+        }
+    }
+}
 @include responsive_tablet {
     .pd-0 {
         padding: 0;

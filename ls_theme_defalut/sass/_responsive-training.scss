@@ -46,8 +46,10 @@
     }
 }
 @include responsive_tablet {
-    .top-banner {
-        display: none;
+    .container-max {
+        .top-banner {
+            display: none;
+        }
     }
     .headers {
         display: none;
