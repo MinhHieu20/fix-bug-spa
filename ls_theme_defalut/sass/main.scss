@@ -244,8 +244,6 @@
 
             &--desc {
                 text-align: justify;
-
-
             }
         }
     }
@@ -322,6 +320,7 @@
                         text-transform: uppercase;
                         font-family: Gilroy-Heavy;
                         font-size: 1.6rem;
+                        
                         a {
                             color: $black;
                         }
@@ -330,6 +329,15 @@
                         max-width: 23.4rem;
                         font-size: 1.8rem;
                         text-align: justify;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                }
+                .event-item:last-child {
+                    .image-pseudo::after {
+                        display: none;
                     }
                 }
             }

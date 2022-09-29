@@ -343,7 +343,7 @@
 
     .container-item {
         .container-heading {
-            padding-bottom: 6.5rem;
+            padding-bottom: 4.5rem;
 
             .container-item-logo {
                 height: 7.6rem;
@@ -355,55 +355,78 @@
             }
         }
     }
-
-    .system-introduction {
-        .introduction-info {
-            .introduction-info-logo {
-                height: 7.6rem;
+    .content-container {
+        .system-introduction {
+            height: 58rem;
+            .introduction-image {
+                .introduction-image-1 {
+                    width: 70%;
+                    margin-left: 6rem;
+                }
+                .introduction-image-2 {
+                    position: absolute;
+                    top: 22rem;
+                    width: 45%;
+                }
+                .introduction-image-3 {
+                    position: absolute;
+                    bottom: -7.7rem;
+                    right: 2.5rem;
+                    width: 40%;
+                }
             }
-
-            .introduction-info-title {
-                font-size: 1.8rem;
-                margin-top: 1rem;
-            }
-
-            .introduction-info-desc {
-                font-size: 1.6rem;
-            }
-        }
-
-        .introduction-image {
-            display: flex;
-            margin-top: 3.5rem;
-            margin-bottom: 4rem;
-
-            .introduction-image-1,
-            .introduction-image-2,
-            .introduction-image-3 {
-                width: calc(100% / 3);
-                height: auto;
-                padding: 0 0.5rem;
+            .introduction-info {
+                text-align: center;
+        
+                .introduction-info-logo {
+                    width: 4rem;
+                    height: 6rem;
+                    margin-left: 7.1rem;
+                    .info-logo-img {
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+                .introduction-info-title {
+                    margin-left: 3.1rem;
+                    margin-top: 1.5rem;
+                    text-align: left;
+                    font-size: 1.8rem;
+                }
+                .introduction-info-desc {
+                    line-height: 1.5rem;
+                    font-size: 1.3rem;
+                    margin-left: 3.1rem;
+                }
             }
         }
     }
 
     .top-banner-2 {
-        height: 34rem;
-
+        height: 30.9rem;
         .top-banner-body {
-            height: 22rem;
-            top: 6rem;
-
-            .top-banner-body-image {
-                width: auto;
-                height: 100%;
-                padding: 0 2rem;
+            top: 0;
+            justify-content: center;
+            &__item {
+                width: 21.6rem;
+                height: 24.6rem;
+                margin: 0 1.5rem;
+                border-radius: 5rem;
+                &--heading {
+                    font-size: 1.8rem;
+                    padding: 3rem;
+                }
+                &--desc {
+                    font-size: 1.2rem;
+                    padding: 1rem 3rem 0 3rem;
+                    line-height: 1.3em;
+                }
             }
         }
     }
 
     .top-banner-3 {
-        height: 30rem;
+        height: 28rem;
         .banner--images{
             padding-top: 5rem;
             width: 17rem;
@@ -435,6 +458,28 @@
             }
         }
     }
+    .container-item {
+        .container-body { 
+            .container-service {
+                &-item {
+                    &__note {
+                        bottom: 1.7rem;
+                        &--image {
+                            width: 5rem;
+                            height: 5rem;
+                        }
+                        &--desc {
+                            font-size: 1.1rem;
+                            line-height: 3rem;
+                            padding: 0 1rem 0 2rem;
+                            min-width: 12rem;
+                            margin-left: -2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .treatment-result {
         padding-top: 2.5rem;
@@ -443,9 +488,28 @@
             .container-body {
                 .treatment-category {
                     .category-nav {
+                        padding-bottom: 1.5rem;
                         .category-item {
                             .category-item-link {
                                 font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+                .container-service {
+                    &-item {
+                        &__note {
+                            bottom: 1.5rem;
+                            &--image {
+                                width: 7rem;
+                                height: 7rem;
+                            }
+                            &--desc {
+                                font-size: 1.2rem;
+                                line-height: 4rem;
+                                padding: 0 1rem 0 2rem;
+                                min-width: 12rem;
+                                margin-left: -3.5rem;
                             }
                         }
                     }
@@ -465,59 +529,72 @@
     }
 
     .event {
-        margin-top: 3.5rem;
-
         .container-item {
+            .container-heading {
+                .container-item-logo {
+                    margin-top: 5rem;
+                }
+            }
             .container-body {
                 .event-list {
+                    display: flex;
                     .event-item {
-                        display: flex;
-                        align-items: center;
-                        border: 1px solid #ffd00f;
-                        border-radius: 2rem;
-                        margin-bottom: 0.5rem;
-                        padding: 1rem;
-
                         .event-item-image {
-                            height: 24.5rem;
-                            padding-right: 6rem;
-                            position: relative;
+                            // position: absolute !important;
+                            a {
+                                display: inline-block;
+                                height: 22rem;
+                                img {
+                                    width: 100%;
+                                    object-fit: cover;
+                                    border-radius: 2rem;
+                                }
+                            }
                         }
-
-                        .event-item-image::after {
-                            border-right: 1px solid #000000;
-                            height: 15rem;
-                            left: 0;
-                            right: 3rem;
+                        .event-title {
+                            max-width: 23.4rem;
+                            font-size: 1.6rem;
+                        }
+                        .event-desc {
+                            max-width: 23.4rem;
+                            font-size: 1.8rem;
+                        }
+                        .image-pseudo::after {
+                            position: absolute;
+                            border-right: 2px solid #000000;
+                            height: 16.5rem;
+                            right: -1.5rem;
                             top: 50%;
                             transform: translateY(-50%);
-                        }
-
-                        .event-item-text {
-
-                            .event-desc,
-                            .event-title {
-                                max-width: 35.5rem;
-                                margin: 2rem 0;
-                            }
-
-                            .event-desc {}
                         }
                     }
                 }
             }
-            .container-footer{
-                margin: 1rem 0 5rem 0;
+            .container-footer {
+                .btn-exception {
+                    font-size: 2rem !important;
+                    margin-top: 5rem;
+                    margin-bottom: 4rem;
+                }
             }
         }
     }
-    .sale{
+    .sale{ 
+        background-color: #fdf9e8;    
         .sale-heading{
-            display: none;
+            background-color: #fdf9e8;
+            top: 3.8rem;
         }
-        .sale-heading-nav{
-
+        .sale-heading-nav {
+            position: absolute;
+            top: 6rem;
         }
+    }
+    .sale-container {
+        background-color: #fdf9e8;
+        padding-top: 12rem;
+        margin-top: 10rem;
+        margin-bottom: 4rem;
     }
     .beauty-store{
         .container-body{
@@ -568,16 +645,18 @@
                     margin-bottom: 2rem;
                     .container-service-item__note {
                         left: 0.5rem;
+                        bottom: 1.5rem;
                         &--image{
-                            width: 8rem;
-                            height: 8rem;
+                            width: 7rem;
+                            height: 7rem;
                         }
                         &--desc{
                             font-size: 1.4rem;
                             line-height: 4rem;
-                            padding: 0 1rem 0 4rem;
-                            min-width: 18rem;
+                            padding: 0 1rem 0 3rem;
+                            min-width: 17rem;
                             margin-left: -3.5rem;
+                            border-radius: 1.6rem;
                         }
                     }
                     .service-information {
@@ -703,7 +782,7 @@
     }
     .top-banner-3 {
         width: auto;
-        height: 19.5rem;
+        height: 18rem;
         .banner--images{
             padding-top: 1rem;
             width: 7rem;
@@ -1041,7 +1120,7 @@
             .container-service {
                 .container-service-item {
                     .container-service-item__note{
-                        bottom: 3rem;
+                        bottom: 2rem;
                         left: 1rem;
                         &--image{
                             width: 4rem;

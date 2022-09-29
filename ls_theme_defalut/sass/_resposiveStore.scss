@@ -167,15 +167,7 @@
                 margin-bottom: 0 !important;
             }
             &-store:after {
-                content: "";
-                position: absolute;
-                top: -5rem;
-                left: 11rem;
-                width: 26rem;
-                height: 5rem;
-                background-image: linear-gradient(90deg, #fef7dc,#fff6d6);
-                border-top-right-radius: 70rem;
-                border-top-left-radius: 70rem;
+                left: 6.5rem;
             }
         }
         .product {
@@ -188,8 +180,8 @@
                     flex-wrap: wrap;
                     li {
                         padding: 1rem 1rem;
-                        font-size: 1.6rem;
                         a {
+                            font-size: 1.5rem;
                             margin-left: 0.5rem;
                         }
                     }
@@ -279,7 +271,9 @@
                 &__menu {
                     li {
                         padding: 1.2rem 1.6rem;
-                        font-size: 1.6rem;
+                        a {
+                            font-size: 1.3rem;
+                        }
                     }
                 }
             }
