@@ -4,6 +4,7 @@ $res_mobile : "(max-width: 480px)";
 $res_tablet : "(min-width: 481px) and (max-width: 768px)";
 $res_tablet_small: "(min-width: 769px) and (max-width: 990px)"; 
 $res_pclow : "(min-width: 991px) and (max-width: 1023px)";
+$res_pcsmall : "(min-width: 1024px) and (max-width: 1170px)";
 $res_pcmedium : "(max-width: 1366px)";
 
 @mixin responsive_mobile() {
@@ -28,6 +29,11 @@ $res_pcmedium : "(max-width: 1366px)";
 }
 @mixin responsive_pclow() {
   @media #{$res_pclow} {
+    @content;
+  }
+}
+@mixin responsive_pcsmall() {
+  @media #{$res_pcsmall} {
     @content;
   }
 }
