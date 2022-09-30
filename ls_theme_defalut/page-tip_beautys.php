@@ -14,10 +14,10 @@ if(get_query_var('paged')) {
     $paged = get_query_var('page');
 }
 ?>
-    <div class="content pdb-15">
-        <div class="beautify-container grid wide dp-none dp-blockPC">
+    <div class="content ">
+        <div class="beautify-container container dp-none dp-blockPC">
             <div class="beautify row">
-                <div class="beautify-program col-lg-9 col-md-9">
+                <div class="beautify-program col-lg-9 col-md-12 col-12">
                     <div class="beautify-program-list row">
                         <?php
                             $args = array(
@@ -34,9 +34,9 @@ if(get_query_var('paged')) {
                             $post_id = $tip_beauty->ID;
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );
                         ?>
-                        <div class="beautify-program-list__item col-lg-4 col-md-4">
+                        <div class="beautify-program-list__item col-lg-4 col-md-4 col-sm-6 col-6">
                             <a href="<?php the_permalink(); ?>">
-                                <div class="beautify-program-list__item--image">
+                                <div class="beautify-program-list__item--image ">
                                     <img src="<?php echo $image[0]; ?>" alt="" class="beautify-program-list__item--image--product">
                                 </div>
                                 <div class="beautify-program-list__item--text">
@@ -73,8 +73,8 @@ if(get_query_var('paged')) {
                         ?>
                     </div>
                 </div>
-                <div class="beautify--program col-lg-3 col-md-3">
-                    <div class="beautify--program__category" id="sidebar-program" style="background: #fff;padding: 0.5rem;box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 6%);">
+                <div class="beautify--program col-lg-3 col-md-12">
+                    <div class="beautify--program__category" id="sidebar-program" >
                         <ul class="beautify--program__category--list">
                             <li class="beautify--program__category--list-item">
                                 <a href="<?php echo home_url() ?>/tin-tuc-moi-nhat" class="beautify--program__category--list-item-link <?php echo ($directoryURI=='tin-tuc-moi-nhat') ? 'active' : '' ?>">tin tức mới nhất</a>
@@ -92,9 +92,9 @@ if(get_query_var('paged')) {
         </div>
 
         <div class="beautify-mobile dp-nonePC dp-block">
-            <div class="beautify-container grid wide">
+            <div class="beautify-container container">
                 <div class="beautify row">
-                    <div class="beautify--program col-12">
+                    <div class="beautify--program col-lg-3 col-md-12">
                         <div class="beautify--program__category">
                             <ul class="beautify--program__category--list d-flex">
                                 <li class="beautify--program__category--list-item">
@@ -109,7 +109,7 @@ if(get_query_var('paged')) {
                             </ul>
                         </div>
                     </div>
-                    <div class="beautify-program col l-9 col-md-9">
+                    <div class="beautify-program col-lg-9 col-md-12 col-12">
                         <div class="beautify-program-list row">
                             <?php
                             $loop = new WP_Query( $args );
@@ -146,38 +146,40 @@ if(get_query_var('paged')) {
                 </div>
             </div>
         </div>
+       
         <div class="advise-contact dp-none">
-            <div class="advise-contact__body grid wide">
-                <div class="contact-body row">
-                    <div class="contact-body__left col l-5">
-                        <div class="contact-body__column">
-                            <div class="contact-logo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
-                            </div>
-                            <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</div>
-                            <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
+        <div class="advise-contact__body">
+            <div class="contact-body container">
+                <div class="contact-body__left col l-5">
+                    <div class="contact-body__column col-6 col-sm-6">
+                        <div class="contact-logo">
+                            <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                         </div>
-                        <div class="contact-body__column">
-                            <div class="contact-logo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/contact/calendar.png" alt="" class="icon__call">
-                            </div>
-                            <div class="contact__title">đặt lịch hẹn</div>
-                            <div class="contact__name">Nhận ưu đãi</div>
-                            <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
-                        </div>
+                        <div class="contact__title">Liên hệ hotline</div>
+                        <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
+                        <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                     </div>
-                    <div class="contact-body__right col l-7 col-md-7">
-                        <div class="contact-body__right-heading">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
+                    <div class="contact-body__column col-6 col-sm-6">
+                        <div class="contact-logo">
+                            <img src="<?php bloginfo('template_directory'); ?>/images/contact/calendar.png" alt="" class="icon__call">
                         </div>
-                        <div class="contact-body__right-info">
-                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
-                        </div>
+                        <div class="contact__title">đặt lịch hẹn</div>
+                        <div class="contact__name">Nhận ưu đãi</div>
+                        <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
+                    </div>
+
+                </div>
+                <div class="contact-body__right col l-7">
+                    <div class="contact-body__right-heading">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
+                    </div>
+                    <div class="contact-body__right-info">
+                        <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 <?php
 get_footer();
