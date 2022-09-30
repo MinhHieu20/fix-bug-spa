@@ -200,7 +200,7 @@
                 }
 
                 .interactive-caption {
-                    top: -6.6rem;
+                    top: -5.5rem;
                     width: 19.8rem;
                     font-size: 1.2rem;
                     padding: 0;
@@ -322,11 +322,185 @@
             padding-right: 1.5rem;
 
             .footer-title {
-                padding-right: 36%;
+                padding-right: 10%;
                 padding-bottom: 1.5rem;
                 font-size: 1.6rem;
             }
 
+            .footer-contact {
+                &-list {
+                    &__item {
+                        &--link {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive_pclow { 
+    .footer {
+        &-top {
+            padding-bottom: 4.5rem;
+            padding-left: 1.5rem;
+            .footer-after::after {
+                height: 4rem;
+                width: 31.8rem;
+                top: -3.9rem;
+                left: 0;
+            }
+
+            &-interactive {
+                .interactive-logo {
+                    margin-left: 13%;
+                    width: 21.4rem;
+                    height: 80%;
+                    top: -16rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .interactive-caption {
+                    top: -5.5rem;
+                    width: 95%;
+                    font-size: 1.4rem;
+                    padding: 0;
+                    line-height: 1.5em;
+                }
+
+                .interactive-image {
+                    display: block !important;
+                    padding-top: 1rem;
+                    position: relative;
+                    top: 3rem;
+                    left: -1rem;
+                }
+            }
+            .contact-title {
+                margin: 0 0 1rem 0;
+            }
+            &-contact {
+                padding-top: 3rem;
+                
+                &__info {
+                    &-list {
+                        &--item {
+                            line-height: 2.5em;
+                        }
+                    }
+                }
+                &__app {
+                    &--googleplay,
+                    &--appstore {
+                        width: 50%;
+                    }
+                }
+            }
+
+            &-menu {
+                padding-top: 3rem;
+                &__list {
+                    &--link {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+        &-bottom {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            .footer-title {
+                padding-right: 10%;
+                padding-bottom: 1.5rem;
+            }
+            .footer-contact {
+                &-list {
+                    &__item {
+                        &--link {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive_pcsmall { 
+    .footer {
+        &-top {
+            padding-bottom: 4.5rem;
+            padding-left: 1.5rem;
+            .footer-after::after {
+                height: 4rem;
+                width: 31.8rem;
+                top: -3.9rem;
+                left: 0;
+            }
+
+            &-interactive {
+                .interactive-logo {
+                    margin-left: 13%;
+                    width: 21.4rem;
+                    height: 80%;
+                    top: -16rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .interactive-caption {
+                    top: -5.5rem;
+                    width: 95%;
+                    font-size: 1.4rem;
+                    padding: 0;
+                    line-height: 1.5em;
+                }
+
+                .interactive-image {
+                    display: block !important;
+                    padding-top: 1rem;
+                    position: relative;
+                    top: 3rem;
+                    left: -1rem;
+                }
+            }
+            .contact-title {
+                margin: 0 0 1rem 0;
+            }
+            &-contact {
+                padding-top: 3rem;
+                
+                &__info {
+                    &-list {
+                        &--item {
+                            line-height: 2.5em;
+                        }
+                    }
+                }
+                &__app {
+                    &--googleplay,
+                    &--appstore {
+                        width: 50%;
+                    }
+                }
+            }
+
+            &-menu {
+                padding-top: 3rem;
+                &__list {
+                    &--link {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+        &-bottom {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            .footer-title {
+                padding-right: 10%;
+                padding-bottom: 1.5rem;
+            }
             .footer-contact {
                 &-list {
                     &__item {

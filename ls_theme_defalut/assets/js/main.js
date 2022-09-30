@@ -289,7 +289,7 @@ productItems.forEach((tab, index) => {
     prevArrow: '<div class="slick-prev"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-left.png"></div>',
     nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
   });
-  // if (window.matchMedia("(min-width: 768px)").matches) {
+  if (window.matchMedia("(min-width: 768px)").matches) {
     $('.product-similar-list').slick({
       infinite: true,
       speed: 300,
@@ -297,51 +297,18 @@ productItems.forEach((tab, index) => {
       slidesToScroll: 1,
       prevArrow: '<div class="slick-prev"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-left.png"></div>',
       nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            // slidesToScroll: 3,
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-        {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 481,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 375,
-          settings: {
-            slidesToShow: 2,
-          }
-        }
-      ]
     });
-  // }
-  // if (window.matchMedia("(max-width: 480px)").matches) {
-  //   $('.product-similar-list').slick({
-  //     infinite: true,
-  //     speed: 300,
-  //     slidesToShow: 2,
-  //     slidesToScroll: 1,
-  //     prevArrow: '<div class="slick-prev"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-left.png"></div>',
-  //     nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
-  //   });
-  // }
+  }
+  if (window.matchMedia("(max-width: 480px)").matches) {
+    $('.product-similar-list').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow: '<div class="slick-prev"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-left.png"></div>',
+      nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
+    });
+  }
   // $('.product-list').simpleLoadMore({
   //   itemsToLoad: 4,
   //   count: 10,
