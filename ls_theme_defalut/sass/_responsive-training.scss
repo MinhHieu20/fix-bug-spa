@@ -1,3 +1,4 @@
+
 @include responsive_pclow{
     .banner-training{
         display: none;
@@ -46,11 +47,7 @@
     }
 }
 @include responsive_tablet {
-    .container-max {
-        .top-banner {
-            display: none;
-        }
-    }
+   
     .headers {
         display: none;
     }
