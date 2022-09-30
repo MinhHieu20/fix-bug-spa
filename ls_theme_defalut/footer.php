@@ -14,7 +14,7 @@ global $ls_options;
     <div class="footer-top">
         <div class="container footer-width">
             <div class="row footer-after">
-                <div class="col-lg-4 pd-top12">
+                <div class="col-xl-4 col-lg-4 col-md-4 pd-top12">
                     <div class="footer-top-interactive">
                         <div class="interactive-logo d-flex">
                             <a href="<?php echo home_url(); ?>"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
@@ -30,7 +30,7 @@ global $ls_options;
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="footer-top-contact">
                         <div class="footer-top-contact__tel">
                             <p class="contact-title"> HOTLINE </p>
@@ -64,7 +64,7 @@ global $ls_options;
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="footer-top-menu">
                         <p class="contact-title"> Menu </p>
                         <ul class="footer-top-menu__list">
@@ -89,7 +89,7 @@ global $ls_options;
     <div class="footer-bottom">
         <div class="container footer-width">
             <div class="row">
-            <div class="footer-bottom-left  col-xl-6 col-md-6">
+            <div class="footer-bottom-left col-xl-6 col-lg-6 col-md-6">
                 <p class="footer-title"><?php echo $ls_options['title-footer']; ?></p>
                 <div class="footer-contact">
                     <ul class="footer-contact-list">
@@ -105,7 +105,7 @@ global $ls_options;
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom-right col-xl-6 col-md-6">
+            <div class="footer-bottom-right col-xl-6 col-lg-6 col-md-6">
                 <?php echo $ls_options['business-paper']; ?>
             </div>
         </div>

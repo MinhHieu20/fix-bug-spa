@@ -1,133 +1,109 @@
 @include responsive_pclow {
-    .header-container{
-        &-heading{
-            &__title{
-            width: 43.4rem;
-
-                &--text{
-                font-size: 2.2rem;
-
-                    &--name{
-
+    .header-contact{
+        padding: 0 1.7rem;
+        &-left{
+            form {
+                width: 100%;
+                float: left;
+            }
+            &__search {
+                height: 5rem;
+                font-size: 1.6rem;
+                padding: 0 2rem;
+            }
+        }
+        &-right{
+            &__cart {
+                &--btn {
+                    width: 5rem;
+                    height: 5rem;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
                     }
+                }
+                &--number {
+                    top: -1.7rem;
+                    right: -1rem;
+                }
+
+            }
+            &__tel {
+                height: 5rem;
+                &--number {
+                    padding: 0 1rem;
+                    font-size: 1.3rem;
+                    line-height: 5rem;
                 }
             }
         }
-    }
-    .header-contact{
-        &-left{
-
-        }
-        &-right{
-
-        }
-    }
-    .search-mobile-form {
-        display: none;
     }
     .header-main {
         &-nav {
             &__list {
                 &--item {
-                    &-link {}
-
-                    &-link:hover {}
-
-                    .sub-menu {
-                        display: none;
-                        &--item {
-                            padding-bottom: 2rem;
-                            -ms-flex: 0 0 50%;
-                            flex: 0 0 50%;
-                            max-width: 50%;
-                            position: relative;
-                            width: 100%;
-                            padding-right: 15px;
-                            padding-left: 15px;
-
-                            &--title {
-                                padding-bottom: 0.5rem;
-                                .down--icon{
-                                    display: none;
-                                }
-
-                            }
-
-                            &--list {
-                                &--service {
-                                    &--link {}
-
-                                    &--link:hover {}
-                                }
-                            }
-                        }
+                    padding: 1rem 1.5rem;
+                    a {
+                        font-size: 1.8rem;
                     }
                 }
             }
         }
     }
-    ul#primary-menu>li>ul.sub-menu {
-        position: absolute;
-        top: 5rem;
-        left: 5rem;
-        background-color: #fff;
-        min-width: 46rem;
-        z-index: 3;
-        padding: 2rem;
-        border-radius: 2rem;
-        border: 1px solid #ffd00f;
-        flex-wrap: wrap;
-        margin-left: -12px;
-        margin-right: -12px;
+}
+@include responsive_pcsmall {
+    .header-contact{
+        padding: 0 1.7rem;
+        &-left{
+            form {
+                width: 100%;
+                float: left;
+            }
+            &__search {
+                height: 5rem;
+                font-size: 1.6rem;
+                padding: 0 2rem;
+            }
+        }
+        &-right{
+            &__cart {
+                &--btn {
+                    width: 5rem;
+                    height: 5rem;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+                &--number {
+                    top: -1.7rem;
+                    right: -1rem;
+                }
+
+            }
+            &__tel {
+                height: 5rem;
+                &--number {
+                    padding: 0 1rem;
+                    font-size: 1.4rem;
+                    line-height: 5rem;
+                }
+            }
+        }
     }
-    ul#primary-menu>li>ul.sub-menu>li {
-        padding-bottom: 2rem;
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px
-    }
-    ul#primary-menu>li>ul.sub-menu>li a {
-        font-size: 1.6rem;
-        font-family: Gilroy-Bold;
-        color: #000;
-        display: block;
-        text-transform: uppercase;
-    }
-    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li {
-        font-size: 1.4rem;
-        font-family: UTM-Avo;
-        color: #000;
-        display: block;
-        padding: 0 -0.7rem;
-    }
-    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li a {
-        font-size: 1.4rem;
-        font-family: Gilroy-Medium;
-        color: #000;
-        display: block;
-        text-transform: capitalize;
-    }
-    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li a:hover {
-        background: #ccc !important;
-    }
-    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li.active {
-        background: #ccc !important;
-        border-radius: 0;
-        padding: 0 0.3rem;
-        width: 100%;
-    }
-    ul#primary-menu>li:hover ul.sub-menu {
-        display: flex;
-    }
-    ul#primary-menu>li:hover ul.sub-menu>li>ul.sub-menu {
-        display: block;
+    .header-main {
+        &-nav {
+            &__list {
+                &--item {
+                    padding: 1rem 1.5rem;
+                    a {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
     }
 }
-
 @include responsive_tablet {
     .header {
         &-container { 
