@@ -1,8 +1,60 @@
 @include responsive_pclow {
-    
+    .hide-pc{
+        display: none;
+    }
+    .advise-contact{
+        margin-bottom: 10rem;
+        margin-top: 6rem;
+        height: 76.7rem;
+        padding: 10rem 0;
+        &__body{
+           .contact-body{
+                
+                &__left{
+                    .contact-body__column{
+                        background-image: url('../images/contact/_Path_.png');
+                        @include backgroundImage();
+                        height: 26.5rem;
+                        .contact-logo{
+                            width: 5rem;
+                        }
+                        .contact__title{
+                            font-size: 1.8rem;
+                            margin-top: 2rem;
+                        }
+                        .contact__name{
+                            font-size: 2.1rem;
+                            padding: 1rem 0;
+                        }
+                        .contact__desc{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                &__right{
+                    &-heading{
+                        width: 90%;
+                        margin: 0 auto;
+                        height: auto;
+                    }
+                    &-info{
+                        .form-group{
+                            .form-control{
+                                width: 50%;
+                                height: 6rem;
+                            }
+                        }
+                    }
+                }
+           }
+        }
+    }
 }
 
 @include responsive_tablet {
+    .hide-tablet{
+        display: none;
+    }
     .top-banner {
         margin-bottom: 2rem;
 
@@ -296,6 +348,9 @@
 }
 
 @include responsive_mobile {
+    .hide-mobile{
+        display: none;
+    }
     .seemore-mobile {
         display: block !important;
         font-size: 1.6rem;
@@ -636,9 +691,7 @@
             }
         }
     }
-    .advise-contactIndex {
-        display: block !important;
-    }
+    
     .advise-contact-training {
         display: block !important;
     }

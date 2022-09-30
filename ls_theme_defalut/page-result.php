@@ -325,10 +325,10 @@ global $ls_options, $post;
         </div>
         <!-- advise-contact -->
         <div class="advise-contact advise-contactIndex">
-            <div class="advise-contact__body grid wide">
+            <div class="advise-contact__body container">
                 <div class="contact-body row">
-                    <div class="contact-body__left col l-5">
-                        <div class="contact-body__column">
+                    <div class="contact-body__left col-lg-5 col-12">
+                        <div class="contact-body__column col-lg-10 col-6 col-sm-6">
                             <div class="contact-logo">
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
@@ -336,7 +336,7 @@ global $ls_options, $post;
                             <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
-                        <div class="contact-body__column">
+                        <div class="contact-body__column col-lg-10 col-6 col-sm-6">
                             <div class="contact-logo">
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/calendar.png" alt="" class="icon__call">
                             </div>
@@ -346,12 +346,12 @@ global $ls_options, $post;
                         </div>
 
                     </div>
-                    <div class="contact-body__right col l-7">
+                    <div class="contact-body__right col-lg-7 col-12">
                         <div class="contact-body__right-heading">
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]'); ?>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                         </div>
                     </div>
                 </div>
