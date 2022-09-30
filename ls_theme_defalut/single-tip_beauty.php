@@ -13,7 +13,7 @@ $directoryURI = get_page_uri();
 ?>
     <div class="content">
         <div class="content-beautify-detail tips-beautify-detail__tablet">
-            <div class="tips-beautify-container grid wide">
+            <div class="tips-beautify-container container">
                 <div class="tips-beautify">
                     <div class="tips-beautify--category col-md-3 col-lg-3">
                         <ul class="tips-beautify--category__list">
@@ -155,7 +155,7 @@ $directoryURI = get_page_uri();
                         </div>
                     </div>
                     <div class="promotion--container dp-nonePC dp-noneTL dp-block tip-detail-mobile">
-                        <div class="promotion--container--body grid wide">
+                        <div class="promotion--container--body container">
                             <div class="promotion--container--body__list row">
                                 <?php
                                 $args = array(
@@ -171,12 +171,12 @@ $directoryURI = get_page_uri();
                                     $post_id = $loop->ID;
                                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );
                                     ?>
-                                    <div class="promotion--container--body__list--item col l-5 col-md-5">
+                                    <div class="promotion--container--body__list--item ">
                                         <div class="promotion--container--body__list--item--content row">
-                                            <div class="promotion--container--body__list--item--content--images col l-5">
+                                            <div class="promotion--container--body__list--item--content--images ">
                                                 <a href="<?php the_permalink();?>"><img src="<?php echo $image[0]; ?>" alt=""></a>
                                             </div>
-                                            <div class="promotion--container--body__list--item--content--text col l-7">
+                                            <div class="promotion--container--body__list--item--content--text ">
                                                 <h2 class="promotion--container--body__list--item--content--text--title">
                                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                                 </h2>
