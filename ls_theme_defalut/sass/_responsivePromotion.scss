@@ -2,7 +2,6 @@
     .promotion__heading{
         width: 35rem;
     }
-   
     .promotion {
         &--container {
             background: $background-content;
@@ -20,6 +19,7 @@
                         margin: 0;
                         &--content {
                             &--images {
+                                height: auto;
                             }
                             &--text {
                                 padding-top: 2rem;

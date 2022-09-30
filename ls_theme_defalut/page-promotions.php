@@ -17,7 +17,7 @@ if(get_query_var('paged')) {
         <div class="promotion">
             <h2 class="promotion__heading">Ưu đãi</h2>
             <div class="promotion--container">
-                <div class="promotion--container--body container">
+                <div class="promotion--container--body grid wide">
                     <div class="promotion--container--body__list row">
                         <?php
                         $args = array(

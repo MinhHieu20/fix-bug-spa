@@ -2,6 +2,9 @@
     .dp-blockPC {
         display: block;
     }
+    .hide-pc{
+        display: none;
+    }
 
     .pd-5 {
         padding-left: 5rem;
@@ -9,6 +12,52 @@
 
     .pd-1 {
         padding-left: 1rem;
+    }
+    .advise-contact{
+        margin-bottom: 10rem;
+        margin-top: 6rem;
+        height: 76.7rem;
+        padding: 10rem 0;
+        &__body{
+           .contact-body{
+                &__left{
+                    .contact-body__column{
+                        background-image: url('../images/contact/_Path_.png');
+                        @include backgroundImage();
+                        height: 26.5rem;
+                        .contact-logo{
+                            width: 5rem;
+                        }
+                        .contact__title{
+                            font-size: 1.8rem;
+                            margin-top: 2rem;
+                        }
+                        .contact__name{
+                            font-size: 2.1rem;
+                            padding: 1rem 0;
+                        }
+                        .contact__desc{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                &__right{
+                    &-heading{
+                        width: 90%;
+                        margin: 0 auto;
+                        height: auto;
+                    }
+                    &-info{
+                        .form-group{
+                            .form-control{
+                                width: 50%;
+                                height: 6rem;
+                            }
+                        }
+                    }
+                }
+           }
+        }
     }
 
     .result {
@@ -19,62 +68,6 @@
             height: 59.1rem;
         }
     }
-    .container-item {
-        .container-body {
-            .container-service {
-                .container-service-item {
-                    .container-service-item__note {
-                        bottom: 1rem;
-                        left: 1rem;
-                        &--image{
-                            width: 6rem;
-                            height: 6rem;
-                        }
-                        &--desc{
-                            font-size: 1.4rem;
-                            line-height: 4rem;
-                            padding: 0 1rem 0 4rem;
-                            min-width: 18rem;
-                            margin-left: -3.5rem;
-                        }
-                    }
-                    .service-information {
-                        position: absolute;
-                        left: 1.2rem;
-                        bottom: 0.5rem;
-                        .service-info-detail {
-                            display: flex;
-                            align-items: center;
-                            position: relative;
-                            .service-info-logo {
-                                width: 8rem;
-                                height: 8rem;
-                                z-index: 1;
-                                .service-info-logo-image {
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                            .service-info-desc {
-                                position: absolute;
-                                right: -19rem;
-                                // padding: 0 5rem 0 5rem;
-                                text-transform: uppercase;
-                                font-size: 1.4rem;
-                                line-height: 5rem;
-                                background-color: #FED119;
-                                border-radius: 5rem;
-                                font-weight: 600;
-                                min-width: 24rem;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     .content-container {
         padding: 10rem 0 14rem;
         // margin: 18rem 0 29rem 0;
@@ -95,9 +88,9 @@
         }
         .container-body {
             .container-service {
-                .container-service-item {
+                &-item {
                     margin-bottom: 2rem;
-                    .container-service-item__note{
+                    &__note{
                         bottom: 2.5rem;
                         left: 1.5rem;
                         &--image{
@@ -132,7 +125,6 @@
                             .service-info-desc {
                                 position: absolute;
                                 right: -19rem;
-                                // padding: 0 5rem 0 5rem;
                                 text-transform: uppercase;
                                 font-size: 1.4rem;
                                 line-height: 5rem;
@@ -272,7 +264,6 @@
                         .event-item-text {
                             .event-title {
                                 font-size: 1.6rem;
-
                                 max-width: 23.4rem;
                                 padding: 3.5rem 0 1.5rem 0;
                             }
@@ -284,6 +275,11 @@
                     }
                     .event-item:hover {
                         padding-bottom: 0.2rem;
+                    }
+                    .event-item:last-child { 
+                        .image-pseudo::after {
+                            display: none;
+                        }
                     }
                 }
             }

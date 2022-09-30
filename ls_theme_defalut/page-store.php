@@ -249,7 +249,7 @@ global $ls_options, $post;
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
+                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?>(BẤM PHÍM 2)</div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
                         <div class="contact-body__column col-lg-10 col-6 col-sm-6">
@@ -260,7 +260,6 @@ global $ls_options, $post;
                             <div class="contact__name">Nhận ưu đãi</div>
                             <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
                         </div>
-
                     </div>
                     <div class="contact-body__right col-lg-7 col-12">
                         <div class="contact-body__right-heading">
@@ -273,6 +272,7 @@ global $ls_options, $post;
                 </div>
             </div>
         </div>
+    </div>
     </div>
 <?php
 get_footer();

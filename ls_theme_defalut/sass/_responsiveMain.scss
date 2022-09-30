@@ -69,10 +69,7 @@
                 justify-content: center;
                 
                 &__item {
-                    padding: 0.8rem 1rem;
-                    padding: 1rem;
-
-
+                    padding: 0.6rem 0.2rem;
                     &--link {
                         padding: 0.8rem 0.8rem;
                         width: 14rem;
@@ -153,6 +150,7 @@
                             .form-control{
                                 position: relative;
                                 margin: 0 auto;
+                                width: 50rem;
                                 height: 5.1rem;
                                 font-size: 1.4rem;
                                 width: 50%;
@@ -237,7 +235,14 @@
     .address {
         &-info {
             &-caption { 
-                padding: 0 39%;
+                padding: 0 29%!important;
+            }
+        }
+        &-nav {
+            &-location {
+                &__item {
+                    padding: 1rem 2rem!important;
+                }
             }
         }
     }

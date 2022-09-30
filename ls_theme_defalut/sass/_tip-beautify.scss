@@ -12,10 +12,12 @@
 
             &__item {
                 position: relative;
+                width: 20.5rem;
                 margin-bottom: 5rem;
 
                 &--image {
-                  
+                    width: 90%;
+                    height: 24rem;
                     position: relative;
 
                     &--product {
@@ -35,10 +37,12 @@
                 }
 
                 &--text {
+                    width: 90%;
                     &--title {
                         text-transform: uppercase;
                         font-family: Gilroy-Heavy;
                         font-size: 1.5rem;
+                        padding: 3.5rem 0 1.5rem 0;
                         max-height: 7rem;
                         color: $black;
                     }
@@ -46,11 +50,14 @@
                     &--desc {
                         font-size: 1.6rem;
                         text-align: justify;
+                        margin-top: 1rem;
                     }
                 }
 
                 &--calendar {
                     position: absolute;
+                    top: -3.8rem;
+                    right: 3.8rem;
                     width: 6.2rem;
                     height: 6.2rem;
                     border-radius: 50%;
@@ -123,6 +130,7 @@
         &__category{
             &--list{
                 &-item{
+                    margin: 1.25rem 0;
                     &-link{
                         color: $color-text;
                         text-transform: uppercase;
