@@ -1,8 +1,8 @@
 const $ = document.querySelector.bind(document);
 (function($){
   $(document).ready(function () {
-    $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
-    $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
+    // $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
+    // $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
   });
 })(jQuery);
 const tabs = document.querySelectorAll(".tab-item");
