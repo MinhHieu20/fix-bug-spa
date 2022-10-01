@@ -456,7 +456,7 @@ get_header();
                         while ( $loop->have_posts() ) : $loop->the_post();
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     ?>
-                    <div class="event-item col-lg-3 col-md-4 col-sm-12">
+                    <div class="event-item col-xl-3 col-md-4 col-sm-12">
                         <?php
                             if ($count == 2) {
                         if(wp_is_mobile()) {
@@ -526,7 +526,7 @@ get_header();
                         while ( $loop->have_posts() ) : $loop->the_post();
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     ?>
-                    <div class="event-item col-lg-3 col-md-4 col-sm-12">
+                    <div class="event-item col-xl-3 col-md-4 col-sm-12">
                     <?php
                         if ($count == 2) {
                         if(wp_is_mobile()) {
@@ -838,7 +838,7 @@ get_header();
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                         </div>
                         <div class="contact__title">Liên hệ hotline</div>
-                        <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
+                        <div class="contact__name"><?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</div>
                         <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                     </div>
                     <div class="contact-body__column col-lg-10 col-6 col-sm-6">
@@ -849,7 +849,6 @@ get_header();
                         <div class="contact__name">Nhận ưu đãi</div>
                         <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
                     </div>
-
                 </div>
                 <div class="contact-body__right col-lg-7 col-12">
                     <div class="contact-body__right-heading">

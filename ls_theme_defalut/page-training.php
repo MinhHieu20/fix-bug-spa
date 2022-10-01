@@ -94,7 +94,6 @@ global $ls_options, $post;
                             <div class="contact__name">Nhận ưu đãi</div>
                             <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
                         </div>
-
                     </div>
                     <div class="contact-body__right col-lg-7 col-12">
                         <div class="contact-body__right-heading">
@@ -107,6 +106,7 @@ global $ls_options, $post;
                 </div>
             </div>
         </div>
+    </div>
     <div class="advise-space"></div>
 <?php
 get_footer();

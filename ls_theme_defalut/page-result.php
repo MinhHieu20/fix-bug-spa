@@ -351,7 +351,7 @@ global $ls_options, $post;
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]'); ?>
                         </div>
                     </div>
                 </div>
