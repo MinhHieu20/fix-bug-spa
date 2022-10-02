@@ -40,12 +40,20 @@ global $ls_options, $post;
                 <div class="container-body">
                     <div class="container-service row">
                         <?php
+                            $term = get_term('65','training_cat');
                             $args = array(
                                 'post_type' => 'training',
                                 'post_status' => 'publish',
                                 'posts_per_page' => 8,
                                 'orderby' => 'title',
                                 'order' => 'ASC',
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'training_cat', //double check your taxonomy name in you dd
+                                        'field'    => 'term_id',
+                                        'terms'    => array( $term->term_id ),
+                                    ),
+                                ),
                             );
                             $loop = new WP_Query( $args );
                             while ( $loop->have_posts() ) : $loop->the_post();
