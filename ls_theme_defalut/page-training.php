@@ -60,7 +60,7 @@ global $ls_options, $post;
                                         <img src="<?php echo esc_url($image['url']); ?>" class="wh-100" alt="">
                                     </div>
                                     <p class="container-service-item__note--desc training--desc"><?php the_title();  ?></p>
-                                    <p class="container-service-item__note--desc"><?php echo get_field('name');  ?></p>
+                                    <p class="container-service-item__note--desc hide-pc"><?php echo get_field('name');  ?></p>
                                 </div>
                             </a>
                         </div>

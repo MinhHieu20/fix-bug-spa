@@ -16,7 +16,7 @@
     display: none;
 }
 .service {
-    padding-bottom: 14.6rem;
+    padding-bottom: 10rem;
     &--detail {
         background-color: $white;
         border-radius: 2rem;
@@ -440,24 +440,15 @@
                 padding: 0 1rem;
                 
                 &__list {
-                    margin-bottom: 2.35rem;
                     
                     &--item {
                         position: relative;
                         margin-left: 1rem;
-                        
+                        margin-bottom: 4rem;
                         .detail-news-boder {
                             display: flex;
-                            margin-top: 4rem;
                         }
-                        .detail-news-boder::after {
-                            content: "";
-                            position: absolute;
-                            bottom: -1.6rem;
-                            width: 96%;
-                            border: 0.1rem solid $more-color;
-        
-                        }
+                        
                         
                         &--images {
                             padding: 0;
@@ -477,7 +468,16 @@
                             padding-left: 1rem;
                         }
                     }
-        
+                    &--item::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -2rem;
+                        width: 96%;
+                        border: 0.1rem solid $more-color;
+    
+                    }
                     &--item:first-child {
                         .detail-news-boder {
                             margin-top: 0;

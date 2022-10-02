@@ -162,6 +162,7 @@
     }
 }
 .tips-new {
+    padding-bottom: 10rem;
     &-item {
         &__heading {
             &--title {
@@ -169,12 +170,14 @@
                 text-transform: uppercase;
                 color: $color-title;
                 font-family: Gilroy-XBold;
+                font-size: 2.6rem;
+                padding-bottom: 2rem;
             }
         }
 
         &__body {
             &--list {
-
+                justify-content: space-around;
                 &--item {
 
                     &-images {
@@ -193,7 +196,7 @@
                         position: absolute;
                         border-right: 2px solid #000000;
                         height: 16.5rem;
-                        right: -5.5rem;
+                        right: -6.5rem;
                         top: 50%;
                         transform: translateY(-50%);
                     }

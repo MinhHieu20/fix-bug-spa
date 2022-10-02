@@ -1,4 +1,7 @@
 @include responsive_pclow {
+    .hide-pc{
+        display: none;
+    }
     .container-item {
         .container-heading {
             padding-bottom: 4.5rem;
@@ -194,10 +197,15 @@
 }
 
 @include responsive_pcsmall {
-
+    .hide-pc{
+        display: none;
+    }
 }
 
 @include responsive_tablet {
+    .hide-table{
+        display: none;
+    }
     .container-item {
         .container-heading {
             padding-bottom: 4.5rem;
@@ -398,6 +406,9 @@
 }
 
 @include responsive_mobile {
+    .hide-mobile{
+        display: none;
+    }
     .seemore-mobile {
         display: block !important;
         font-size: 1.6rem;
