@@ -12,9 +12,9 @@ global $post;
         <?php
             while ( have_posts() ) : the_post();
         ?>
-        <div class="service-container grid wide">
+        <div class="service-container container">
             <div class="service row service-promotion-mobile">
-                <div class="service--detail col l-9">
+                <div class="service--detail col-lg-9 col-12">
                     <h2 class="service--detail__heading"><?php the_title(); ?></h2>
                     <div class="service--detailing promotion--detail">
                         <div class="promotion--detail__item">
@@ -40,7 +40,7 @@ global $post;
                 <div class="promotion-mobile">
                     <h2 class="promotion-mobile__heading">Ưu đãi liên quan</h2>
                     <div class="promotion-mobile--container">
-                        <div class="promotion-mobile--container--body grid wide">
+                        <div class="promotion-mobile--container--body container">
                             <div class="promotion-mobile--container--body__list row">
                                 <?php
                                     $args = array(
@@ -53,12 +53,12 @@ global $post;
                                     while ( $loop->have_posts() ) : $loop->the_post();
                                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                                 ?>
-                                <div class="promotion-mobile--container--body__list--item col l-5 col-md-12">
+                                <div class="promotion-mobile--container--body__list--item col-md-12 col-12">
                                     <div class="promotion-mobile--container--body__list--item--content row">
-                                        <div class="promotion-mobile--container--body__list--item--content--images col l-5">
+                                        <div class="promotion-mobile--container--body__list--item--content--images col-md-5 col-sm-5 col-12">
                                             <img src="<?php echo $image[0]; ?>" alt="">
                                         </div>
-                                        <div class="promotion-mobile--container--body__list--item--content--text col l-7">
+                                        <div class="promotion-mobile--container--body__list--item--content--text col-md-7 col-sm-7 col-12">
                                             <h1 class="promotion-mobile--container--body__list--item--content--text--title">
                                                 <a href="<?php the_permalink(); ?>"><?php echo truncate( get_the_title(), 50 ); ?></a></h1>
                                             <p class="promotion-mobile--container--body__list--item--content--text--desc"><?php the_excerpt(); ?></p>
@@ -73,7 +73,7 @@ global $post;
                         </div>
                     </div>
                 </div>
-                <div class="service--category col l-3">
+                <div class="service--category col-lg-3 hide-mobile hide-tablet hide-tablet-small">
                     <div class="details-news">
                         <h3 class="details-news-title">ƯU ĐÃI LỚN NHẤT</h3>
 
@@ -110,8 +110,8 @@ global $post;
                 </div>
             </div>
         </div>
-        <div class="tips-new promotion-news promotion--detail-mobile">
-            <div class="tips-new-item grid wide">
+        <div class="tips-new promotion-news promotion--detail-mobile hide-mobile hide-tablet hide-tablet-small">
+            <div class="tips-new-item container">
                 <div class="tips-new-item__heading">
                     <h2 class="tips-new-item__heading--title">Tin tức liên quan</h2>
                 </div>
@@ -153,7 +153,7 @@ global $post;
                     </div>
                 </div>
                 <div class="promotion--container dp-nonePC dp-noneTL dp-block">
-                    <div class="promotion--container--body grid wide">
+                    <div class="promotion--container--body container">
                         <div class="promotion--container--body__list row">
                             <?php
                             $args = array(
@@ -165,12 +165,12 @@ global $post;
                             while ( $loop->have_posts() ) : $loop->the_post();
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                             ?>
-                            <div class="promotion--container--body__list--item col l-5 col-md-5">
+                            <div class="promotion--container--body__list--item col-lg-5 col-md-5">
                                 <div class="promotion--container--body__list--item--content row">
-                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                    <div class="promotion--container--body__list--item--content--images col-lg-5">
                                         <img src="<?php echo $image[0]; ?>" alt="">
                                     </div>
-                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                    <div class="promotion--container--body__list--item--content--text col-lg-7">
                                         <h2 class="promotion--container--body__list--item--content--text--title">
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h2>

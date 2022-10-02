@@ -51,7 +51,7 @@ global $ls_options, $post;
                             while ( $loop->have_posts() ) : $loop->the_post();
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'single-post-thumbnail' );
                         ?>
-                        <div class="training--item col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6 pd-05">
+                        <div class="training--item col-xl-3 col-lg-3 col-sm-6 col-md-3 col-6 pd-05">
                             <a href="<?php the_permalink(); ?>">
                                 <img src="<?php echo $image[0]; ?>" alt="" class="service-image">
                                 <div class="container-service-item__note">

@@ -1,8 +1,6 @@
 .promotion--detail{
     &__item{
         &--images{
-            width: 64.7rem;
-            // height: 64.7rem;
             margin-bottom: 7rem;
             img{
                 width: 100%;
@@ -19,6 +17,7 @@
             &--desc{
                 font-size: 1.6rem;
                 font-family: K2D-ExtraLight;
+                line-height: 2rem;
             }
             &--desc:nth-child(8){
                 margin-bottom: 2.6rem;
