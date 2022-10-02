@@ -135,9 +135,7 @@
                 &__left{
                     display: flex;
                     .contact-body__column{
-                        background-image: url('../images/contact/_Path_.png');
-                        @include backgroundImage();
-                        height: 20rem;
+                       
                         .contact-logo{
 
                         }
@@ -216,9 +214,7 @@
                 &__left{
                     display: flex;
                     .contact-body__column{
-                        background-image: url('../images/contact/_Path_.png');
-                        @include backgroundImage();
-                        height: 25rem;
+                       
                         .contact-logo{
                             width: 5rem;
                         }
@@ -245,7 +241,7 @@
                         .form-group{
                             .form-control{
                                 width: 50%;
-                                height: 7rem;
+                                height: 6rem;
                             }
                         }
                     }

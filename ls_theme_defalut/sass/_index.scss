@@ -11,16 +11,12 @@
         padding-left: 1rem;
     }
     .advise-contact{
-        margin-bottom: 10rem;
-        margin-top: 6rem;
-        height: 76.7rem;
-        padding: 10rem 0;
+      
         &__body{
            .contact-body{
                 &__left{
                     .contact-body__column{
-                        background-image: url('../images/contact/_Path_.png');
-                        @include backgroundImage();
+                       
                         height: 26.5rem;
                         .contact-logo{
                             width: 5rem;
@@ -48,7 +44,6 @@
                         .form-group{
                             .form-control{
                                 width: 50%;
-                                height: 6rem;
                             }
                         }
                     }
