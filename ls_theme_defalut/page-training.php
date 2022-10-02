@@ -23,7 +23,7 @@ global $ls_options, $post;
                 </h2>
             </div>
         </div>
-        <div class="top-banner banner-training">
+        <div class="top-banner banner-training hide-pc">
             <div class="top-banner-training">
                 <img src="<?php bloginfo('template_directory'); ?>/images/banner1.png" alt="">
             </div>

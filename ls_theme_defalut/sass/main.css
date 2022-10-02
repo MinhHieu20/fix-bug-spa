@@ -7385,14 +7385,17 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   .main .product-details .product-one .product-briefing-right__amount {
     margin-bottom: 3.3rem;
   }
-  .main .product-details .product-one .product-briefing-right__amount--number-add, .main .product-details .product-one .product-briefing-right__amount--number-delete {
+  .main .product-details .product-one .product-briefing-right__amount .cart {
+    flex-wrap: wrap;
+  }
+  .main .product-details .product-one .product-briefing-right__amount .cart--number-add, .main .product-details .product-one .product-briefing-right__amount .cart--number-delete {
     padding: 1.2rem 1.2rem;
     font-size: 2rem;
   }
-  .main .product-details .product-one .product-briefing-right__amount--number > span {
+  .main .product-details .product-one .product-briefing-right__amount .cart--number > span {
     font-size: 2rem;
   }
-  .main .product-details .product-one .product-briefing-right__add-cart {
+  .main .product-details .product-one .product-briefing-right__amount .cart__add-cart {
     padding: 1rem 2.6rem;
     margin-left: 0;
   }
@@ -9135,6 +9138,34 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
     right: -1rem;
   }
 }
+@media (min-width: 1024px) {
+  .container-item .container-body .container-service .training--item {
+    margin-bottom: 5.5rem;
+  }
+  .container-item .container-body .container-service .training--item a {
+    background-color: #faf5da;
+    padding-bottom: 1.2rem;
+    border-radius: 4rem 4rem 2rem 2rem;
+    display: block;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note--image {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note--desc {
+    display: none;
+    font-size: 1.6rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: block;
+    line-height: 2.2rem;
+    padding: 0 1rem 0 3rem;
+    max-width: 22rem;
+    border-radius: 5rem;
+    text-align: center;
+    margin-left: -3.5rem;
+  }
+}
 @media (min-width: 991px) and (max-width: 1023px) {
   .banner-training {
     display: none;
@@ -9244,6 +9275,9 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   }
   .content-container .container-item .container-heading .container-item-title {
     font-size: 1.8rem;
+  }
+  .content-container .container-item .container-body {
+    padding: 0 1rem;
   }
   .content-container .container-item .container-body .container-service .training--item a {
     position: relative;
