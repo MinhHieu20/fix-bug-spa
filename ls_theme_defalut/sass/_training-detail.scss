@@ -311,22 +311,20 @@
             padding: 0 1rem;
             
             &__list {
-                margin-bottom: 2.35rem;
                 
                 &--item {
                     position: relative;
                     .detail-news-boder {
                         display: flex;
-                        margin-top: 4rem;
                     }
-                    .detail-news-boder::after {
-                        content: "";
-                        position: absolute;
-                        bottom: -1.6rem;
-                        width: 100%;
-                        border: 0.1rem solid $more-color;
+                    // .detail-news-boder::after {
+                    //     content: "";
+                    //     position: absolute;
+                    //     bottom: -1.6rem;
+                    //     width: 100%;
+                    //     border: 0.1rem solid $more-color;
     
-                    }
+                    // }
                     
                     &--images {
                         padding: 0;

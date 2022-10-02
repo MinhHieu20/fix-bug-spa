@@ -23,7 +23,7 @@ global $ls_options, $post;
                 </h2>
             </div>
         </div>
-        <div class="top-banner banner-training">
+        <div class="top-banner banner-training hide-pc">
             <div class="top-banner-training">
                 <img src="<?php bloginfo('template_directory'); ?>/images/banner1.png" alt="">
             </div>
@@ -51,7 +51,7 @@ global $ls_options, $post;
                             while ( $loop->have_posts() ) : $loop->the_post();
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'single-post-thumbnail' );
                         ?>
-                        <div class="training--item col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6 pd-05">
+                        <div class="training--item col-xl-3 col-lg-3 col-sm-6 col-md-3 col-6 pd-05">
                             <a href="<?php the_permalink(); ?>">
                                 <img src="<?php echo $image[0]; ?>" alt="" class="service-image">
                                 <div class="container-service-item__note">
@@ -60,7 +60,7 @@ global $ls_options, $post;
                                         <img src="<?php echo esc_url($image['url']); ?>" class="wh-100" alt="">
                                     </div>
                                     <p class="container-service-item__note--desc training--desc"><?php the_title();  ?></p>
-                                    <p class="container-service-item__note--desc"><?php echo get_field('name');  ?></p>
+                                    <p class="container-service-item__note--desc hide-pc"><?php echo get_field('name');  ?></p>
                                 </div>
                             </a>
                         </div>

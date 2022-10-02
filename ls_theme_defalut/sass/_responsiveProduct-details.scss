@@ -176,20 +176,24 @@
                         }
                         &__amount {
                             margin-bottom: 3.3rem;
-                            &--number {
-                                &-add,
-                                &-delete {
-                                    padding: 1.2rem 1.2rem;
-                                    font-size: 2rem;
+                            .cart{
+                                flex-wrap: wrap;
+                                &--number {
+                                    &-add,
+                                    &-delete {
+                                        padding: 1.2rem 1.2rem;
+                                        font-size: 2rem;
+                                    }
+                                    > span {
+                                        font-size: 2rem;
+                                    }
                                 }
-                                > span {
-                                    font-size: 2rem;
+
+                                &__add-cart {
+                                    padding: 1rem 2.6rem;
+                                    margin-left: 0;
                                 }
                             }
-                        }
-                        &__add-cart {
-                            padding: 1rem 2.6rem;
-                            margin-left: 0;
                         }
                     }
                 }

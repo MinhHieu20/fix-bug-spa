@@ -8,9 +8,9 @@ get_header();
 global $post, $ls_options;
 ?>
     <div class="content service-content">
-        <div class="service-container grid wide">
+        <div class="service-container container">
             <div class="service row">
-                <div class="service--detail col l-9" id="post-<?php the_ID(); ?>">
+                <div class="service--detail col-lg-9" id="post-<?php the_ID(); ?>">
                     <h2 class="service--detail__heading"><?php echo get_the_title(); ?></h2>
                     <button class="btn service--detail__btn">đăng ký tư vấn</button>
                     <div class="service--detailing">
@@ -20,7 +20,7 @@ global $post, $ls_options;
                             <div class="service--detailing__item--logo">
                                 <img src="<?php echo $ls_options['logo']['url']; ?>" alt="">
                             </div>
-                            <div class="service--detailing__item--heading col l-9">
+                            <div class="service--detailing__item--heading col-lg-9">
                                 Để lại số điện thoại để được các
                                 chuyên gia hàng đầu tư vấn cho bạn!
                             </div>
@@ -44,7 +44,7 @@ global $post, $ls_options;
                                     while ( $loop->have_posts() ) : $loop->the_post();
                                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                                     ?>
-                                    <div class="service--detailing__item--result--list__item col l-3 col-6">
+                                    <div class="service--detailing__item--result--list__item col-lg-3 col-6">
                                         <div class="service--detailing__item--result--list__item--images">
                                             <img src="<?php echo $image[0]; ?>" alt="">
                                         </div>
@@ -61,7 +61,7 @@ global $post, $ls_options;
                         </div>
                     </div>
                 </div>
-                <div class="service--category col l-3">
+                <div class="service--category col-lg-3">
                     <div class="service--category-one">
                         <div class="detail-news">
                             <h2 class="detail-news--title">Dịch vụ liên quan</h2>
