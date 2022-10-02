@@ -31,39 +31,24 @@ get_header();
             <div class="container-body">
                 <div class="container-service row">
                     <?php
-                    $extension = get_term('70','service_main_cat');
-                    $args = array(
-                        'post_type' => 'service_main',
-                        'orderby' => 'title',
-                        'posts_per_page' => 12,
-                        'order' => 'ASC',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'service_main_cat', //double check your taxonomy name in you dd
-                                'field'    => 'term_id',
-                                'terms'    => array( $extension->term_id ),
-                            ),
-                        ),
-                    );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post();
-                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                    $categories = get_categories(array( 'taxonomy'=>'service_main_cat', 'parent' => 70));
+                    foreach ($categories as $category) {
                         ?>
                         <div class="container-service-item col-lg-3 col-sm-3 col-6 pd-05">
                             <a href="!#">
-                                <img class="service-image" src="<?php echo $image[0]; ?>" alt="">
+                                <?php $icon_image_bg = get_field('background_image', $category); ?>
+                                <img class="service-image" src="<?php echo esc_url($icon_image_bg['url']); ?>" alt="">
                                 <div class="container-service-item__note">
                                     <div class="container-service-item__note--image">
-                                        <?php $icon_image = get_field('image_icon_service'); ?>
+                                        <?php $icon_image = get_field('image_icon_service', $category); ?>
                                         <img class="wh-100" src="<?php echo esc_url($icon_image['url']); ?>" alt="">
                                     </div>
-                                    <p class="container-service-item__note--desc"><?php the_title(); ?></p>
+                                    <p class="container-service-item__note--desc"><?php echo $category->cat_name ?></p>
                                 </div>
                             </a>
                         </div>
-                    <?php
-                    endwhile;
-                    wp_reset_postdata();
+                        <?php
+                    }
                     ?>
                 </div>
             </div>
