@@ -3740,6 +3740,7 @@ ul#primary-menu > li:hover ul.sub-menu > li > ul.sub-menu {
 .content-beautify-detail {
   background-color: #fff6d2;
   padding-bottom: 8rem;
+  padding-top: 4rem;
 }
 
 .mobile-srouce {
@@ -4992,9 +4993,8 @@ ul#primary-menu > li:hover ul.sub-menu > li > ul.sub-menu {
   background-color: #fff;
   border-radius: 2rem;
   border: 2px solid #ffd00f;
-}
-.promotion--container--body__list--item--content {
-  align-items: center;
+  margin-bottom: 2.4rem;
+  padding: 1rem;
 }
 .promotion--container--body__list--item--content--images img {
   width: 100%;
