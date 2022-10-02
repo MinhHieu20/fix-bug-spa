@@ -8,21 +8,22 @@
             padding-top: 2rem;
             &--body {
                 background: $white;
-                width: 90%;
                 &__list {
-                    padding: 1rem;
+                    padding: 1rem 0rem;
                     &--item {
-                        border: none;
                         background: none;
                         padding-bottom: 0;
-                        padding-right: 1.38rem;
-                        margin: 0;
+                        margin-bottom: 2.4rem;
                         &--content {
                             &--images {
                                 height: auto;
                             }
                             &--text {
                                 padding-top: 2rem;
+                                &--title{
+                                    font-size: 1.6rem;
+                                    font-weight: 700;
+                                }
                             }
                         }
                     }
@@ -53,15 +54,12 @@
                     padding-bottom: 5.5rem;
     
                     &--item {
-                        margin: 0 0.5rem 2.95rem 0.5rem;
                         border-radius: 2rem;
-                        padding: 0.7rem 2rem 1.5rem 1.38rem;
-    
+                        padding: 0;
                         &--content {
                             height: 100%;
                             align-items: center;
                             &--images {
-                                width: 20.5rem;
 
                                 img {
                                     width: 100%;

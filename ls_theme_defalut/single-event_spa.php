@@ -11,9 +11,17 @@ get_header();
 global $post, $ls_option;
 ?>
     <div class="content content-beautify-detail event-detail-mobile event-detail-tablet">
-        <div class="tips-beautify-container grid wide">
+        <div class="tips-beautify-container container">
             <div class="tips-beautify row">
-                <div class="tips-beautify--category col-md-3 col l-3">
+                <div class="tips-beautify--detail col-md-9 col-lg-9 col-12" id="post-<?php the_ID(); ?>">
+                    <h1 class="tips-beautify--detail__heading">
+                        <?php echo get_the_title(); ?>
+                    </h1>
+                    <div class="tips-beautify--detailing">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+                <div class="tips-beautify--category col-md-3 col-lg-3 hide-mobile hide-table">
                     <div class="detail-news">
                         <h2 class="detail-news--title">Sự kiện mới nhất</h2>
                         <div class="detail-news--menu">
@@ -48,24 +56,17 @@ global $post, $ls_option;
                         </div>
                     </div>
                 </div>
-                <div class="tips-beautify--detail col-md-9 col l-9 col-11" id="post-<?php the_ID(); ?>">
-                    <h1 class="tips-beautify--detail__heading">
-                        <?php echo get_the_title(); ?>
-                    </h1>
-                    <div class="tips-beautify--detailing">
-                        <?php the_content(); ?>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="tips-new">
-            <div class="tips-new-item grid wide">
+            <div class="tips-new-item container  hide-mobile hide-table hide-tablet-small">
                 <div class="tips-new-item__heading">
                     <h2 class="tips-new-item__heading--title">Tin tức liên quan</h2>
                 </div>
 
                 <div class="tips-new-item__body dp-blockTL dp-none">
-                    <div class="tips-new-item__body--list">
+                    <div class="tips-new-item__body--list row">
                         <?php
                         $args = array(
                             'post_type' => 'event_spa',
@@ -77,7 +78,7 @@ global $post, $ls_option;
                         while ( $loop->have_posts() ) : $loop->the_post();
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         ?>
-                            <div class="tips-new-item__body--list--item col-lg-3 col-md-3">
+                            <div class="tips-new-item__body--list--item col-lg-3 col-md-4">
                                 <?php
                                 if ($count == 2) {
                                 ?>
@@ -107,43 +108,43 @@ global $post, $ls_option;
                         ?>
                     </div>
                 </div>
+            </div>
 
-                <div class="promotion--container dp-nonePC dp-noneTL dp-block">
-                    <div class="promotion--container--body grid wide">
-                        <div class="promotion--container--body__list row">
-                            <?php
-                            $args = array(
-                                'post_type' => 'event_spa',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 2,
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                            ?>
-                            <div class="promotion--container--body__list--item col l-5 col-md-5">
-                                <div class="promotion--container--body__list--item--content row">
-                                    <div class="promotion--container--body__list--item--content--images col l-5">
-                                        <img src="<?php echo $image[0]; ?>" alt="">
-                                    </div>
-                                    <div class="promotion--container--body__list--item--content--text col l-7">
-                                        <h2 class="promotion--container--body__list--item--content--text--title">
-                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                        </h2>
-                                        <p class="promotion--container--body__list--item--content--text--desc">
-                                        <?php
-                                            $the_excerpt_custom = get_field('the_excerpt_custom');
-                                            echo $the_excerpt_custom;
-                                        ?>
-                                        </p>
-                                    </div>
+            <div class="promotion--container hide-pc">
+                <div class="promotion--container--body container">
+                    <div class="promotion--container--body__list row">
+                        <?php
+                        $args = array(
+                            'post_type' => 'event_spa',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 2,
+                        );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post();
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                        ?>
+                        <div class="promotion--container--body__list--item col-md-6 col-sm-6 col-12">
+                            <div class="promotion--container--body__list--item--content row">
+                                <div class="promotion--container--body__list--item--content--images col-md-5 col-sm-12 col-12">
+                                    <img src="<?php echo $image[0]; ?>" alt="">
+                                </div>
+                                <div class="promotion--container--body__list--item--content--text col-md-7 col-sm-12 col-12">
+                                    <h2 class="promotion--container--body__list--item--content--text--title">
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    </h2>
+                                    <p class="promotion--container--body__list--item--content--text--desc">
+                                    <?php
+                                        $the_excerpt_custom = get_field('the_excerpt_custom');
+                                        echo $the_excerpt_custom;
+                                    ?>
+                                    </p>
                                 </div>
                             </div>
-                            <?php
-                                endwhile;
-                                wp_reset_postdata();
-                            ?>
                         </div>
+                        <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
             </div>
