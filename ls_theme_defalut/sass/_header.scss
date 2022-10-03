@@ -38,6 +38,8 @@
 }
 
 .header-contact {
+    padding-left: 0;
+    padding-right: 0;
     .dp-nonePC {
         display: none;
     }
@@ -52,6 +54,7 @@
 
     &-left {
         padding-right: 0;
+        padding-left: 0;
         // width: 32.15%;
 
         form {
@@ -80,7 +83,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: 10%;
+            right: 5%;
             border: none;
             color: #FED119;
             padding: 0;
