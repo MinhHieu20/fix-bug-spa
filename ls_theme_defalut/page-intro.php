@@ -8,7 +8,7 @@ get_header();
 global $ls_options;
 ?>
     <div class="main mg4">
-        <div class="main-logo col-md-12 col-sm-12 col-lg-12 col-xl-12">
+        <div class="main-logo">
             <img src="<?php echo $ls_options['banner-main-main']['url']; ?>" alt="">
         </div>
         <div class="main-info">
