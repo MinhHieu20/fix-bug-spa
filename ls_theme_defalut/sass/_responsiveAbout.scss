@@ -6,17 +6,13 @@
     }
 
     .main {
-        &-logo {
-            height: 22rem;
-        }
-
         &-info { 
             &-image {
                 height: 146rem;
                 .main-content { 
                     .container-width{
-                        padding-left: 0;
-                        padding-right: 0;
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
                         &--logo {
                             margin-top: 3.9rem;
                             margin-bottom: 5rem;
@@ -197,7 +193,7 @@
                     &__image {
                         position: relative;
                         top: 5rem;
-                        width: 36rem;
+                        width: auto;
                         height: 100%;
                         margin: 0 auto;
                         img {
@@ -233,7 +229,7 @@
                         font-size: 2rem;
                         padding: 0 0%;
                         line-height: 1.2em;
-                        margin-bottom: 0rem;
+                        margin-bottom: 4.6rem;
                     }
 
                     &-right {
@@ -242,7 +238,7 @@
                         justify-content: center;
                         margin-top: 1rem;
                         &__one { 
-                            width: 26.1rem;
+                            width: 28.1rem;
                             height: 28.6rem;
                             margin: 0;
                         }
@@ -255,7 +251,7 @@
                         }
 
                         &__three {
-                            right: 4rem;
+                            right: 3rem;
                             bottom: -11rem;
                             width: 11.2rem;
                             height: 11.1rem;
@@ -298,7 +294,7 @@
                             height: 53.6rem;    
                             margin-top: 4rem;
                             &--one{
-                                width: 26.1rem;
+                                width: 28.1rem;
                                 height: 28.6rem;
                             }
 
@@ -312,7 +308,7 @@
 
                             &--three {
                                 position: absolute;
-                                right: 4.6rem;
+                                right: 2.6rem;
                                 bottom: 13.1rem;
                                 width: 12.2rem;
                                 height: 11.1rem;
@@ -366,7 +362,7 @@
                         &--item1{
                             position: absolute;
                             top: -7rem;
-                            left: 15.5rem;
+                            left: 13.5rem;
                             height: 20.8rem;
                             img{
                                 height: 100%;
@@ -376,7 +372,7 @@
                         &--item2{
                             position: absolute;
                             top: 15.9rem;
-                            left: 3rem;
+                            left: 2rem;
                             width: 16.6rem;
                             height: 16.8rem;
                             img {
@@ -390,8 +386,8 @@
                         &--item3{
                             position: absolute;
                             top: 5.2rem;
-                            left: 20.8rem;
-                            width: 15.1rem;
+                            left: 18.7rem;
+                            width: 16.1rem;
                             height: 27.3rem;
                             img {
                                 width: 100%;
@@ -418,6 +414,170 @@
         }
         &-team {
             height: 13.5rem;
+        }
+    }
+}
+@include responsive_mobile_low {
+    .main {
+        &-logo {
+            height: 21.5rem;
+        }
+        &-info {
+            &-image {
+                height: 130rem;
+                .main-content-heading {
+                    font-size: 2.4rem;
+                    line-height: 1.4em;
+                }
+                .main-content--logo {
+                    margin-top: 3rem;
+                }
+                .main-content { 
+                    &-right {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1rem;
+                        &__one { 
+                            width: 23.1rem;
+                            height: 23.6rem;
+                            margin: 0;
+                        }
+
+                        &__two {
+                            left: 1rem;
+                            bottom: -8.5rem;
+                            width: 14.3rem;
+                            height: 15.4rem;
+                        }
+
+                        &__three {
+                            right: 4rem;
+                            bottom: -10rem;
+                            width: 10.2rem;
+                            height: 10.1rem;
+                        }
+                    }
+                }
+            }
+            .main-inftras{
+                bottom: -270rem;
+                &-image {
+                    height: 349rem;
+                }
+                &-content{
+                    .main-mobile{
+                        .main-inftras-content {
+                            &__right{
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 3rem;
+                                &--one { 
+                                    width: 21.1rem;
+                                    height: 21.6rem;
+                                    margin: 0;
+                                }
+                                &--two {
+                                    left: 1rem;
+                                    bottom: 23.5rem;
+                                    width: 14.3rem;
+                                    height: 15.4rem;
+                                }
+        
+                                &--three {
+                                    right: 5rem;
+                                    bottom: 21rem;
+                                    width: 9.2rem;
+                                    height: 10.1rem;
+                                }
+                            }
+                            &__left {
+                                &--list {
+                                    &-item {
+                                        line-height: 1.2em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__heading {
+                        padding: 0;
+                        margin-bottom: 4.6rem;
+                    }
+                }
+            }
+        }
+        &-device {
+            height: 74.2rem;
+            margin-top: 215rem;
+            background-image: linear-gradient(#fffdf6,#ffe98c);
+            .device-mobile {
+                height:100%;
+                .main-device-left {
+                    &__list {
+                        top: 15rem;
+                        width: 100%;
+                        height: 100%;
+                        &--item {
+                            top: -3.4rem;
+                            left: 1rem;
+                            height: 24.6rem;
+                            img {
+                                height: 100%;
+                            }
+                        }
+
+                        &--item1{
+                            top: -7rem;
+                            left: 13.5rem;
+                            height: 19.3rem;
+                            img{
+                                height: 100%;
+                            }
+                        }
+
+                        &--item2{
+                            top: 15.9rem;
+                            left: 2rem;
+                            width: 15.6rem;
+                            height: 13.3rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 3rem;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &--item3{
+                            top: 5.2rem;
+                            left: 16.7rem;
+                            width: 16.1rem;
+                            height: 25.3rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                
+                .main-device-right {
+                    &__image {
+                        position: relative;
+                        top: 5rem;
+                        width: 32rem;
+                        height: 100%;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &-team {
+            height: 13rem;
         }
     }
 }

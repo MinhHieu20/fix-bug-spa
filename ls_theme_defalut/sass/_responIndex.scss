@@ -1107,6 +1107,15 @@
         }
     }
 }
+@include responsive_mobile_low {
+    .advise-contact__body{
+        padding-bottom: 2rem;
+        .contact-body__right-info .form-group .form-control {
+            width: 31.8rem !important;
+        }
+
+    } 
+}
 @include responsive_tablet_small{
     .hide-tablet-small{
         display: none;
