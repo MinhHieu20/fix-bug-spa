@@ -182,10 +182,10 @@ global $ls_options, $post;
                                         <div class="content-landing-procedure__outside--title">
                                             <div class="content-landing-procedure__outside--title-image">
                                                 <img src="<?php bloginfo('template_directory'); ?>/images/landing/bgColor6.png" alt="">
+                                                <span class="content-landing-procedure__outside--title-number left-22">
+                                                    <?php echo $slide['title']; ?>
+                                                </span>
                                             </div>
-                                            <span class="content-landing-procedure__outside--title-number left-22">
-                                                <?php echo $slide['title']; ?>
-                                            </span>
                                             <p class="content-landing-procedure__outside--title-text"><?php echo $slide['description']; ?></p>
                                         </div>
                                     </a>

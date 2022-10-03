@@ -60,7 +60,7 @@ global $ls_options;
                             <div class="container container-width">
 
                                 <div class="main-pc dp-none dp-blockPC">
-                                    <div class="row">
+                                    <div class="basis--intro row">
                                         <div class="col-lg-6 col-lg-6 col-md-6 main-inftras-content__right">
                                             <img class="main-inftras-content__right--one"
                                                  src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">

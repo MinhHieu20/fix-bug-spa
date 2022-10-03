@@ -169,8 +169,8 @@
 
                 &__cart {
                     background-color: #ffd00f;
-                    width: 4.5rem;
-                    height: 4.5rem;
+                    width: 4rem;
+                    height: 4rem;
                     border-radius: 50%;
                     padding: 0.5rem;
                     .header-cart-pc {
@@ -197,7 +197,7 @@
 
                 &__tel {
                     height: 3.65rem;
-                    min-width: 18rem;
+                    min-width: 11rem;
 
                     &--number {
                         font-size: 1rem;
@@ -315,7 +315,7 @@
     }
     ul#primary-menu>li>a{
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     ul#primary-menu>li>ul.sub-menu>li>a{
         font-size: 1.2rem;
@@ -324,11 +324,11 @@
     ul#primary-menu>li>ul.sub-menu {
         position: absolute;
         top: 4rem;
-        left: 3rem;
+        left: 0rem;
         background-color: #fff;
-        min-width: 46rem;
+        min-width: 43rem;
         z-index: 3;
-        padding: 1rem;
+        padding: 1rem 0 0 0;
         border-radius: 2rem;
         border: 1px solid #ffd00f;
         margin-left: -12px;
