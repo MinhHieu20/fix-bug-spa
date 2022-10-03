@@ -15,7 +15,7 @@ if(get_query_var('paged')) {
 }
 ?>
     <div class="content pdb-15">
-        <div class="beautify-container grid wide dp-none dp-blockPC">
+        <div class="beautify-container container dp-none dp-blockPC">
             <div class="beautify row">
                 <div class="beautify-program col-lg-9 col-md-9">
                     <div class="beautify-program-list row">

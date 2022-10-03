@@ -22,7 +22,7 @@ global $ls_options;
                         <h1 class="main-content-heading text-center"><?php echo $ls_options['title-intro']; ?></h1>
                         <div class="container container-width pd-0">
                             <div class="row">
-                                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                                     <div class="main-content-left">
                                         <ul class="main-content-left__list">
                                             <li class="main-content-left__list--item">
@@ -61,7 +61,7 @@ global $ls_options;
 
                                 <div class="main-pc dp-none dp-blockPC">
                                     <div class="basis--intro row">
-                                        <div class=" col-lg-6 col-md-6 col-12 main-inftras-content__right">
+                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__right">
                                             <img class="main-inftras-content__right--one"
                                                  src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
                                             <img class="main-inftras-content__right--two"
@@ -69,7 +69,7 @@ global $ls_options;
                                             <img class="main-inftras-content__right--three"
                                                  src="<?php echo $ls_options['img-infra-2']['url']; ?>" alt="">
                                         </div>
-                                        <div class=" col-lg-6 col-md-6 col-12 main-inftras-content__left">
+                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__left">
                                             <ul class="main-inftras-content__left--list">
                                                 <li class="main-inftras-content__left--list-item">
                                                     <?php echo $ls_options['content-infra'] ?>
@@ -138,7 +138,7 @@ global $ls_options;
             <div class="container container-width">
                 <div class="device-pc dp-none dp-blockPC">
                     <div class="device-about row wh-100 align-items-center">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-6 main-device-left">
+                        <div class="col-xl-6 col-lg-6 col-md-7 col-6 main-device-left">
                             <ul class="main-device-left__list">
                                 <li class="main-device-left__list--item">
                                     <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
@@ -154,7 +154,7 @@ global $ls_options;
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-6 main-device-right">
+                        <div class="col-xl-6 col-lg-6 col-md-5 col-6 main-device-right">
                             <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
                         </div>
                     </div>

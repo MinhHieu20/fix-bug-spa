@@ -204,7 +204,7 @@
 
 @include responsive_tablet {
     .hide-table{
-        display: none;
+        // display: none;
     }
     .container-item {
         .container-heading {
@@ -247,15 +247,15 @@
                         bottom: 2rem;
                         left: 1rem;
                         &--image {
-                            width: 5rem;
-                            height: 5rem;
+                            width: 4rem;
+                            height: 4rem;
                         }
                         &--desc {
-                            font-size: 1.1rem;
-                            line-height: 3rem;
-                            padding: 0 1rem 0 1rem;
+                            font-size: 1rem;
+                            line-height: 2.6rem;
+                            padding: 0 1rem 0 2rem;
                             min-width: 11rem;
-                            margin-left: -1.1rem;
+                            margin-left: -2rem;
                         }
                     }
                 }
@@ -275,12 +275,12 @@
                 height: 18.75rem;
             }
             .introduction-image-2 {
-                left: 1.2rem;
+                left: -1rem!important;
                 bottom: -3.6rem;
             }
             .introduction-image-3 {
                 right: 0.5rem!important;
-                bottom: -9.7rem!important;
+                bottom: -7rem!important;
             }
         }
         .introduction-info {
@@ -400,7 +400,6 @@
         }
     }
     .advise-contactIndex{
-        margin-top: 6rem;
         margin-bottom: 8rem;
     }
 }

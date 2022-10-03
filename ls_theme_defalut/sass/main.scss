@@ -24,7 +24,6 @@
 @import 'promotion-detail';
 @import 'booking';
 @import 'popup';
-@import 'responsiveHeader';
 @import 'responsiveFooter';
 @import 'responsiveMain';
 @import 'resposiveStore';
@@ -52,6 +51,7 @@
 @import 'woocommerce.scss';
 @import 'landing.scss';
 @import 'responsiveLanding';
+@import 'responsiveHeader';
 
 .seemore-mobile {
     display: none;
@@ -763,12 +763,13 @@
             height: 92%;
             width: 1rem;
             border-right: 0.1rem solid #A1710F;
+            display: none;
         }
     }
 
     .address-near {
         text-align: center;
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
 
         .address-near-btn {
             position: relative;

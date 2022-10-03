@@ -203,9 +203,9 @@
             .category-nav {
                 .category-item {
                     .category-item-link {
-                        font-size: 2.4rem;
-                        line-height: 6.6rem;
-                        padding: 0 4rem;
+                        font-size: 1.6rem;
+                        line-height: 3rem!important;
+                        padding: 0 0rem;
                         font-weight: 600;
                     }
                 }
@@ -217,10 +217,10 @@
         .treatment-result-item {
             .treatment-result-desc {
                 margin-top: 2.5rem;
-                font-size: 2rem;
-                padding: 0 2rem;
+                font-size: 1.6rem;
                 text-align: center;
                 color: $black;
+                text-align: inherit;
             }
         }
     }

@@ -15,12 +15,13 @@
     // position: absolute;
     background-color: $white;
     border: 1px solid $white;
-    padding: 4rem 0;
+    padding: 4rem 3rem;
     .single-training-title {
         color: $more-color;
         font-family: K2D-ExtraBold;
-        line-height: 1.2;
+        line-height: 1.8rem;
         margin: 0;
+        font-size: 1.6rem;
     }
     .details-header{
         margin-top: 2rem;
@@ -77,6 +78,7 @@
         &-title{
             font-family:  K2D-Bold;
             color: $more-color;
+            font-size: 1.6rem;
         }
         &-sub{
             font-family: K2D-ExtraLight;
@@ -140,6 +142,7 @@
             font-family:  K2D-Bold;
             color: $more-color;
             margin-top: 2.6rem;
+            font-size: 1.6rem;
         }
         &-sub{
             font-family: K2D-ExtraLight;
@@ -164,6 +167,7 @@
             font-family:  K2D-Bold;
             text-align:center;
             color: $more-color;
+            font-size: 1.6rem;
         }
         &-outstanding{
             margin-top: 4rem;

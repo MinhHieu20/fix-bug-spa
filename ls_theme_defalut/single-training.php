@@ -16,8 +16,7 @@ $directoryURI = get_page_uri();
             <div class="row details training-detail-container">
                 <div class="col-lg-9 home-training" id="post-<?php the_ID(); ?>">
 
-                    <h1 class="single-training-title dp-none dp-blockPC"><?php echo get_the_title(); ?></h1>
-                    <h2 class="single-training-title heading-mobile dp-nonePC"><?php echo get_the_title(); ?></h2>
+                    <h3 class="single-training-title"><?php echo get_the_title(); ?></h3>
 
                     <div class="details-header">
                         <p class="details-header__text">

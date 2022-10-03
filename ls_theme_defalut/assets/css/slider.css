@@ -136,3 +136,8 @@
   right: -2.6rem;
   top: 45%;
 }
+@media (max-width: 768px) {
+  .money{
+    padding-top: 2rem;
+  }
+}

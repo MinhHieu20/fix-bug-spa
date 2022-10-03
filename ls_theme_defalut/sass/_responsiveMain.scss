@@ -218,7 +218,12 @@
             }
         }
         .location-details {
-            margin-bottom: 14.5rem;
+            margin-bottom: 2rem;
+            &-mobile::-webkit-scrollbar{
+                display: none;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
             &-list {
                 &__item {
                     margin-bottom: 1.4rem;
