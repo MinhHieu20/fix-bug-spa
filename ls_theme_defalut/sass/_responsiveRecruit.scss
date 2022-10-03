@@ -30,6 +30,21 @@
             display: none;
         }
     }
+    .container-body{
+        .treatment-category{
+            .category-nav{
+                .category-item{
+                    &-link{
+                        font-size: 1.6rem!important;
+                        line-height: 3rem!important;
+                        font-weight: 500!important;
+                        padding: 0!important;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @include responsive_tablet{

@@ -230,6 +230,7 @@
 
                 .detail-news {
                     padding-bottom: 0.75rem;
+                    display: none;
                     &--menu {
                         &__list {
                             position: relative;
@@ -256,7 +257,7 @@
                 }
             }
             &--detail{
-                padding: 5.24rem 2rem 3.85rem 2rem;
+                padding: 5.24rem 6rem 3.85rem 6rem;
                 margin-top: 2.5rem;
                 margin-right: 1rem;
                 &__heading{
@@ -266,7 +267,6 @@
             }
         }
         .tips-new{
-            padding-top: 12rem;
             padding-bottom: 10rem;
             &-item{
                 &__heading{
@@ -294,8 +294,10 @@
                             }
 
                             .image-pseudo::after {
-                                height: 13.5rem;
-                                right: -2.5rem;
+                                height: 7.5rem;
+                                right: -2rem;
+                                top: 32%;
+                                transform: translateY(-50%);
                             }
 
                             &--text{

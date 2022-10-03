@@ -22,7 +22,7 @@ $directoryURI = get_page_uri();
                             <?php the_content(); ?>
                         </div>
                     </div>
-                    <div class="tips-beautify--category col-lg-3 hide-mobile hide-table hide-tablet-small">
+                    <div class="tips-beautify--category col-lg-3 hide-table hide-tablet-small">
                         <ul class="tips-beautify--category__list">
                             <li class="tips-beautify--category__list--item">
                                 <a href="#" class="tips-beautify--category__list--item--link active <?php echo ($directoryURI=='') ? 'active' : '' ?>">Tin tức mới nhất</a>
@@ -100,7 +100,7 @@ $directoryURI = get_page_uri();
             </div>
 
             <div class="tips-new">
-                <div class="tips-new-item hide-mobile hide-table hide-tablet-small">
+                <div class="tips-new-item hide-table hide-tablet-small">
                     <div class="tips-new-item__heading">
                         <h2 class="tips-new-item__heading--title">Tin tức liên quan</h2>
                     </div>

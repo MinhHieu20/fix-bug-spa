@@ -436,7 +436,7 @@
     
         &-info {
             &-image {
-                height: 70rem;
+                height: 80rem;
     
                 .main-content {
                     top: 0;
@@ -485,7 +485,6 @@
                     }
     
                     &-right {
-                        display: none;
                         &__one {
                             width: 90%;
                             height: 40rem;
@@ -494,14 +493,14 @@
     
                         &__two {
                             left: 1.2rem;
-                            top: 28rem;
+                            top: 23rem;
                             width: 19.3rem;
                             height: 19.4rem;
                         }
     
                         &__three {
                             right: 1.6rem;
-                            bottom: -13rem;
+                            bottom: 2rem;
                             width: 13.8rem;
                             height: 13.1rem;
                         }
@@ -510,13 +509,13 @@
             }
     
             .main-inftras {
-                bottom: -95rem;
+                bottom: -68rem;
                 right: 0;
                 left: 0;
                 z-index: -1;
     
                 &-image {
-                    height: 135rem;
+                    height: 130rem;
     
                     &__above {
                         height: 100%;
@@ -531,7 +530,7 @@
                 }
     
                 &-content {
-                    top: 45rem;
+                    top: 68rem;
                     right: 0;
                     left: 0;
     
@@ -555,28 +554,28 @@
     
                     .main-pc {
                         .basis--intro{
-                            flex-direction: column-reverse;
+                            flex-direction: row;
                             .main-inftras-content__right {
                                 position: relative;
                                 margin-top: 2rem;
                                 &--one {
-                                    width: 70%;
+                                    width: 90%;
                                     height: 35rem;
                                   margin-left: 50%;
                                   transform: translateX(-50%);
                                 }
         
                                 &--two {
-                                    left: 1.6rem;
-                                    bottom: -7rem;
-                                    width: 40%;
+                                    left: 0.5rem;
+                                    top: 25rem;
+                                    width: 50%;
                                     height: auto;
                                 }
         
                                 &--three {
-                                    right: 6rem;
-                                    bottom: -8rem;
-                                    width: 30%;
+                                    right: 2rem;
+                                    top: 36rem;
+                                    width: 40%;
                                     height: auto;
                                 }
                             }
@@ -599,12 +598,11 @@
         }
     
         &-device {
-            height: 70rem;
-            margin-top: 135rem;
+            height: 53.2rem;
+            margin-top: 110rem;
     
             .device-pc {
                 .device-about{
-                    flex-direction: column-reverse;
                     .main-device-left {
                         &__list {
                             &--item {
@@ -617,7 +615,7 @@
                             }
         
                             &--item1 {
-                                top: 6rem;
+                                top: -3rem;
                                 left: 13.5rem;
                                 height: 21.8rem;
         
@@ -627,7 +625,7 @@
                             }
         
                             &--item2 {
-                                top: 29.9rem;
+                                top: 23rem;
                                 left: 3rem;
                                 width: 19.6rem;
                                 height: 17.8rem;
@@ -636,11 +634,12 @@
                                     width: 100%;
                                     height: 100%;
                                     object-fit: cover;
+                                    border-radius: 2rem;
                                 }
                             }
         
                             &--item3 {
-                                top: 18.2rem;
+                                top: 10rem;
                                 left: 21.2rem;
                                 width: 15.1rem;
                                 height: 31.3rem;

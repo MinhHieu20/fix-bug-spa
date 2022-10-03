@@ -105,8 +105,8 @@
                                bottom: 0.5rem;
                                left: 0.5rem;
                                 &--image{
-                                    width: 6rem;
-                                    height: 6rem;
+                                    width: 4rem;
+                                    height: 4rem;
                                     z-index: 1;
                                 }
                                 &--desc{
@@ -115,7 +115,6 @@
                                     border-radius: 2rem;
                                     margin-left: -2rem;
                                     text-align: center;
-                                    min-width: 18rem;
                                 }
                                 .training--desc{
                                     display: none;
