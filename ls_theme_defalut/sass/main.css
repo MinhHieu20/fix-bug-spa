@@ -1214,13 +1214,9 @@ a:hover {
   display: none;
 }
 .header-main-nav__list--item .sub-menu--item {
-  padding-bottom: 2rem;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 50%;
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .header-main-nav__list--item .sub-menu--item--title {
   font-size: 1.6rem;
@@ -1262,25 +1258,8 @@ a:hover {
   width: 5rem;
 }
 
-ul#primary-menu > li > ul.sub-menu {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-  background-color: #fff;
-  min-width: 46rem;
-  z-index: 3;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid #ffd00f;
-  flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
 ul#primary-menu > li > ul.sub-menu > li {
-  padding-bottom: 2rem;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 50%;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -1320,10 +1299,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   border-radius: 0;
   padding: 0 0.3rem;
   width: 100%;
-}
-
-ul#primary-menu > li:hover ul.sub-menu {
-  display: flex;
 }
 
 .footer-width {
@@ -15240,6 +15215,24 @@ body .select2-container--default .select2-selection--single {
   }
 }
 @media (min-width: 991px) and (max-width: 1023px) {
+  ul#primary-menu > li > ul.sub-menu {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    background-color: #fff;
+    min-width: 47rem;
+    z-index: 3;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ffd00f;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  ul#primary-menu > li:hover ul.sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .header-container-heading__title {
     height: 5.8rem;
   }
@@ -15283,6 +15276,26 @@ body .select2-container--default .select2-selection--single {
   }
 }
 @media (min-width: 1024px) {
+  ul#primary-menu > li > ul.sub-menu {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    background-color: #fff;
+    min-width: 48rem;
+    z-index: 3;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ffd00f;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  ul#primary-menu > li:hover ul.sub-menu > li > ul.sub-menu {
+    display: block;
+  }
+  ul#primary-menu > li:hover ul.sub-menu {
+    display: flex;
+  }
   .header-container-heading__title {
     height: 5.8rem;
   }
@@ -15493,7 +15506,7 @@ body .select2-container--default .select2-selection--single {
     top: 4rem;
     left: 0rem;
     background-color: #fff;
-    min-width: 43rem;
+    min-width: 44rem;
     z-index: 3;
     padding: 1rem 0 0 0;
     border-radius: 2rem;
