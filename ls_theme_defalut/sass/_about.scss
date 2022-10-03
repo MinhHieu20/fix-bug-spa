@@ -1,19 +1,19 @@
 .main {
     &-logo {
         width: 100%;
-        height: 85rem;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
     }
 
     &-info {
         &-image {
             position: relative;
-            height: 100rem;
+            height: 90rem;
             >img {
                 height: 100%;
                 width: 100%;
@@ -26,7 +26,6 @@
                 left: 0;
 
                 &--logo {
-                    margin-top: 10.1rem;
                     margin-bottom: 0.5rem;
 
                     img {
@@ -39,7 +38,7 @@
                     text-transform: uppercase;
                     font-family: UTM-AvoBold;
                     font-size: 2.8rem;
-                    margin-bottom: 4.6rem;
+                    margin-bottom: 5.6rem;
                 }
 
                 &-left {
@@ -50,7 +49,6 @@
 
                         &--item {
                             font-size: 1.8rem;
-                            margin-top: 2.5rem;
                             line-height: 1.25;
                         }
                     }
@@ -138,9 +136,8 @@
                 left: 0;
 
                 &__logo {
-                    margin-top: 11.8rem;
+                    // margin-top: 11.8rem;
                     margin-bottom: 0.5rem;
-                    padding-left: 3rem;
 
                     img {
                         width: 8.4rem;
@@ -208,7 +205,6 @@
     }
 
     &-device {
-        height: 64.2rem;
         margin-top: 122.8rem;
 
         .device-pc {
@@ -219,10 +215,8 @@
                 &__list {
                     position: relative;
                     width: 100%;
-                    height: 101%;
 
                     &--item {
-                        position: absolute;
                         top: 10rem;
 
                         img {
@@ -232,9 +226,6 @@
 
                     &--item1 {
                         position: absolute;
-                        top: 6rem;
-                        left: 16.5rem;
-
                         img {
                             height: 25.8rem
                         }
@@ -274,11 +265,12 @@
     }
 
     &-team {
-        widht: 100%;
+        width: 100%;
         height: auto;
         img {
             width: 100%;
-            height: auto
+            height: auto;
+            display: block;
         }
     }
 
@@ -320,7 +312,6 @@
             }
 
             &__image {
-                width: 124.5rem;
                 margin-right: auto;
                 margin-left: auto;
                 margin-top: 3.8rem;
@@ -328,9 +319,10 @@
                 &--list {
                     justify-content: space-between;
                     &-item {
+                        width: calc(100% / 6);
                         img {
-                            width: 21.5rem;
-                            height: 12.8rem;
+                            width: 100%;
+                            height: auto;
                             border-radius: 2rem;
                         }
                     }
