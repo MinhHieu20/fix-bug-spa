@@ -14,45 +14,43 @@
             &-image {
                 height: 146rem;
                 .main-content { 
-                    margin-left: 1.5rem;
-                    margin-right: 1.5rem;
-
-                    &--logo {
-                        margin-top: 3.9rem;
-                        margin-bottom: 5rem;
-                        margin-left: 2rem;
-                    }
-
-                    &-heading{
-                        font-size: 2rem;
-                        padding: 0 14%;
-                        line-height: 1.2em;
-                        margin-bottom: 5.6rem;
-                    }
-
-                    &-right {
-                        height: 62.1rem;
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 4rem;
-                        &__one { 
-                            width: 34.1rem;
-                            height: 38.6rem;
-                            margin: 0;
+                    .container-width{
+                        padding-left: 0;
+                        padding-right: 0;
+                        &--logo {
+                            margin-top: 3.9rem;
+                            margin-bottom: 5rem;
                         }
-
-                        &__two {
-                            left: 2.8rem;
-                            bottom: 15.2rem;
-                            width: 20.3rem;
-                            height: 19.4rem;
+                        &-heading{
+                            font-size: 2rem;
+                            padding: 0 14%;
+                            line-height: 1.2em;
+                            margin-bottom: 5.6rem;
                         }
-
-                        &__three {
-                            right: 5.9rem;
-                            bottom: 7.5rem;
-                            width: 15.2rem;
-                            height: 15.1rem;
+                        &-right {
+                            // height: 62.1rem;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 4rem;
+                            &__one { 
+                                width: 34.1rem;
+                                height: 38.6rem;
+                                margin: 0;
+                            }
+    
+                            &__two {
+                                left: 2.8rem;
+                                bottom: 15.2rem;
+                                width: 20.3rem;
+                                height: 19.4rem;
+                            }
+    
+                            &__three {
+                                right: 5.9rem;
+                                bottom: 7.5rem;
+                                width: 15.2rem;
+                                height: 15.1rem;
+                            }
                         }
                     }
                 }
@@ -223,29 +221,26 @@
 
         &-info { 
             &-image {
-                height: 146rem;
+                height: 130rem;
                 .main-content { 
-                    margin-left: 1.5rem;
-                    margin-right: 1.5rem;
 
                     &--logo {
                         margin-top: 3.9rem;
-                        margin-bottom: 5rem;
-                        margin-left: 2rem;
+                        margin-bottom: 3rem;
                     }
 
                     &-heading{
                         font-size: 2rem;
-                        padding: 0 14%;
+                        padding: 0 0%;
                         line-height: 1.2em;
-                        margin-bottom: 5.6rem;
+                        margin-bottom: 0rem;
                     }
 
                     &-right {
-                        height: 62.1rem;
+                        // height: 62.1rem;
                         display: flex;
                         justify-content: center;
-                        margin-top: 4rem;
+                        margin-top: 1rem;
                         &__one { 
                             width: 26.1rem;
                             height: 28.6rem;
@@ -253,15 +248,15 @@
                         }
 
                         &__two {
-                            left: 1.6rem;
-                            bottom: 24.2rem;
+                            left: 2rem;
+                            bottom: -8.5rem;
                             width: 16.3rem;
                             height: 17.4rem;
                         }
 
                         &__three {
-                            right: 4.5rem;
-                            bottom: 21.5rem;
+                            right: 4rem;
+                            bottom: -11rem;
                             width: 11.2rem;
                             height: 11.1rem;
                         }
@@ -269,7 +264,7 @@
                 }
             }
             .main-inftras {
-                bottom: -203rem;
+                bottom: -215rem;
                 &-image {
                     height: 305rem;
                     &__above {
@@ -293,7 +288,7 @@
 
                     &__heading{ 
                         padding: 0;    
-                        margin-bottom: 9.6rem;
+                        margin-bottom: 4.6rem;
                     }
 
                     .main-mobile {
@@ -348,7 +343,7 @@
 
         &-device {
             height: 74.2rem;
-            margin-top: 203rem;
+            margin-top: 215rem;
             background-image: linear-gradient(#fffdf6,#ffe98c);
             .device-mobile {
                 height:100%;
@@ -430,6 +425,10 @@
     .pd-0 {
         padding: 0;
     }
+    .main-logo{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .main {
         &-logo {
             height: 36rem;
@@ -437,7 +436,7 @@
     
         &-info {
             &-image {
-                height: 85rem;
+                height: 70rem;
     
                 .main-content {
                     top: 0;
@@ -445,8 +444,8 @@
                     left: 0;
     
                     &--logo {
-                        margin-top: 10.1rem;
-                        margin-bottom: 0.5rem;
+                        margin-top: 5rem;
+                        margin-bottom: 2.5rem;
     
                         img {
                             width: 8.4rem;
@@ -456,7 +455,7 @@
     
                     &-heading {
                         font-size: 2rem;
-                        margin-bottom: 4.6rem;
+                        margin-bottom: 3.6rem;
                     }
     
                     &-left {
@@ -511,13 +510,13 @@
             }
     
             .main-inftras {
-                bottom: -90rem;
+                bottom: -95rem;
                 right: 0;
                 left: 0;
                 z-index: -1;
     
                 &-image {
-                    height: 130rem;
+                    height: 135rem;
     
                     &__above {
                         height: 100%;
@@ -538,7 +537,7 @@
     
                     &__logo {
                         position: relative;
-                        margin: 0rem auto 0.5rem;
+                        margin: 0rem auto 2.5rem;
                         width: 8.4rem;
                         height: 6.9rem;
     
@@ -558,24 +557,27 @@
                         .basis--intro{
                             flex-direction: column-reverse;
                             .main-inftras-content__right {
+                                position: relative;
+                                margin-top: 2rem;
                                 &--one {
-                                    width: 90%;
+                                    width: 70%;
                                     height: 35rem;
-                                    margin-left: 3.5rem;
+                                  margin-left: 50%;
+                                  transform: translateX(-50%);
                                 }
         
                                 &--two {
                                     left: 1.6rem;
                                     bottom: -7rem;
-                                    width: 19.3rem;
-                                    height: 19.4rem;
+                                    width: 40%;
+                                    height: auto;
                                 }
         
                                 &--three {
-                                    right: 1.6rem;
-                                    bottom: -5rem;
-                                    width: 13.8rem;
-                                    height: 13.1rem;
+                                    right: 6rem;
+                                    bottom: -8rem;
+                                    width: 30%;
+                                    height: auto;
                                 }
                             }
         
@@ -597,71 +599,69 @@
         }
     
         &-device {
-            height: 53.2rem;
-            margin-top: 130rem;
+            height: 70rem;
+            margin-top: 135rem;
     
             .device-pc {
-
-                .main-device-left {
-                    &__list {
-                        &--item {
-                            top: 10rem;
-                            height: 30.6rem;
-    
-                            img {
-                                height: 100%;
+                .device-about{
+                    flex-direction: column-reverse;
+                    .main-device-left {
+                        &__list {
+                            &--item {
+                                top: 10rem;
+                                height: 30.6rem;
+        
+                                img {
+                                    height: 100%;
+                                }
                             }
-                        }
-    
-                        &--item1 {
-                            top: 6rem;
-                            left: 13.5rem;
-                            height: 21.8rem;
-    
-                            img {
-                                height: 100%;
+        
+                            &--item1 {
+                                top: 6rem;
+                                left: 13.5rem;
+                                height: 21.8rem;
+        
+                                img {
+                                    height: 100%;
+                                }
                             }
-                        }
-    
-                        &--item2 {
-                            top: 29.9rem;
-                            left: 3rem;
-                            width: 19.6rem;
-                            height: 17.8rem;
-    
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+        
+                            &--item2 {
+                                top: 29.9rem;
+                                left: 3rem;
+                                width: 19.6rem;
+                                height: 17.8rem;
+        
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
                             }
-                        }
-    
-                        &--item3 {
-                            top: 18.2rem;
-                            left: 21.2rem;
-                            width: 15.1rem;
-                            height: 31.3rem;
-    
-                            img {
-                                width: 100%;
-                                height: 100%;
+        
+                            &--item3 {
+                                top: 18.2rem;
+                                left: 21.2rem;
+                                width: 15.1rem;
+                                height: 31.3rem;
+        
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
-                }
-    
-                .main-device-right {
-                    img {
-                        width: 80%;
+                    .main-device-right {
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
     
-        &-team {
-            height: 26.9rem;
-        }
-    
+        
         &-papers {
             height: 26.8rem;
             margin-top: 8.4rem;
@@ -712,236 +712,439 @@
         }
     }
 }
-@include responsive_pclow {
-    .main {
-        &-logo { 
-            height: 60rem;
-        }
-        &-info {
-            &-image {
-                .main-content {
-                    &-heading {
-                        font-size: 2.6rem;
-                    }
-                    &-left {
-                        &__list {
-                            margin-bottom: 3rem;
-                            &--item {
-                                font-size: 1.6rem;
-                                margin-top: 1rem;
-                            }
-                        }
-                        .service--detail__btn {
-                            padding: 1rem 2rem;
-                            font-size: 2rem;
-                        }
-                        .service--detail__btn::after {
-                            width: 96%;
-                        }
-    
-                        &__advise {
-                            padding: 0.5rem 1rem;
-                            font-size: 1.8rem;
-                            width: 16.7rem;
-                            button {
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-    
-                    &-right {
-                        &__one {
-                            width: 90%;
-                            height: 40rem;
-                            margin-left: 3.5rem;
-                        }
-    
-                        &__two {
-                            left: 1.2rem;
-                            bottom: -1.1rem;
-                            width: 24.3rem;
-                            height: 23.4rem;
-                        }
-    
-                        &__three {
-                            right: 2.3rem;
-                            bottom: -7rem;
-                            width: 17.8rem;
-                            height: 17.1rem;
-                        }
-                    }
-                }
-            }
-    
-            .main-inftras {
-                bottom: -109rem;
-                &-image {
-                    height: 130rem;
-                    &__above {
-                        height: 100%;
-                    }
-    
-                    &__below {
-                        top: 0;
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-    
-                &-content {
-                    top: 17rem;
-                    &__logo {
-                        padding-left: 0;
-                    }
-                    &__heading {
-                        font-size: 2rem;
-                        margin-bottom: 9.6rem;
-                        padding: 0 30%;
-                    }
-                    .main-pc {
-                        .main-inftras-content__right {
-                            &--one {
-                                width: 90%;
-                                height: 40rem;
-                                margin-left: 3.5rem;
-                            }
-                            &--two {
-                                left: 1.2rem;
-                                bottom: 16.5rem;
-                                width: 24.3rem;
-                                height: 23.4rem;
-                            }
-                            &--three {
-                                right: 2.6rem;
-                                bottom: 13rem;
-                                width: 17.8rem;
-                                height: 17.1rem;
-                            }
-                        }
-                        .main-inftras-content__left {
-                            &--list {
-                                &-item {
-                                    font-size: 1.6rem;
-                                    margin-top: 1.5rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    
-        &-device {
-            height: 53.2rem;
-            margin-top: 106.8rem;
-    
-            .device-pc {
-                .main-device-left {
-                    padding-left: 8rem;
-                    &__list {
-                        &--item {
-                            top: 10rem;
-                            height: 30.6rem;
-    
-                            img {
-                                height: 100%;
-                            }
-                        }
-    
-                        &--item1 {
-                            top: 6rem;
-                            left: 13.5rem;
-                            height: 21.8rem;
-    
-                            img {
-                                height: 100%;
-                            }
-                        }
-    
-                        &--item2 {
-                            top: 29.9rem;
-                            left: 3rem;
-                            width: 19.6rem;
-                            height: 17.8rem;
-    
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-                        }
-    
-                        &--item3 {
-                            top: 18.2rem;
-                            left: 21.2rem;
-                            width: 15.1rem;
-                            height: 31.3rem;
-    
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-    
-                .main-device-right {
-                    text-align: left;
-                    img {
-                        width: 80%;
-                    }
-                }
-            }
-        }
-        &-papers {
-            height: 28.8rem;
-            margin-top: 8.4rem;
-    
-            &-content {
-                top: 0;
-                right: 0;
-                left: 0;
-    
-                &__logo {
-                    width: 6.6rem;
-                    height: 4.8rem;
-                }
-    
-                &__heading {
-                    font-size: 2rem;
-                    margin-top: 1rem;
-                    padding: 0 35%;
-                    line-height: 1.2;
-                }
-    
-                &__image {
-                    width: 100%;
-                    margin-top: 3.8rem;
-    
-                    &--list {
-                        justify-content: space-evenly;
-                        &-item {
-                            width: 16.5rem;
-                            a {
-                                display: inline-block;
-                            }
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 1.6rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
-        .address .location-details {
-            margin-bottom: 3.5rem;
+@include responsive_tablet_small{
+    .main-logo{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-info{
+        &-image{
+            .main-content{
+                &--logo{
+                    margin-top: 4.4rem;
+                    margin-bottom: 1.5rem;
+                }
+                &-left{
+                    .service--detail__btn{
+                        font-size: 1.6rem;
+                        padding: 1rem 3rem;
+                    }
+                }
+                &-right{
+                    &__one{
+                        width: 90%;
+                        height: auto;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &__two{
+                        width: 60%;
+                        height: auto;
+                        top: 24rem;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &__three{
+                        width: 40%;
+                        height: auto;
+                        right: 0;
+                        top: 32rem;
+                    }
+                }
+            }
         }
-        
-        .address .address-near {
-            margin-bottom: 10.6rem;
+        .main-inftras{
+            bottom: -150rem;
+            &-image{
+                height: 156rem;
+                .main-inftras-content{
+                    top: 12rem;
+                    &__heading{
+                        padding: 0 10%;
+                        margin-bottom: 6rem;
+                    }
+                    .main-pc{
+                        .main-inftras-content__right{
+                            &--one{
+                                width: 100%;
+                                height: auto;
+                                margin-left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            &--two{
+                                width: 50%;
+                                height: auto;
+                                left: 0;
+                                top: 22rem;
+                            }
+                            &--three{
+                                width: 40%;
+                                height: auto;
+                                right: 3rem;
+                                top: 38rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-device{
+        margin-top: 160rem;
+        .container-width{
+            .device-about{
+                .main-device-left{
+                    padding-left: 0;
+                    padding-right: 0;
+                    &__list{
+                        &--item{
+                            img{
+                                width: 70%;
+                                height: auto;
+                            }
+                        }
+                        &--item1{
+                            width: 40%;
+                            top: -2rem;
+                            right: 6rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item2{
+                            width: 60%;
+                            bottom: 0;
+                            left: 6rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item3{
+                           width: 50%;
+                           top: 10rem;
+                           right: 5rem;
+                           img{
+                            width: 100%;
+                            height: auto;
+                           }
+                        }
+                    }
+                }
+                .main-device-right{
+                    padding-left: 0;
+                    padding-right: 0;
+                    img{
+                        width: 80%;
+
+                    }
+                }
+            }
+        }
+    }
+    .main-team{
+        margin-top: 15rem;
+    }
+    .main-papers{
+        margin-top: 5rem;
+        &-content{
+            &__heading{
+                padding: 0 20%;
+            }
+        }
+    }
+}
+@include responsive_pclow{
+    .main-logo{
+        padding-right: 0;
+        padding-left: 0;
+        img{
+            display: block;
+        }
+    }
+    .main-info{
+        &-image{
+            .main-content{
+                &--logo{
+                    margin-top: 4.4rem;
+                    margin-bottom: 1.5rem;
+                }
+                &-left{
+                    .service--detail__btn{
+                        font-size: 1.6rem;
+                        padding: 1rem 3rem;
+                    }
+                }
+                &-right{
+                    &__one{
+                        width: 90%;
+                        height: auto;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &__two{
+                        width: 60%;
+                        height: auto;
+                        top: 24rem;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &__three{
+                        width: 40%;
+                        height: auto;
+                        right: 0;
+                        top: 32rem;
+                    }
+                }
+            }
+        }
+        .main-inftras{
+            bottom: -150rem;
+            &-image{
+                height: 156rem;
+                .main-inftras-content{
+                    top: 12rem;
+                    &__heading{
+                        padding: 0 10%;
+                        margin-bottom: 6rem;
+                    }
+                    .main-pc{
+                        .main-inftras-content__right{
+                            &--one{
+                                width: 100%;
+                                height: auto;
+                                margin-left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            &--two{
+                                width: 50%;
+                                height: auto;
+                                left: 0;
+                                top: 22rem;
+                            }
+                            &--three{
+                                width: 40%;
+                                height: auto;
+                                right: 3rem;
+                                top: 38rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-device{
+        margin-top: 160rem;
+        .container-width{
+            .device-about{
+                .main-device-left{
+                    padding-left: 0;
+                    padding-right: 0;
+                    &__list{
+                        &--item{
+                            img{
+                                width: 70%;
+                                height: auto;
+                            }
+                        }
+                        &--item1{
+                            width: 40%;
+                            top: -2rem;
+                            right: 6rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item2{
+                            width: 60%;
+                            bottom: 0;
+                            left: 6rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item3{
+                           width: 50%;
+                           top: 10rem;
+                           right: 5rem;
+                           img{
+                            width: 100%;
+                            height: auto;
+                           }
+                        }
+                    }
+                }
+                .main-device-right{
+                    padding-left: 0;
+                    padding-right: 0;
+                    img{
+                        width: 80%;
+
+                    }
+                }
+            }
+        }
+    }
+    .main-team{
+        margin-top: 15rem;
+    }
+    .main-papers{
+        margin-top: 5rem;
+        &-content{
+            &__heading{
+                padding: 0 20%;
+            }
+        }
+    }
+}
+@include responsive_pcsmall{
+    .main-logo{
+        padding-right: 0;
+        padding-left: 0;
+        img{
+            display: block;
+        }
+    }
+    .main-info{
+        &-image{
+            .main-content{
+                &--logo{
+                    margin-top: 4.4rem;
+                    margin-bottom: 1.5rem;
+                }
+                &-left{
+                    .service--detail__btn{
+                        font-size: 1.6rem;
+                        padding: 1rem 3rem;
+                    }
+                }
+                &-right{
+                    &__one{
+                        width: 90%;
+                        height: auto;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &__two{
+                        width: 60%;
+                        height: auto;
+                        top: 24rem;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &__three{
+                        width: 40%;
+                        height: auto;
+                        right: 0;
+                        top: 32rem;
+                    }
+                }
+            }
+        }
+        .main-inftras{
+            bottom: -121rem;
+            &-image{
+                height: 128rem;
+                .main-inftras-content{
+                    top: 12rem;
+                    &__heading{
+                        padding: 0 10%;
+                        margin-bottom: 6rem;
+                    }
+                    .main-pc{
+                        .main-inftras-content__right{
+                            &--one{
+                                width: 100%;
+                                height: auto;
+                                margin-left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            &--two{
+                                width: 50%;
+                                height: auto;
+                                left: 0;
+                                top: 44rem;
+                            }
+                            &--three{
+                                width: 40%;
+                                height: auto;
+                                right: 3rem;
+                                top: 62rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-device{
+        margin-top: 130rem;
+        .container-width{
+            .device-about{
+                .main-device-left{
+                    padding-left: 0;
+                    padding-right: 0;
+                    &__list{
+                        &--item{
+                            img{
+                                width: 70%;
+                                height: auto;
+                            }
+                        }
+                        &--item1{
+                            width: 40%;
+                            top: -2rem;
+                            right: 6rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item2{
+                            width: 60%;
+                            bottom: -2rem;
+                            left: 4rem;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &--item3{
+                           width: 50%;
+                           top: 10rem;
+                           right: 5rem;
+                           img{
+                            width: 100%;
+                            height: auto;
+                           }
+                        }
+                    }
+                }
+                .main-device-right{
+                    padding-left: 0;
+                    padding-right: 0;
+                    img{
+                        width: 80%;
+
+                    }
+                }
+            }
+        }
+    }
+    .main-team{
+        margin-top: 15rem;
+    }
+    .main-papers{
+        margin-top: 5rem;
+        &-content{
+            &__heading{
+                padding: 0 20%;
+            }
         }
     }
 }

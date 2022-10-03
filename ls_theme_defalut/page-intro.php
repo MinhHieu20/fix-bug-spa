@@ -8,7 +8,7 @@ get_header();
 global $ls_options;
 ?>
     <div class="main mg4">
-        <div class="main-logo">
+        <div class="main-logo col-md-12 col-sm-12 col-lg-12 col-xl-12">
             <img src="<?php echo $ls_options['banner-main-main']['url']; ?>" alt="">
         </div>
         <div class="main-info">
@@ -22,7 +22,7 @@ global $ls_options;
                         <h1 class="main-content-heading text-center"><?php echo $ls_options['title-intro']; ?></h1>
                         <div class="container container-width pd-0">
                             <div class="row">
-                                <div class="col-lg-6 col-lg-6 col-md-6 col-12 ">
+                                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                                     <div class="main-content-left">
                                         <ul class="main-content-left__list">
                                             <li class="main-content-left__list--item">
@@ -32,7 +32,7 @@ global $ls_options;
                                         <button id="modal-con" class="btn service--detail__btn dp-none">tư vấn ngay</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-lg-6 col-md-6 col-12  main-content-right">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main-content-right">
                                     <div class="mobie-image">
                                         <img class="main-content-right__one" src="<?php echo $ls_options['img-intro']['url']; ?>" alt="">
                                         <img class="main-content-right__two" src="<?php echo $ls_options['img-intro-1']['url']; ?>" alt="">
@@ -61,7 +61,7 @@ global $ls_options;
 
                                 <div class="main-pc dp-none dp-blockPC">
                                     <div class="basis--intro row">
-                                        <div class="col-lg-6 col-lg-6 col-md-6 main-inftras-content__right">
+                                        <div class=" col-lg-6 col-md-6 col-12 main-inftras-content__right">
                                             <img class="main-inftras-content__right--one"
                                                  src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
                                             <img class="main-inftras-content__right--two"
@@ -69,7 +69,7 @@ global $ls_options;
                                             <img class="main-inftras-content__right--three"
                                                  src="<?php echo $ls_options['img-infra-2']['url']; ?>" alt="">
                                         </div>
-                                        <div class="col-lg-6 col-lg-6 col-md-6 main-inftras-content__left">
+                                        <div class=" col-lg-6 col-md-6 col-12 main-inftras-content__left">
                                             <ul class="main-inftras-content__left--list">
                                                 <li class="main-inftras-content__left--list-item">
                                                     <?php echo $ls_options['content-infra'] ?>
@@ -118,7 +118,7 @@ global $ls_options;
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-6 col-12 main-inftras-content__right">
+                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__right">
                                             <img class="main-inftras-content__right--one"
                                                  src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
                                             <img class="main-inftras-content__right--two"
@@ -135,10 +135,10 @@ global $ls_options;
             </div>
         </div>
         <div class="main-device">
-            <div class="container container-width wh-100">
-                <div class="device-pc dp-none dp-blockPC wh-100">
-                    <div class="row wh-100 align-items-center">
-                        <div class="col-lg-6 col-md-6 main-device-left wh-100">
+            <div class="container container-width">
+                <div class="device-pc dp-none dp-blockPC">
+                    <div class="device-about row wh-100 align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6 main-device-left">
                             <ul class="main-device-left__list">
                                 <li class="main-device-left__list--item">
                                     <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
@@ -154,7 +154,7 @@ global $ls_options;
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 col-md-6 main-device-right">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6 main-device-right">
                             <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
                         </div>
                     </div>
@@ -166,7 +166,7 @@ global $ls_options;
                                 <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12 main-device-left wh-100">
+                        <div class="col-lg-6 col-12 col-6 main-device-left wh-100">
                             <ul class="main-device-left__list">
                                 <li class="main-device-left__list--item">
                                     <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
@@ -186,7 +186,7 @@ global $ls_options;
                 </div>
             </div>
         </div>
-        <div class="main-team">
+        <div class="main-team" >
             <img src="<?php bloginfo('template_directory'); ?>/images/banner3.jpg" alt="">
         </div>
         <div class="main-papers dp-none">
@@ -200,7 +200,7 @@ global $ls_options;
                     <ul class="main-papers-content__image--list d-flex">
                         <?php $i = 0; ?>
                         <?php foreach($ls_options['feedback-customer'] as $slide) : ?>
-                        <li class="main-papers-content__image--list-item">
+                        <li class="main-papers-content__image--list-item ">
                             <a href="<?php echo $slide['url']; ?>"><img src="<?php echo $slide['image']; ?>" alt=""></a>
                         </li>
                         <?php $i++; ?>
