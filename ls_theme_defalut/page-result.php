@@ -13,7 +13,7 @@ global $ls_options, $post;
                 <h1><img src="<?php bloginfo('template_directory'); ?>/images/banner1.png" alt=""></h1>
             </div>
         </div>
-        <div class="content-container single-treatment-result result content-result">
+        <div class="content-container single-treatment-result result">
             <div class="container-item grid wide">
                 <div class="container-body">
                     <div class="treatment-category">
@@ -80,7 +80,7 @@ global $ls_options, $post;
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</div>
+                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
                         <div class="contact-body__column col-lg-10 col-6 col-sm-6">

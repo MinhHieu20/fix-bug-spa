@@ -56,9 +56,6 @@
 .seemore-mobile {
     display: none;
 }
-.content-result {
-    padding-bottom: 15rem;
-}
 .top-banner {
     .top-banner-1 {
         width: 100%;
@@ -166,7 +163,8 @@
     flex-direction: row-reverse;
     .introduction-image {
         position: relative;
-        padding-bottom: 14rem;
+
+        // overflow: hidden;
         .introduction-image-1 {
          
         }
@@ -174,11 +172,11 @@
 
         .introduction-image-2 {
             left: 1.2rem;
-            bottom: 10.4rem;
+            bottom: -3.6rem;
             z-index: 1;
         }
         .introduction-image-3 {
-            bottom: 4.3rem;
+            bottom: -9.7rem;
             right: 8.5rem;
             z-index: 1;
         }
@@ -543,8 +541,7 @@
                     // height: 26.5rem;
                     margin: 1.5rem 0;
                     text-align: center;
-                    background-image: url(../images/contact/_Path_.png);
-                    @include backgroundImage();
+
                     .contact-logo {
                         // width: 6.55rem;
                         // height: 6.55rem;
@@ -766,6 +763,7 @@
             height: 92%;
             width: 1rem;
             border-right: 0.1rem solid #A1710F;
+            display: none;
         }
     }
 
