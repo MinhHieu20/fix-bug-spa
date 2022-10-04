@@ -17,7 +17,7 @@ $directoryURI = get_page_uri();
                 <div class="tips-beautify row">
                   
                     <div class="tips-beautify--detail col-lg-9 col-12" id="post-<?php the_ID(); ?>">
-                        <p class="tips-beautify--detail__heading"><?php echo get_the_title(); ?></p>
+                        <h2 class="tips-beautify--detail__heading"><?php echo get_the_title(); ?></h2>
                         <div class="tips-beautify--detailing">
                             <?php the_content(); ?>
                         </div>

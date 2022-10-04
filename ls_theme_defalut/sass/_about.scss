@@ -1,7 +1,7 @@
 .main {
     &-logo {
         width: 100%;
-        max-height: 116rem;
+
         img {
             width: 100%;
             height: 100%;
@@ -13,7 +13,7 @@
     &-info {
         &-image {
             position: relative;
-            height: 98rem;
+            height: 90rem;
             >img {
                 height: 100%;
                 width: 100%;
@@ -27,7 +27,7 @@
 
                 &--logo {
                     margin-bottom: 0.5rem;
-                    margin-top: 5rem;
+
                     img {
                         width: 8.4rem;
                         height: 6.9rem;
@@ -89,7 +89,7 @@
                     &__two {
                         position: absolute;
                         left: 4.8rem;
-                        bottom: -12.9rem;
+                        bottom: -11.9rem;
                         width: 30.3rem;
                         height: 30.4rem;
                     }
@@ -97,7 +97,7 @@
                     &__three {
                         position: absolute;
                         right: -0.4rem;
-                        bottom: -21.5rem;                    
+                        bottom: -18.5rem;                    
                         width: 21.2rem;
                         height: 21.1rem;
                     }
@@ -114,7 +114,7 @@
 
             &-image {
                 position: relative;
-                height: 130rem;
+                height: 144rem;
 
                 &__above {
                     position: relative;
@@ -205,8 +205,8 @@
     }
 
     &-device {
-        margin-top: 131.8rem;
-        height: 55rem;
+        margin-top: 122.8rem;
+
         .device-pc {
             height: 100%;
 
@@ -226,8 +226,6 @@
 
                     &--item1 {
                         position: absolute;
-                        top: -4rem;
-                        right: 13rem;
                         img {
                             height: 25.8rem
                         }
@@ -235,7 +233,7 @@
 
                     &--item2 {
                         position: absolute;
-                        top: 26.9rem;
+                        top: 34.9rem;
                         left: 4rem;
 
                         img {
@@ -246,8 +244,8 @@
 
                     &--item3 {
                         position: absolute;
-                        top: 11.2rem;
-                        left: 28.8rem;
+                        top: 20.2rem;
+                        left: 26.8rem;
 
                         img {
                             width: 23.1rem;

@@ -23,7 +23,7 @@
         z-index: 1;
     }
     .content-landing {
-        height: 788rem;
+        height: 788rem !important;
         &-acne {
             height: 118rem;
             &__left {
@@ -1126,7 +1126,7 @@
         }
     
         &-device {
-            height: 46.2rem;
+            height: 64.2rem;
     
             .pc-device {
                 justify-content: space-evenly;
@@ -1634,16 +1634,12 @@
                     margin-bottom: 2rem;
 
                     &-image {
-                        width: 4rem;
-                        position: relative;
-                        img {
-                            width: 100%;
-                        }
+                        width: 16%;
                     }
 
                     &-number {
-                        top: 2.5rem;
-                        left: 0.7rem;
+                        top: 34.8rem;
+                        left: 1.5rem;
                         font-size: 4.5rem;
                     }
 
@@ -1761,7 +1757,7 @@
                 }
     
                 &--title {
-                    bottom: 6rem;
+                    bottom: 7rem;
                     font-size: 1.8rem;
                 }
             }
