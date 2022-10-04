@@ -82,7 +82,7 @@ global $ls_options, $post;
         </div>
     </div>
     <!-- advise-contact -->
-    <div class="advise-contact advise-contactIndex">
+    <div class="advise-contact advise-contactIndex mb-10">
             <div class="advise-contact__body container">
                 <div class="contact-body row">
                     <div class="contact-body__left col-lg-5 col-12">
