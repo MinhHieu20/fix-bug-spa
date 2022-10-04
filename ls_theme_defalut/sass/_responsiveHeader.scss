@@ -17,96 +17,18 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .header-container{
-        &-heading{
-            &__title{
-            height: 5.8rem;
-
-            }
-        }
-    }
-    .header-contact{
-        padding: 0 1.7rem;
-        &-left{
-            form {
-                width: 100%;
-                float: left;
-            }
-            &__search {
-                height: 5rem;
-                font-size: 1.6rem;
-                padding: 0 2rem;
-            }
-        }
-        &-right{
-            &__cart {
-                &--btn {
-                    width: 5rem;
-                    height: 5rem;
-                    img {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-                &--number {
-                    top: -1.7rem;
-                    right: -1rem;
-                }
-
-            }
-            &__tel {
-                height: 5rem;
-                &--number {
-                    padding: 0 1rem;
-                    font-size: 1.3rem;
-                    line-height: 5rem;
-                }
-            }
-        }
-    }
-    .header-main {
-        &-nav {
-            &__list {
-                &--item {
-                    padding: 1rem 1.5rem;
-                    a {
-                        font-size: 1.8rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@include responsive_pcsmall {
-    ul#primary-menu>li>ul.sub-menu {
-        position: absolute;
-        top: 5rem;
-        left: 5rem;
-        background-color: #fff;
-        min-width: 48rem;
-        z-index: 3;
-        padding: 2rem;
-        border-radius: 2rem;
-        border: 1px solid #ffd00f;
-        flex-wrap: wrap;
-        margin-left: -12px;
-        margin-right: -12px;
-    }
     ul#primary-menu>li:hover ul.sub-menu>li>ul.sub-menu {
         display: block;
     }
-    ul#primary-menu>li:hover ul.sub-menu {
-        display: flex;
-    }
     .header-container{
         &-heading{
             &__title{
             height: 5.8rem;
+
             }
         }
     }
     .header-contact{
-        justify-content: space-between;
         padding: 0 1.7rem;
         margin-top: 6rem;
         &-left{
@@ -115,14 +37,17 @@
                 float: left;
             }
             &__search {
-                width: 30.5rem;
                 height: 5rem;
                 font-size: 1.6rem;
                 padding: 0 2rem;
-                float: right;
+                width: 86%;
+            }
+            &__button { 
+                right: 20%;
             }
         }
         &-right{
+            justify-content: flex-end;
             &__cart {
                 &--btn {
                     width: 5rem;
@@ -140,10 +65,10 @@
             }
             &__tel {
                 height: 5rem;
-                min-width: 22rem;
+                min-width: 21rem;
                 &--number {
                     padding: 0 1rem;
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     line-height: 5rem;
                 }
             }
@@ -260,7 +185,7 @@
                         
                         &--top {
                             width: 100%;
-                            height: 33rem;
+                            height: auto;
                             overflow-y: scroll;
                             &-image { 
                                 height: 6rem;

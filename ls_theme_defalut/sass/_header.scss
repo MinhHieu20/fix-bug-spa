@@ -264,6 +264,7 @@
                     }
                 }
             }
+
             .sub-menu:after {
                 content: "";
                 position: absolute;
@@ -275,7 +276,9 @@
         }
     }
 }
-
+ul#primary-menu>li:hover ul.sub-menu>li>ul.sub-menu {
+    display: block;
+}
 ul#primary-menu>li>ul.sub-menu>li {
     -ms-flex: 0 0 50%;
     position: relative;

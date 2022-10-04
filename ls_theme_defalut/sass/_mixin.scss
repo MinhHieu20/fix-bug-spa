@@ -1,10 +1,11 @@
 
 $res_mobile_low : "(max-width: 360px)";
-$res_mobile_small : "(min-width: 376px) and (max-width: 479px)";
+$res_mobile_medium : "(max-width: 390px)";
+$res_mobile_small : "(min-width: 375px) and (max-width: 479px)";
 $res_mobile : "(max-width: 480px)";
 $res_tablet : "(min-width: 481px) and (max-width: 768px)";
 $res_tablet_small: "(min-width: 769px) and (max-width: 990px)"; 
-$res_pclow : "(min-width: 991px) and (max-width: 1023px)";
+$res_pclow : "(min-width: 991px) and (max-width: 1024px)";
 $res_pcsmall : "(min-width: 1024px) ";
 
 
@@ -15,6 +16,11 @@ $res_pcsmall : "(min-width: 1024px) ";
 }
 @mixin responsive_mobile_small() {
   @media #{$res_mobile_small} {
+    @content;
+  }
+}
+@mixin responsive_mobile_medium() {
+  @media #{$res_mobile_medium} {
     @content;
   }
 }
