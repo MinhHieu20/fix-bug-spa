@@ -17,6 +17,8 @@
                     box-shadow: 0.9rem 0.9rem 0.9rem rgb(0 0 0 / 10%);
                     &--top{
                         position: relative;
+                        max-height: 36vh;
+                        overflow-y: scroll;
                         &-image{
                             margin-left: 1rem;
                             margin-top: 1.6rem;
@@ -25,7 +27,7 @@
                             display: flex;
                             justify-content: center;
                             img {
-                                width: auto;
+                                width: 100%;
                                 padding-top: 2rem;
                             }
                         }
