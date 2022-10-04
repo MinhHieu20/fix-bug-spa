@@ -267,7 +267,7 @@
             &--item:nth-child(2)::after {
                 content: "";
                 position: absolute;
-                top: 3.5rem;
+                top: 4.5rem;
                 left: 4rem;
                 width: 16rem;
                 height: 3rem;
@@ -284,7 +284,9 @@
         }
     }
 }
-
+ul#primary-menu>li:hover ul.sub-menu>li>ul.sub-menu {
+    display: block;
+}
 ul#primary-menu>li>ul.sub-menu>li {
     // padding-bottom: 2rem;
     -ms-flex: 0 0 50%;

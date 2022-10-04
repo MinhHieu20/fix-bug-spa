@@ -1223,7 +1223,7 @@ a:hover {
 .header-main-nav__list--item:nth-child(2)::after {
   content: "";
   position: absolute;
-  top: 3.5rem;
+  top: 4.5rem;
   left: 4rem;
   width: 16rem;
   height: 3rem;
@@ -1236,6 +1236,10 @@ a:hover {
   left: -2.8rem;
   height: 5rem;
   width: 5rem;
+}
+
+ul#primary-menu > li:hover ul.sub-menu > li > ul.sub-menu {
+  display: block;
 }
 
 ul#primary-menu > li > ul.sub-menu > li {
@@ -1515,7 +1519,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 
 .content-container {
-  padding: 10rem 0 14rem;
+  padding: 10rem 0 0 0;
 }
 
 .container-item .container-heading {
@@ -1662,7 +1666,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 
 .event {
-  padding: 3.4rem 0 15.2rem 0;
+  padding: 3.4rem 0 0 0;
   margin: 0;
 }
 .event .container-item .container-body .event-list {
@@ -3409,7 +3413,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 
 .main-logo {
   width: 100%;
-  max-height: 117rem;
+  max-height: 116rem;
 }
 .main-logo img {
   width: 100%;
@@ -3692,12 +3696,16 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 
 .tips-beautify--detail {
   background-color: #fff;
+  padding-top: 4rem;
+  border-radius: 2rem;
 }
 .tips-beautify--detail__heading {
   text-transform: uppercase;
   color: #a0710e;
   font-family: K2D-ExtraBold;
   line-height: 1.2em;
+  font-size: 3rem;
+  text-align: center;
 }
 .tips-beautify--detail .tips-beautify--detailing {
   margin-top: 4.75rem;
@@ -3736,15 +3744,19 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-color: #fff;
   padding: 2.55rem 0;
   margin-bottom: 1rem;
+  border-radius: 2rem;
 }
 .tips-beautify--category__list--item {
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 .tips-beautify--category__list--item--link {
   color: #808080;
   text-transform: uppercase;
   font-family: Gilroy-XBold;
   border-radius: 1rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
 }
 .tips-beautify--category__list--item:nth-child(2) a, .tips-beautify--category__list--item:nth-child(3) a, .tips-beautify--category__list--item:nth-child(4) a {
   font-family: Gilroy-Regular;
@@ -7599,12 +7611,11 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 18.75rem;
   }
   .system-introduction .introduction-image .introduction-image-2 {
-    left: 1.2rem;
-    bottom: -3.6rem;
+    left: 9.2rem !important;
   }
   .system-introduction .introduction-image .introduction-image-3 {
-    right: -2.5rem !important;
-    bottom: -9.7rem !important;
+    right: 6.5rem !important;
+    bottom: -4.3rem !important;
   }
   .system-introduction .introduction-info {
     padding-left: 5rem;
@@ -7648,11 +7659,12 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 22rem;
   }
   .event .container-item .container-body .event-list .event-item .event-item-image a {
-    display: inline-block;
+    display: block;
     height: 22rem;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
     padding: 1.5rem 0 1.5rem 0;
+    max-width: 100%;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
     font-size: 1.4rem;
@@ -7693,6 +7705,10 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .content-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .container-item .container-heading {
     padding-bottom: 4.5rem;
   }
@@ -7741,6 +7757,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .system-introduction {
     margin-top: 9.45rem;
+    padding-left: 1.5rem;
   }
   .system-introduction .introduction-image .introduction-image-1 {
     height: 35rem;
@@ -7757,7 +7774,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .system-introduction .introduction-image .introduction-image-3 {
     right: 0.5rem !important;
-    bottom: -7rem !important;
+    bottom: 4rem !important;
   }
   .system-introduction .introduction-info {
     padding-left: 0;
@@ -7860,6 +7877,10 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     font-family: Gilroy-Medium-Italic;
     margin: 1rem auto 0;
   }
+  .container-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .container-item .container-body .container-service .container-service-item {
     margin-bottom: 2rem;
   }
@@ -7909,7 +7930,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     text-align: center;
   }
   .content-container {
-    padding: 1.6rem 1.5rem;
+    padding: 1.6rem 0;
   }
   .container-item .container-heading {
     padding-bottom: 7.45rem;
@@ -7923,6 +7944,9 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .system-introduction {
     margin-top: 3.9rem;
     display: block;
+  }
+  .system-introduction .introduction-image {
+    padding-bottom: 0 !important;
   }
   .system-introduction .introduction-image .introduction-image-1,
 .system-introduction .introduction-image .introduction-image-2,
@@ -8027,7 +8051,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding-bottom: 1.5rem;
   }
   .event {
-    padding: 4.6rem 3rem;
+    padding: 4.6rem 0;
   }
   .container-body .treatment-category .category-nav .category-item {
     padding: 0rem 0.8rem !important;
@@ -8163,7 +8187,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .advise-contact__body .contact-body__left .contact-body__column {
     width: 21.6rem !important;
     height: 15.3rem !important;
-    background-image: none !important;
   }
   .advise-contact__body .contact-body__left .contact-body__column .contact-logo {
     width: 2.55rem !important;
@@ -13484,7 +13507,7 @@ body .select2-container--default .select2-selection--single {
     z-index: 1;
   }
   .content-landing {
-    height: 788rem !important;
+    height: 788rem;
   }
   .content-landing-acne {
     height: 118rem;
@@ -14392,7 +14415,7 @@ body .select2-container--default .select2-selection--single {
     padding: 1.2rem 1.8rem;
   }
   .content-landing-device {
-    height: 64.2rem;
+    height: 46.2rem;
   }
   .content-landing-device .pc-device {
     justify-content: space-evenly;
@@ -14802,11 +14825,15 @@ body .select2-container--default .select2-selection--single {
     margin-bottom: 2rem;
   }
   .content-landing-procedure__outside--title-image {
-    width: 16%;
+    width: 4rem;
+    position: relative;
+  }
+  .content-landing-procedure__outside--title-image img {
+    width: 100%;
   }
   .content-landing-procedure__outside--title-number {
-    top: 34.8rem;
-    left: 1.5rem;
+    top: 2.5rem;
+    left: 0.7rem;
     font-size: 4.5rem;
   }
   .content-landing-procedure__outside--title-text {
@@ -14896,7 +14923,7 @@ body .select2-container--default .select2-selection--single {
     right: 4rem;
   }
   .content-landing-cover__advertiver--title {
-    bottom: 7rem;
+    bottom: 6rem;
     font-size: 1.8rem;
   }
   .content-landing-cover__feedback {
@@ -15408,7 +15435,7 @@ body .select2-container--default .select2-selection--single {
   }
   .header-contact-right .header-cart--notify__info--top {
     width: 100%;
-    height: 33rem;
+    height: auto;
     overflow-y: scroll;
   }
   .header-contact-right .header-cart--notify__info--top-image {
@@ -15914,6 +15941,10 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   display: none;
 }
 
+.content-result {
+  padding-bottom: 15rem;
+}
+
 .top-banner .top-banner-1 {
   width: 100%;
   height: auto;
@@ -16012,14 +16043,15 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 }
 .system-introduction .introduction-image {
   position: relative;
+  padding-bottom: 14rem;
 }
 .system-introduction .introduction-image .introduction-image-2 {
   left: 1.2rem;
-  bottom: -3.6rem;
+  bottom: 10.4rem;
   z-index: 1;
 }
 .system-introduction .introduction-image .introduction-image-3 {
-  bottom: -9.7rem;
+  bottom: 4.3rem;
   right: 8.5rem;
   z-index: 1;
 }
