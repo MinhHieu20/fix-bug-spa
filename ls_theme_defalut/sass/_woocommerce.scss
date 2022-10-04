@@ -247,3 +247,10 @@ body .select2-container--default .select2-selection--single {
 .woocommerce-message {
     display: none;
 }
+.woocommerce .quantity .qty {
+    background: transparent;
+    width: 2rem !important;
+}
+.woocommerce-cart-form__cart-item .minus {
+    margin-left: 2rem;
+}

@@ -240,13 +240,16 @@
                     margin-right: -0.4rem;
                     margin-left: -0.4rem;
                     &--image {
-                        padding-top: 0 !important;
+                        padding-top: 2rem !important;
                     }
                     &--money {
                         &-price {
                             font-weight: 800;
                             color: $more-color !important;
                         }
+                    }
+                    &--name {
+                        margin-top: 1.2rem;
                     }
                 }
             }
@@ -327,8 +330,9 @@
                         }
 
                         &__add-cart {
-                            padding: 1rem 1.6rem;
+                            padding: 1.4rem 1.4rem;
                             margin-left: 0;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -370,6 +374,12 @@
 
                     &--name {
                         margin-top: 0 !important;
+                        margin-bottom: 1rem !important;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        height: 4rem !important;
                     }
 
                     &--money {
