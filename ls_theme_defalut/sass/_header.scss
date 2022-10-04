@@ -233,8 +233,8 @@
                         // max-width: 50%;
                         position: relative;
                         width: 100%;
-                        // padding-right: 15px;
-                        // padding-left: 15px;
+                        padding-right: 0;
+                        padding-left: 0;
                         &--title {
                             font-size: 1.6rem;
                             font-family: Gilroy-Bold;
@@ -264,15 +264,6 @@
                     }
                 }
             }
-            &--item:nth-child(2)::after {
-                content: "";
-                position: absolute;
-                top: 3.5rem;
-                left: 4rem;
-                width: 16rem;
-                height: 3rem;
-                cursor: pointer;
-            }
             .sub-menu:after {
                 content: "";
                 position: absolute;
@@ -286,14 +277,10 @@
 }
 
 ul#primary-menu>li>ul.sub-menu>li {
-    // padding-bottom: 2rem;
     -ms-flex: 0 0 50%;
-    // flex: 0 0 50%;
-    // max-width: 50%;
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
+ 
 }
 ul#primary-menu>li>ul.sub-menu>li a {
     font-size: 1.6rem;
@@ -307,7 +294,7 @@ ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li {
     font-family: UTM-Avo;
     color: #000;
     display: block;
-    padding: 0 -0.7rem;
+    padding: 0 -0.7rem!important;
 }
 ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li a {
     font-size: 1.4rem;

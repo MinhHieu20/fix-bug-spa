@@ -608,51 +608,76 @@
     .ul#primary-menu>li {
         transition: 3s;
     }
-    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu,
     ul#primary-menu>li>ul.sub-menu{
         display: none;
     }
-    ul#primary-menu>li:hover ul.sub-menu {
+
+    ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu{
+        display: none;
+    }
+    // .sub-menu--item>ul.sub-menu{
+    //     display: none;
+    // }
+    .para-hide {
+        display: none;
+    }
+    .rotate {
+        transform: rotate(180deg);
+    }
+
+
+    ul#primary-menu>li:hover > ul.sub-menu {
         display: block;
     }
     ul#primary-menu>li ul.sub-menu>li {
-        margin: 0.5rem 0;
+        margin: 0.5rem 1.5rem!important;
+        width: 100%!important;
+        display: block!important;
     }
     ul#primary-menu>li>ul.sub-menu>li>a{
         font-size: 1.4rem;
         color: $black;
         font-weight: 700;
+       
     }
     ul#primary-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
 
-        font-size: 1.4rem;
+        font-size: 1.4rem!important;
         font-family: UTM-Avo;
-        padding: 0 0.5rem;
 
     }
-    ul#primary-menu>li>ul.sub-menu>li:hover ul.sub-menu{
-        display: block;
-    }
+    // ul#primary-menu>li>ul.sub-menu>li:hover ul.sub-menu{
+    //     display: block;
+    // }
     ul#primary-menu>li>ul.sub-menu>li:hover ul.sub-menu > li{
-        margin: 0.3rem 0;
+        margin: 0.3rem 0!important;
+        padding: 0.5rem 0!important;
     }
     ul#primary-menu>li>ul.sub-menu>li>a::before{
         position: absolute;
-        top: 0;
+        top: 6.5px;
         right: 1rem;
         background-image: url("../images/arrowdown.png");
         background-size: cover;
         background-repeat: no-repeat;
         content: "";
-
         height: 1rem;
         width: 1.3rem;
         color: $black;
+        transform: rotate(180deg);
+    }
+    ul#primary-menu>li>ul.sub-menu>li.active-menu>a::before{
+        transform: rotate(0);
     }
     ul#primary-menu > li > ul.sub-menu > li:nth-child(6) > a::before,
     ul#primary-menu > li > ul.sub-menu > li:nth-child(7) > a::before,
     ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before{
         display: none !important;
+    }
+    .active-menu>ul.sub-menu{
+        max-height: 11rem!important;
+        overflow-y: scroll;
+        transition: 0.3s;
     }
 }
 @include responsive_tablet_small{

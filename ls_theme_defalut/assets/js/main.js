@@ -331,22 +331,21 @@ productItems.forEach((tab, index) => {
       }
     ]
   });
-  // if (window.matchMedia("(max-width: 480px)").matches) {
-  //   $('.product-similar-list').slick({
-  //     infinite: true,
-  //     speed: 300,
-  //     slidesToShow: 2,
-  //     slidesToScroll: 1,
-  //     prevArrow: '<div class="slick-prev"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-left.png"></div>',
-  //     nextArrow: '<div class="slick-next"><img src="http://localhost:8888/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/images/service/arrow-right.png"></div>',
-  //   });
-  // }
-  // $('.product-list').simpleLoadMore({
-  //   itemsToLoad: 4,
-  //   count: 10,
-  //   item:'div',
-  //   btnHTML:'<a href="#" class="load-more__btn">View More <i class="fas fa-angle-down"></i></a>',
-  // });
 
+$(function(){
+  $('.sub-menu--item').click(function(){
+    $(this).toggleClass('active-menu');
+    $('.sub-menu--item>ul.sub-menu').slideUp();
+    $(this).siblings().removeClass('active-menu');
+    $('.active-menu .sub-menu').stop().slideDown();
+    return false;
+  })
+
+})
+
+  
 })(jQuery);
+
+
+
 
