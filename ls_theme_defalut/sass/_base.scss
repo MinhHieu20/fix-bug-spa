@@ -150,10 +150,13 @@ a:hover {
 
 .active {
   background-color: #FFD00F;
-  display: inline-block;
+  display: block;
   color: #4d4d4d !important;
 }
-
+.active-menu,
+.open-menu {
+  display: block!important;
+}
 .address-nav-location__item.active,
 .tab-category.active,
 .tab-item.active {
