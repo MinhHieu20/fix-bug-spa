@@ -137,75 +137,47 @@ $directoryURI = get_page_uri();
                     <div id="sidebar-training" style="padding: 1.5rem;">
                         <div class="details-menu dp-none dp-blockPC">
                             <ul class="details-menu-list">
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-dieu-tri-mun" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-dieu-tri-mun') ? 'active' : '' ?>">ĐIỀU TRỊ MỤN</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-dieu-tri-tham-mun" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-dieu-tri-tham-mun') ? 'active' : '' ?>">ĐIỀU TRỊ THÂM MỤN</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-cham-soc-da" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-cham-soc-da') ? 'active' : '' ?>">CHĂM SÓC DA</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-goi-dau" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-goi-dau') ? 'active' : '' ?>">GỘI ĐẦU</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-triet-long" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-triet-long') ? 'active' : '' ?>">TRIỆT LÔNG</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-tam-trang" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-tam-trang') ? 'active' : '' ?>">TẮM TRẮNG</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-massage" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-massage') ? 'active' : '' ?>">MASSAGE</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-phun-xam-tham-my" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-phun-xam-tham-my') ? 'active' : '' ?>">PHUN XĂM THẨM MỸ</a>
-                                </li>
+                                <?php
+                                $extension = get_term(65,'training_cat');
+                                $args = array(
+                                    'post_type' => 'training',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 6,
+                                    'orderby' => 'title',
+                                    'order' => 'ASC',
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'training_cat', //double check your taxonomy name in you dd
+                                            'field'    => 'term_id',
+                                            'terms'    => array( $extension->term_id ),
+                                        ),
+                                    ),
+                                );
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post();
+                                    ?>
+                                    <li class="details-menu-list__item">
+                                        <a href="<?php the_permalink(); ?>" class="details-menu-list__item--link <?php echo ($directoryURI == $post->post_name) ? 'active' : '' ?>"><?php the_title();?></a>
+                                    </li>
+                                <?php
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
                             </ul>
                         </div>
                         <div class="details-menu details-menu-mobile dp-nonePC">
                             <ul class="details-menu-list row">
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-dieu-tri-mun" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-dieu-tri-mun') ? 'active' : '' ?>">ĐIỀU TRỊ MỤN</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-dieu-tri-tham-mun" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-dieu-tri-tham-mun') ? 'active' : '' ?>">ĐIỀU TRỊ THÂM MỤN</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-cham-soc-da" class="details-menu-list__item--link hover-gold <?php echo ($directoryURI=='khoa-dao-tao-cham-soc-da') ? 'active' : '' ?>">CHĂM SÓC DA</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-triet-long" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-triet-long') ? 'active' : '' ?>">TRIỆT LÔNG</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-tam-trang" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-tam-trang') ? 'active' : '' ?>">TẮM TRẮNG</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-massage" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-massage') ? 'active' : '' ?>">MASSAGE</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-goi-dau" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-goi-dau') ? 'active' : '' ?>">GỘI ĐẦU</a>
-                                </li>
-
-                                <li class="details-menu-list__item">
-                                    <a href="<?php echo home_url(); ?>/khoa-dao-tao-phun-xam-tham-my" class="details-menu-list__item--link <?php echo ($directoryURI=='khoa-dao-tao-phun-xam-tham-my') ? 'active' : '' ?>t">PHUN XĂM THẨM MỸ</a>
-                                </li>
+                                <?php
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post();
+                                    ?>
+                                    <li class="details-menu-list__item">
+                                        <a href="<?php the_permalink(); ?>" class="details-menu-list__item--link <?php echo ($directoryURI == $post->post_name) ? 'active' : '' ?>"><?php the_title();?></a>
+                                    </li>
+                                <?php
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
                             </ul>
                         </div>
                         <div class="details-news">

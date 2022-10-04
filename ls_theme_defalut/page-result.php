@@ -17,308 +17,55 @@ global $ls_options, $post;
             <div class="container-item grid wide">
                 <div class="container-body">
                     <div class="treatment-category">
-                        <ul class="category-nav row ">
-                            <li class="category-item tab-item active"><a class="category-item-link">Điều trị mụn</a>
-                            </li>
-                            <li class="category-item tab-item"><a class="category-item-link">Điều trị thâm mụn</a>
-                            </li>
-                            <li class="category-item tab-item"><a class="category-item-link">Chăm sóc da</a></li>
-                            <li class="category-item tab-item"><a class="category-item-link">Gội đầu</a></li>
-                            <li class="category-item tab-item"><a class="category-item-link">Triệt lông</a></li>
-                            <li class="category-item tab-item"><a class="category-item-link">Tắm trắng</a></li>
-                            <li class="category-item tab-item"><a class="category-item-link">Massage</a></li>
-                            <li class="category-item tab-item"><a class="category-item-link">Phun xăm thẩm mỹ</a>
-                            </li>
+                        <ul id="item_id" class="category-nav row">
+                            <?php
+                            $terms = get_terms('beauty_cat');
+                            foreach ($terms as $index => $term) { ?>
+                                <li class="category-item tab-item">
+                                    <a class="category-item-link"><?php echo $term->name; ?></a>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
-                    <div class="tab-pane active">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('26','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
+                    <div id="container_tab">
+                        <?php foreach ($terms as $index => $term) { ?>
+                            <div class="tab-pane">
+                                <div class="treatment-result-list row pd-6">
+                                    <?php
+                                    $extension = get_term($term->term_id,'beauty_cat');
+                                    $args = array(
+                                        'post_type' => 'beauty',
+                                        'post_status' => 'publish',
+                                        'posts_per_page' => 6,
+                                        'orderby' => 'title',
+                                        'order' => 'ASC',
+                                        'tax_query' => array(
+                                            array(
+                                                'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
+                                                'field'    => 'term_id',
+                                                'terms'    => array( $extension->term_id ),
+                                            ),
+                                        ),
+                                    );
+                                    $loop = new WP_Query( $args );
+                                    while ( $loop->have_posts() ) : $loop->the_post();
+                                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                                        ?>
+                                        <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
+                                            <div class="treatment-result-image">
+                                                <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
+                                            </div>
+                                            <div class="treatment-result-desc">
+                                                <?php the_title();  ?>
+                                            </div>
+                                        </div>
+                                    <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                    ?>
                                 </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('24','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('25','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('27','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('30','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('31','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('29','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane">
-                        <div class="treatment-result-list row pd-6">
-                            <?php
-                            $extension = get_term('28','beauty_cat');
-                            $args = array(
-                                'post_type' => 'beauty',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'beauty_cat', //double check your taxonomy name in you dd
-                                        'field'    => 'term_id',
-                                        'terms'    => array( $extension->term_id ),
-                                    ),
-                                ),
-                            );
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                                ?>
-                                <div class="treatment-result-item col-xl-3 col-sm-3 col-6 pd-05">
-                                    <div class="treatment-result-image">
-                                        <img src="<?php echo $image[0]; ?>" class="w-100" alt="">
-                                    </div>
-                                    <div class="treatment-result-desc">
-                                        <?php the_title();  ?>
-                                    </div>
-                                </div>
-                            <?php
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                        <button class="seemore-mobile btn"><a href="#">Xem thêm</a></button>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,13 @@ const $ = document.querySelector.bind(document);
   $(document).ready(function () {
     // $.lockfixed("#sidebar-program", {offset: {top: 20, bottom: 1000} });
     // $.lockfixed("#sidebar-training", {offset: {top: 20, bottom: 1000} });
+    $('#item_id > li:first-child').addClass('active');
+    $('#container_tab > div:first-child').addClass('active');
+    $('#product_cat_id > li:first-child').addClass('active');
+    $('#product_list_swiper > div:first-child').addClass('active');
+    $('#product_list_store > div:first-child').addClass('show');
+    $('#location_item > li:first-child').addClass('active');
+    $('#location_list > div:first-child').addClass('active');
   });
 })(jQuery);
 const tabs = document.querySelectorAll(".tab-item");

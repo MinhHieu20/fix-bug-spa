@@ -96,13 +96,7 @@ if(get_query_var('paged')) {
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="họ tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="số điện thoại">
-                            </div>
-                            <button class="btn-exception">Gửi ngay</button>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                         </div>
                     </div>
                 </div>

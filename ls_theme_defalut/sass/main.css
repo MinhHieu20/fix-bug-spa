@@ -1194,10 +1194,7 @@ a:hover {
   display: none;
 }
 .header-main-nav__list--item .sub-menu--item {
-  padding-bottom: 2rem;
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
   position: relative;
   width: 100%;
 }
@@ -1242,10 +1239,7 @@ a:hover {
 }
 
 ul#primary-menu > li > ul.sub-menu > li {
-  padding-bottom: 2rem;
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -8602,7 +8596,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .container-item .container-body .container-service .training--item a {
     background-color: #faf5da;
-    padding-bottom: 1.2rem;
+    padding-bottom: 10rem;
     border-radius: 4rem 4rem 2rem 2rem;
     display: block;
   }
@@ -8616,7 +8610,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
     display: block;
-    line-height: 2.2rem;
     padding: 0 1rem 0 3rem;
     max-width: 22rem;
     border-radius: 5rem;
@@ -15566,7 +15559,7 @@ body .select2-container--default .select2-selection--single {
     float: left;
   }
   .header-contact-left__search {
-    width: 26.5rem;
+    width: 30.5rem;
     height: 5rem;
     font-size: 1.6rem;
     padding: 0 2rem;
@@ -16970,4 +16963,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   transform: scaleX(1.4);
   opacity: 0;
   transition: all 0.4s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

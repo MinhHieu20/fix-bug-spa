@@ -179,6 +179,12 @@ function willgroup_init_beauty() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ) ,
             'rewrite'  => array(
                 'slug' => 'ket-qua-dieu-tri'
@@ -203,6 +209,9 @@ function willgroup_init_beauty() {
             ),
             'hierarchical' => true,
             'public' => true,
+            'show_ui' => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite' => array(
                 'slug' => 'loai-ket-qua-dieu-tri'
             ) ,
@@ -234,6 +243,12 @@ function willgroup_init_event_spa() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'su-kien-spa'
@@ -258,6 +273,9 @@ function willgroup_init_event_spa() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-su-kien-spa'
             ),
@@ -289,6 +307,12 @@ function willgroup_init_tip_beauty() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'meo-lam-dep'
@@ -313,6 +337,9 @@ function willgroup_init_tip_beauty() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-meo-lam-dep'
             ),
@@ -344,6 +371,12 @@ function willgroup_init_extension_spa() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'chi-nhanh-spa'
@@ -368,6 +401,9 @@ function willgroup_init_extension_spa() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-chi-nhanh-spa'
             ),
@@ -399,6 +435,12 @@ function willgroup_init_promotion() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'chinh-sach-uu-dai'
@@ -423,6 +465,9 @@ function willgroup_init_promotion() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-chinh-sach-uu-dai'
             ),
@@ -454,6 +499,12 @@ function willgroup_init_training() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'khoa-dao-tao'
@@ -478,6 +529,9 @@ function willgroup_init_training() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-khoa-dao-tao'
             ),
@@ -508,6 +562,12 @@ function willgroup_init_service_main() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'dich-vu-chinh'
@@ -532,8 +592,11 @@ function willgroup_init_service_main() {
             ),
             'hierarchical' => true,
             'public'       => true,
-            'rewrite'      => array(
-                'slug'     => 'loai-dich-vu-chinh'
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var'         => true,
+            'rewrite'           => array(
+                'slug'          => 'loai-dich-vu-chinh'
             ),
         )
     );
@@ -563,6 +626,12 @@ function willgroup_init_recruits_main() {
                 'title',
                 'thumbnail',
                 'editor',
+                'excerpt',
+                'author',
+                'comments',
+                'trackbacks',
+                'revisions',
+                'custom-fields'
             ),
             'rewrite'  => array(
                 'slug' => 'tuyen-dung-chinh'
@@ -587,6 +656,9 @@ function willgroup_init_recruits_main() {
             ),
             'hierarchical' => true,
             'public'       => true,
+            'show_ui'      => true,
+            'show_admin_column' => true,
+            'query_var' => true,
             'rewrite'      => array(
                 'slug'     => 'loai-tuyen-dung-chinh'
             ),
@@ -594,6 +666,61 @@ function willgroup_init_recruits_main() {
     );
 }
 add_action('init', 'willgroup_init_recruits_main');
+
+function willgroup_init_contact_main() {
+    register_post_type('contact_main',
+        array(
+            'labels' => array(
+                'name'            => __('Tổng hợp liên hệ', 'LeadSoft') ,
+                'singular_name'   => __('Tổng hợp liên hệ', 'LeadSoft') ,
+                'menu_name'       => __('Tổng hợp liên hệ', 'LeadSoft') ,
+                'name_admin_bar'  => __('Tổng hợp liên hệ', 'LeadSoft') ,
+                'all_items'       => __('Tất cả Tổng hợp liên hệ', 'LeadSoft') ,
+                'add_new'         => __('Viết bài mới', 'LeadSoft') ,
+                'add_new_item'    => __('Viết bài mới', 'LeadSoft') ,
+                'edit_item'       => __('Sửa bài viết', 'LeadSoft') ,
+            ),
+            'description'     => __('Liên hệ', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
+            'capability_type' => 'post',
+            'public'          => true,
+            'has_archive'     => 'contact-main',
+            'supports'        => array(
+                'title',
+                'thumbnail',
+                'editor',
+            ),
+            'rewrite'  => array(
+                'slug' => 'lien-he-chinh'
+            ),
+        )
+    );
+    flush_rewrite_rules();
+    register_taxonomy('contact_main_cat', array('contact_main') ,
+        array(
+            'labels' => array(
+                'name'              => __('Phân Loại Liên hệ', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại Liên hệ', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại Liên hệ', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại Liên hệ', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục Liên hệ cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục Liên hệ cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa Liên hệ', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật Liên hệ', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm Danh mục Liên hệ', 'LeadSoft') ,
+                'new_item_name'     => __('Tên Danh mục Liên hệ', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục Liên hệ', 'LeadSoft') ,
+            ),
+            'hierarchical' => true,
+            'public'       => true,
+            'rewrite'      => array(
+                'slug'     => 'loai-lien-he-chinh'
+            ),
+        )
+    );
+}
+add_action('init', 'willgroup_init_contact_main');
 
 add_filter( 'big_image_size_threshold', '__return_false' );
 /**
@@ -689,6 +816,105 @@ function custom_disable_redirect_canonical( $redirect_url ) {
     if ( is_paged() && is_singular() ) $redirect_url = false;
     return $redirect_url;
 }
+
+function save_posted_data() {
+    global $wpdb;
+    $submission = WPCF7_Submission::get_instance();
+    $fullname       = sanitize_text_field($_POST['ho-ten']);
+    $phonenumber    = sanitize_text_field($_POST['phone-number']);
+    $emailcontact   = sanitize_text_field($_POST['email-contact']);
+    $contentcontact = sanitize_text_field($_POST['content-contact']);
+    $selectservice  = sanitize_text_field($_POST['select-service']);
+    $selectlocation = sanitize_text_field($_POST['select-location']);
+    $datecontact    = sanitize_text_field($_POST['date-contact']);
+    $hourcontact    = sanitize_text_field($_POST['hour-contact']);
+    $contentsubject = sanitize_text_field($_POST['content-subject']);
+    $args = array(
+        'post_type' => 'contact_main',
+        'post_status' => 'publish',
+        'post_title' => 'Form được tạo bởi khách hàng '.$fullname,
+        'post_content' => 'Thông tin khách :'.
+            '<br>Họ tên: '.$fullname.
+            '<br>Số điện thoại: '.$phonenumber.
+            '<br>Email: '.$emailcontact.
+            '<br>Dịch vụ lựa chọn: '.$selectservice.
+            '<br>Vị trí: '.$selectlocation.
+            '<br>Đặt ngày hẹn: '.$datecontact.
+            '<br>Đặt giờ hẹn: '.$hourcontact.
+            '<br>Tiêu đề: '. $contentsubject.
+            '<br>Nội dung liên hệ: '.$contentcontact,
+    );
+    $post_id = wp_insert_post($args);
+}
+add_filter( 'wpcf7_posted_data', 'save_posted_data' );
+
+function get_location_data() {
+    $html = '<div class="address-nav"><div class="container container-width"><ul id="location_item" class="address-nav-location row">';
+    $terms = get_terms('extension_cat');
+    foreach ($terms as $index => $term) {
+        $html .= '<li class="address-nav-location__item"><a class="address-nav-location__item--link">' . $term->name .'</a></li>';
+     }
+    $html .= '</ul></div></div>';
+    $html .= '<div id="location_list">';
+    foreach ($terms as $index => $term) {
+        $html .= '<div class="location-details"><div class="container container-width"><div class="row location-details-border location-details-mobile">';
+        $extension_child = get_term($term->term_id, 'extension_cat');
+        $args_child = array(
+            'post_type' => 'extension',
+            'post_status' => 'publish',
+            'posts_per_page' => 6,
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'extension_cat', //double check your taxonomy name in you dd
+                    'field'    => 'term_id',
+                    'terms'    => array( $extension_child->term_id ),
+                ),
+            ),
+        );
+        $count = 0;
+        $loop_child = new WP_Query( $args_child );
+        $html .= '<ul class="location-details-list col-lg-6">';
+        while ( $loop_child->have_posts() ) : $loop_child->the_post();
+            $post_child_id = $loop_child->ID;
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_child_id ), 'single-post-thumbnail' );
+            if($count %2 == 0) {
+                $html .= '<li class="location-details-list__item row"><div class="col-lg-5 col-6 location-details-left">';
+                $html .= '<img src="'.$image[0].'" alt="" class="">';
+                $html .= '</div><div class="col-lg-6 col-6 location-details-right"><h4 class="location-details-right__name">' . get_the_title() . '</h4>';
+                $html .= '<p class="location-details-right__info">'. get_the_content() . '</p>';
+                $html .= '<button class="btn location-view" id="' . $post_child_id . '">Xem địa chỉ</button></div><div class="col-lg-1"></div></li>';
+            }
+        $count++;
+        endwhile;
+        wp_reset_postdata();
+        $html .= '</ul>';
+        $html .= '<ul class="location-details-list col-lg-6">';
+        while ( $loop_child->have_posts() ) : $loop_child->the_post();
+            $post_child_id = $loop_child->ID;
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_child_id ), 'single-post-thumbnail' );
+            if($count %2 != 0) {
+                $html .= '<li class="location-details-list__item row">
+                   <div class="col-lg-5 col-6 location-details-left">';
+                $html .= '<img src="'.$image[0].'" alt="" class="">';
+                $html .= '</div>
+                    <div class="col-lg-6 col-6 location-details-right">
+                   <h4 class="location-details-right__name">' . get_the_title() . '</h4>';
+                $html .= '<p class="location-details-right__info">' . get_the_content() . '</p>';
+                $html .= '<button class="btn location-view" id="'.$post_child_id.'">Xem địa chỉ</button></div><div class="col-lg-1"></div></li>';
+            }
+            $count++;
+        endwhile;
+        wp_reset_postdata();
+        $html .= '</ul>';
+        $html .= '</div></div></div>';
+    }
+    $html .= '</div>';
+    $html .= '<div class="address-near dp-none"><button class="btn address-near-btn">Tìm chi nhánh gần bạn</button></div>';
+    return $html;
+}
+add_shortcode('get_location','get_location_data');
 
 /**
  * Implement the Custom Header feature.

@@ -21,213 +21,58 @@ global $ls_options, $post;
         <div class="product">
             <div class="product-cat">
                 <div class="container container-width">
-                    <ul class="product-cat__menu d-flex">
-                        <li class="product-cat__menu-item">
-                            <a>Điều trị thâm mụn</a>
-                        </li>
-                        <li class="product-cat__menu-item active">
-                            <a>Điều trị nám</a>
-                        </li>
-                        <li class="product-cat__menu-item">
-                            <a>Serum</a>
-                        </li>
-                        <li class="product-cat__menu-item">
-                            <a>Sữa rửa mặt</a>
-                        </li>
-                        <li class="product-cat__menu-item">
-                            <a>Kem dưỡng trắng da</a>
-                        </li>
+                    <ul id="product_cat_id" class="product-cat__menu d-flex">
+                        <?php
+                        $terms = get_terms('product_cat');
+                        foreach ($terms as $index => $term) { ?>
+                            <li class="product-cat__menu-item">
+                                <a><?php echo $term->name; ?></a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
-            <div class="product-details store">
-                <div class="container container-width">
-                    <div class="row product-list">
-                        <?php
-                        $args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => '24',
-                            'product_cat' => 'dieu-tri-tham-mun',
-                            'orderby' =>'date',
-                            'order' => 'ASC'
-                        );
-                        $loop = new WP_query($args);
-                        global $wp_query; $wp_query->in_the_loop = true;
-                        while ($loop->have_posts()) : $loop->the_post();
-                            global $product;
-                            $product_id = $loop->id;
-                            ?>
-                            <div class="product-list-item col-lg-3 col-md-4 col-sm-6 col-6">
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
-                                <div class="product-list-item__image">
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
-                                </div>
+            <div id="product_list_store">
+                <?php foreach ($terms as $index => $term) { ?>
+                    <div class="product-details store">
+                        <div class="container container-width">
+                            <div class="row product-list">
+                                <?php
+                                $args = array(
+                                    'post_type' => 'product',
+                                    'posts_per_page' => '24',
+                                    'product_cat' => $term->slug,
+                                    'orderby' =>'date',
+                                    'order' => 'ASC'
+                                );
+                                $loop = new WP_query($args);
+                                global $wp_query; $wp_query->in_the_loop = true;
+                                while ($loop->have_posts()) : $loop->the_post();
+                                    global $product;
+                                    $product_id = $loop->id;
+                                    ?>
+                                    <div class="product-list-item col-lg-3 col-md-3 col-6">
+                                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
+                                        <div class="product-list-item__image">
+                                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
+                                        </div>
 
-                                <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                <div class="product-list-item__money mr-top0">
-                                    <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
-                                    <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                        endwhile;
-                        wp_reset_postdata();
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="product-details store show">
-                <div class="container container-width">
-                    <div class="row product-list">
-                        <?php
-                        $args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => '24',
-                            'product_cat' => 'dieu-tri-nam',
-                            'orderby' =>'date',
-                            'order' => 'ASC'
-                        );
-                        $loop = new WP_query($args);
-                        global $wp_query; $wp_query->in_the_loop = true;
-                        while ($loop->have_posts()) : $loop->the_post();
-                            global $product;
-                            $product_id = $loop->id;
-                            ?>
-                            <div class="product-list-item col-lg-3 col-md-4 col-sm-6 col-6">
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
-                                <div class="product-list-item__image">
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
-                                </div>
-
-                                <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                <div class="product-list-item__money mr-top0">
-                                    <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
-                                    <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                        endwhile;
-                        wp_reset_postdata();
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="product-details store">
-                <div class="container container-width">
-                    <div class="row product-list">
-                    <?php
-                    $args = array(
-                        'post_type' => 'product',
-                        'posts_per_page' => '24',
-                        'product_cat' => 'serum',
-                        'orderby' =>'date',
-                        'order' => 'ASC'
-                    );
-                    $loop = new WP_query($args);
-                    global $wp_query; $wp_query->in_the_loop = true;
-                    while ($loop->have_posts()) : $loop->the_post();
-                        global $product;
-                        $product_id = $loop->id;
-                        ?>
-                        <div class="product-list-item col-lg-3 col-md-4 col-sm-6 col-6">
-                            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
-                            <div class="product-list-item__image">
-                                <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
-                            </div>
-
-                            <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                            <div class="product-list-item__money mr-top0">
-                                <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
-                                <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
-                                </a>
+                                        <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                        <div class="product-list-item__money mr-top0">
+                                            <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
+                                            <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
+                                                <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
                             </div>
                         </div>
-                    <?php
-                    endwhile;
-                    wp_reset_postdata();
-                    ?>
-                </div>
-                </div>
-            </div>
-            <div class="product-details store">
-                <div class="container container-width">
-                    <div class="row product-list">
-                        <?php
-                        $args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => '24',
-                            'product_cat' => 'sua-rua-mat',
-                            'orderby' =>'date',
-                            'order' => 'ASC'
-                        );
-                        $loop = new WP_query($args);
-                        global $wp_query; $wp_query->in_the_loop = true;
-                        while ($loop->have_posts()) : $loop->the_post();
-                            global $product;
-                            $product_id = $loop->id;
-                            ?>
-                            <div class="product-list-item col-lg-3 col-md-4 col-sm-6 col-6">
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
-                                <div class="product-list-item__image">
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
-                                </div>
-
-                                <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                <div class="product-list-item__money mr-top0">
-                                    <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
-                                    <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                        endwhile;
-                        wp_reset_postdata();
-                        ?>
                     </div>
-                </div>
-            </div>
-            <div class="product-details store">
-                <div class="container container-width">
-                    <div class="row product-list">
-                        <?php
-                        $args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => '24',
-                            'product_cat' => 'kem-duong-trang-da',
-                            'orderby' =>'date',
-                            'order' => 'ASC'
-                        );
-                        $loop = new WP_query($args);
-                        global $wp_query; $wp_query->in_the_loop = true;
-                        while ($loop->have_posts()) : $loop->the_post();
-                            $product_id = $loop->id;
-                            ?>
-                            <div class="product-list-item col-lg-3 col-md-4 col-sm-6 col-6">
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );?>
-                                <div class="product-list-item__image">
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php  echo $image[0]; ?>" class="mr-one" alt=""></a>
-                                </div>
-
-                                <h4 class="product-list-item__name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                <div class="product-list-item__money mr-top0">
-                                    <span class="product-list-item__money--price"><?php echo $product->get_regular_price(); ?>đ</span>
-                                    <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="btn choose-product add-to-cart">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                        endwhile;
-                        wp_reset_postdata();
-                        ?>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             <div class="product-details-viewcart">
                 <a href="<?php echo home_url() ?>/gio-hang">
