@@ -91,61 +91,7 @@ if(get_query_var('paged')) {
             </div>
         </div>
 
-        <!-- <div class="beautify-mobile dp-nonePC dp-block">
-            <div class="beautify-container grid wide">
-                <div class="beautify row">
-                    <div class="beautify--program col-12">
-                        <div class="beautify--program__category">
-                            <ul class="beautify--program__category--list d-flex">
-                                <li class="beautify--program__category--list-item">
-                                    <a href="<?php echo home_url() ?>/tin-tuc-moi-nhat" class="beautify--program__category--list-item-link <?php echo ($directoryURI=='tin-tuc-moi-nhat') ? 'active' : '' ?>">tin tức mới nhất</a>
-                                </li>
-                                <li class="beautify--program__category--list-item">
-                                    <a href="<?php echo home_url() ?>/meo-lam-dep" class="beautify--program__category--list-item-link <?php echo ($directoryURI=='meo-lam-dep') ? 'active' : '' ?>">mẹo làm đẹp</a>
-                                </li>
-                                <li class="beautify--program__category--list-item">
-                                    <a href="<?php echo home_url() ?>/su-kien-chuong-trinh" class="beautify--program__category--list-item-link <?php echo ($directoryURI=='su-kien-chuong-trinh') ? 'active' : '' ?>">sự kiện chương trình</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="beautify-program col l-9 col-md-9">
-                        <div class="beautify-program-list row">
-                            <?php
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                $post_id = $loop->ID;
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );
-                            ?>
-                            <div class="beautify-program-list__item col-12">
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="beautify-program-list__item--image image-pseudo--tips">
-                                        <img src="<?php echo $image[0]; ?>" class="beautify-program-list__item--image--product" alt="">
-                                    </div>
-                                    <div class="beautify-program-list__item--text">
-                                        <h2 class="beautify-program-list__item--text--title"><?php the_title(); ?></h2>
-                                        <p class="beautify-program-list__item--text--desc">
-                                            <?php
-                                                $the_excerpt_custom = get_field('the_excerpt_custom');
-                                                echo $the_excerpt_custom;
-                                            ?>
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="beautify-program-list__item--calendar row">
-                                    <p class="beautify-program-list__item--calendar--date"><?php echo get_the_date('d     m'); ?></p>
-                                </div>
-                            </div>
-                            <?php
-                                endwhile;
-                                wp_reset_postdata();
-                            ?>
-                        </div>
-                        <div class="navigation"></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <div class="advise-contact advise-contactIndex hide-mobile">
             <div class="advise-contact__body container">
                 <div class="contact-body row">
