@@ -15,7 +15,7 @@ if(get_query_var('paged')) {
 }
 ?>
     <div class="content pdb-15">
-        <div class="beautify-container container dp-none dp-blockPC">
+        <div class="beautify-container container">
             <div class="beautify row">
                 <div class="beautify-program col-lg-9 col-md-9">
                     <div class="beautify-program-list row">
@@ -34,7 +34,7 @@ if(get_query_var('paged')) {
                             $post_id = $tip_beauty->ID;
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );
                         ?>
-                        <div class="beautify-program-list__item col-lg-4 col-md-4">
+                        <div class="beautify-program-list__item col-lg-4 col-md-4 col-12">
                             <a href="<?php the_permalink(); ?>">
                                 <div class="beautify-program-list__item--image">
                                     <img src="<?php echo $image[0]; ?>" alt="" class="beautify-program-list__item--image--product">
@@ -91,7 +91,7 @@ if(get_query_var('paged')) {
             </div>
         </div>
 
-        <div class="beautify-mobile dp-nonePC dp-block">
+        <!-- <div class="beautify-mobile dp-nonePC dp-block">
             <div class="beautify-container grid wide">
                 <div class="beautify row">
                     <div class="beautify--program col-12">
@@ -145,7 +145,7 @@ if(get_query_var('paged')) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="advise-contact advise-contactIndex hide-mobile">
             <div class="advise-contact__body container">
                 <div class="contact-body row">
