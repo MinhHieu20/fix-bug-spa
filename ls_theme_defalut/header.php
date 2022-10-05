@@ -65,7 +65,7 @@ global $ls_options;
                     </svg>
                 </button>
                 <div class="header-contact-right__cart">
-                    <div class="header-cart-pc hide-mobile">
+                    <div class="header-cart-pc dp-none dp-blockPC">
                         <button class="header-contact-right__cart--btn">
                             <img src="<?php bloginfo('template_directory'); ?>/images/store.png" alt="">
                             <span class="header-contact-right__cart--number dp-none"><?php echo sprintf (WC()->cart->cart_contents_count ); ?>+</span>
