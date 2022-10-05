@@ -1,7 +1,6 @@
 .content-beautify-detail {
     background-color: $background-content;
-    padding-bottom: 8rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 .mobile-srouce{
     display: none;
@@ -67,9 +66,11 @@
     &--category {
         &__list {
             background-color: $white;
+
             padding: 2.55rem 0;
             margin-bottom: 1rem;
             border-radius: 2rem;
+
 
             &--item {
                 text-align: center;
@@ -80,7 +81,9 @@
                     font-family: Gilroy-XBold;
                     border-radius: 1rem;
                     font-size: 1.6rem;
+
                     padding: 0.5rem 1rem;
+
                 }
             }
 

@@ -1,5 +1,9 @@
 @include responsive_pclow{
-   
+    .content-beautify-detail {
+        background-color: $background-content;
+        padding-bottom: 8rem;
+        padding-top: 4rem;
+    }
     .tips-beautify-container {
         padding-top: 2.4rem;
     }
@@ -11,6 +15,7 @@
         &--category{
             &__list{
             border-radius: 2rem;
+            padding: 2.55rem 0;
 
                 &--item{
                     margin-bottom: 2.5rem;
@@ -66,6 +71,12 @@
 }
 
 @include responsive_mobile {
+    .tips-beautify--details{
+        flex-direction: column-reverse;
+    }
+    .tips-beautify-container{
+        padding-top: 1rem;
+    }
     .tips-beautify--category__list--item:nth-child(4){
         display: none;
     }
@@ -81,7 +92,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                margin-bottom: 1rem;
                 &--item{
                     &--link{
                         font-size: 1.4rem;
@@ -93,9 +103,8 @@
             }
         }
         &--detail{
-            padding: 5.24rem 2rem 1rem 2rem;
-            margin-top: 2.5rem;
-          
+            margin: 2.5rem 0rem 0rem 0rem;
+            padding: 2rem 1.5rem;
             &__heading{
                 font-size: 2.2rem;
                 text-align: center;
@@ -123,44 +132,41 @@
     }
     .tips-new{
         display: block;
-        margin-top: 5.9rem;
         &-item{
             &__heading{
-                padding-bottom: 2.35rem;
 
                 &--title{
                     font-size: 2.4rem;
                 }
             }
             &__body{
-                background-color: $white;
-                padding: 2rem;
                 margin-left: 50%;
                 transform: translateX(-50%);
                 &--list{
-                  
+                    background-color: $white;
+                    padding: 2rem 0;
                     &--item{
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 1.5rem;
                         &-images{
-                            width: 24.2rem;
+                            width: 26rem;
                            height: auto;
                         }
                         .image-pseudo::after{
                             display: none;
                         }
-                        &--text{
+                        &-text{
                             margin-left: 2rem;
-                            &-title{
-
-                            }
-                            &-desc{
-
+                           
+                            .tips-new-item__body--list--item-desc{
+                                margin-top: 1rem;
                             }
                         }
                     }
-                    
+                    &--item:first-child{
+                        display: none;
+                    }
     
                 }
             }
@@ -198,6 +204,11 @@
 }
 
 @include responsive_tablet {
+    .content-beautify-detail {
+        background-color: $background-content;
+        padding-bottom: 8rem;
+        padding-top: 4rem;
+    }
     .dp-noneTL {
         display: none;
     }
@@ -215,6 +226,8 @@
                 margin-top: 2.5rem;
 
                 &__list{
+                    padding: 2.55rem 0;
+
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
