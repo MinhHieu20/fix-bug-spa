@@ -232,6 +232,9 @@
                     margin-bottom: 1.4rem;
                 }
             }
+            &-list:after {
+                display: none;
+            }
         }
     }
 }
