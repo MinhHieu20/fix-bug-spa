@@ -162,6 +162,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -214,6 +216,12 @@ a:hover {
   max-width: 48.4rem;
   max-height: 8.4rem;
   background-color: #FFD00F;
+}
+
+.active {
+  background-color: #FFD00F;
+  display: block;
+  color: #4d4d4d !important;
 }
 
 .active-menu,
@@ -347,8 +355,8 @@ a:hover {
   border-radius: 5rem;
 }
 
-.height-4 {
-  height: 4rem;
+.height-6 {
+  height: 6rem;
 }
 
 .dp-blockPC {
@@ -369,6 +377,15 @@ a:hover {
 
 .tips-beautify--category__list--item .active {
   color: #000 !important;
+}
+
+.header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+  border-radius: 1.6rem;
+  padding: 0.5rem 2.2rem;
+  font-family: UTM-AvoBold;
+  background-color: #ffd00f;
+  color: #000;
 }
 
 .show {
@@ -410,8 +427,6 @@ a:hover {
   padding-top: 0.7rem;
 }
 
-
-
 @keyframes showModal {
   from {
     top: -200px;
@@ -422,7 +437,6 @@ a:hover {
     opacity: 1;
   }
 }
-
 @keyframes drop-down {
   from {
     opacity: 0;
@@ -980,6 +994,10 @@ a:hover {
     width: 644px;
   }
 }
+.search-mobile-form {
+  display: none;
+}
+
 .header-container-heading {
   position: relative;
   height: 5.1rem;
@@ -1113,12 +1131,7 @@ a:hover {
 
 .search-mobile-form {
   padding: 0.5rem 3rem 0 3rem;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  animation: showModal linear 0.3s;
 }
 .search-mobile-form .form-group {
   display: flex;
@@ -1512,6 +1525,21 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .container-item .container-body .container-service-item {
   margin-bottom: 2rem;
 }
+.container-item .container-body .container-service-item__note {
+  bottom: 2.5rem;
+  left: 1.5rem;
+}
+.container-item .container-body .container-service-item__note--image {
+  width: 8rem;
+  height: 8rem;
+}
+.container-item .container-body .container-service-item__note--desc {
+  font-size: 1.6rem;
+  line-height: 5rem;
+  padding: 0 3rem;
+  min-width: 22rem;
+  margin-left: -3.5rem;
+}
 .container-item .container-body .container-service-item .service-information {
   position: absolute;
   left: 1.2rem;
@@ -1550,9 +1578,19 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .system-introduction .introduction-image {
   display: flex;
 }
+.system-introduction .introduction-image .introduction-image-1 {
+  height: 60rem;
+  width: 64.5%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
+  height: 26.75rem;
   position: absolute;
+}
+.system-introduction .introduction-info {
+  padding-left: 8rem;
 }
 .system-introduction .introduction-info .introduction-info-logo {
   height: 7.1rem;
@@ -1561,10 +1599,13 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   margin-bottom: 3.2rem;
 }
 .system-introduction .introduction-info .introduction-info-title {
+  font-size: 3.4rem;
+  line-height: 4.9rem;
   text-align: left;
 }
 .system-introduction .introduction-info .introduction-info-desc {
   font-size: 1.6rem;
+  width: 57%;
 }
 
 .top-banner-2 {
@@ -1631,8 +1672,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 .event .container-item .container-body .event-list .event-item .event-item-image .event-image {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2rem;
 }
 .event .container-item .container-body .event-list .event-item .image-pseudo::after {
@@ -1644,6 +1684,8 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
   font-size: 1.6rem;
+  max-width: 23.4rem;
+  padding: 3.5rem 0 1.5rem 0;
 }
 .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
   max-width: 23.4rem;
@@ -3363,6 +3405,10 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   border: none;
 }
 
+.main .hide-pc,
+.main .hide-table {
+  display: none;
+}
 .main-logo {
   width: 100%;
   max-height: 116rem;
@@ -3370,8 +3416,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .main-logo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .main-info-image {
@@ -3497,83 +3542,82 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   padding: 0px 38%;
   line-height: 1.2;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__right--one {
+.main-info .main-inftras-content__right--one {
   width: 53.7rem;
   height: 50.4rem;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__right--two {
+.main-info .main-inftras-content__right--two {
   position: absolute;
   left: -4.8rem;
   bottom: 12rem;
   width: 33.6rem;
   height: 30.4rem;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__right--three {
+.main-info .main-inftras-content__right--three {
   position: absolute;
   right: 4.8rem;
   bottom: 5rem;
   height: 23.2rem;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__left {
+.main-info .main-inftras-content__left {
   text-align: justify;
   line-height: 1.4em;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__left--list-item {
+.main-info .main-inftras-content__left--list-item {
   font-size: 1.8rem;
   margin-top: 2.5rem;
   line-height: 1.25;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__left--list-item span {
+.main-info .main-inftras-content__left--list-item span {
   font-family: Gilroy-XBold;
 }
-.main-info .main-inftras-content .main-pc .main-inftras-content__left--list-item:first-child {
+.main-info .main-inftras-content__left--list-item:first-child {
   margin-top: 0;
 }
 .main-device {
   margin-top: 131.8rem;
   height: 55rem;
 }
-.main-device .device-pc {
-  height: 100%;
-}
-.main-device .device-pc .main-device-left__list {
+.main-device-left__list {
   position: relative;
   width: 100%;
 }
-.main-device .device-pc .main-device-left__list--item {
+.main-device-left__list--item {
   top: 10rem;
 }
-.main-device .device-pc .main-device-left__list--item img {
+.main-device-left__list--item img {
   height: 37.6rem;
 }
-.main-device .device-pc .main-device-left__list--item1 {
+.main-device-left__list--item1 {
   position: absolute;
+  top: 0;
+  right: 16rem;
 }
-.main-device .device-pc .main-device-left__list--item1 img {
+.main-device-left__list--item1 img {
   height: 25.8rem;
 }
-.main-device .device-pc .main-device-left__list--item2 {
+.main-device-left__list--item2 {
   position: absolute;
   top: 26.9rem;
   left: 4rem;
 }
-.main-device .device-pc .main-device-left__list--item2 img {
+.main-device-left__list--item2 img {
   width: 26.6rem;
   height: 22.8rem;
 }
-.main-device .device-pc .main-device-left__list--item3 {
+.main-device-left__list--item3 {
   position: absolute;
   top: 11.2rem;
   left: 28.8rem;
 }
-.main-device .device-pc .main-device-left__list--item3 img {
+.main-device-left__list--item3 img {
   width: 23.1rem;
   height: 40.3rem;
 }
-.main-device .device-pc .main-device-right {
+.main-device-right {
   text-align: right;
 }
-.main-device .device-pc .main-device-right img {
+.main-device-right img {
   width: 100%;
 }
 .main-team {
@@ -4305,13 +4349,11 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--register__inner--logo,
@@ -4406,8 +4448,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .form--register .tab-pane-content .address,
 .form--contact .tab-pane-content .address {
   margin-top: calc((100vh - 63.8rem) / 2);
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   padding: 2rem 1rem;
   background-color: #f5e28b;
   margin-left: 50%;
@@ -4480,16 +4521,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--again__inner--logo {
@@ -5270,16 +5309,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-top: calc((100vh - 63.8rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
 }
 .form--pop__inner--logo {
@@ -5408,8 +5445,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh - 161rem) / 2);
@@ -5421,8 +5457,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 5rem) / 2);
@@ -5434,8 +5469,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 2rem) / 2);
@@ -5449,14 +5483,12 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: calc((100vh - 70rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
   border-radius: 4rem;
 }
@@ -5532,8 +5564,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .address-pop-mobile .pop-details-list__item .pop-details-left img {
   width: 100%;
   height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right {
@@ -5618,16 +5649,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--advise__inner--logo {
@@ -5711,16 +5740,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--appointment__inner--logo {
@@ -6019,8 +6046,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .footer-top-interactive .interactive-image > img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .footer-top-interactive .interactive-image .footer-top-interactive__share--top {
     top: 2rem;
@@ -6436,8 +6462,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     width: 100%;
     height: 100%;
     margin: 0;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6521,8 +6546,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     width: 100%;
     height: 100%;
     margin: 0;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6570,8 +6594,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .main .product-details .product-list-item__image img {
     height: 100%;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6918,8 +6941,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .main .product-similar-list__item--image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-similar-list__item--name {
     margin-top: 0 !important;
@@ -7213,11 +7235,8 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     width: 100%;
     height: auto;
   }
-
-  .beautify-mobile .beautify-program-list__item--image--product {
-    -o-object-fit: cover;
-       object-fit: cover;
-
+  .beautify-program-list__item--image--product {
+    object-fit: cover;
   }
   .beautify-program-list__item .image-pseudo--tips::after {
     display: none;
@@ -7538,17 +7557,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 2rem 0;
   }
 }
-
 @media (min-width: 991px) and (max-width: 1024px) {
-  .header-main-nav__list--item-link .active,
-.header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: #000;
-  }
-
   .hide-pc {
     display: none;
   }
@@ -7584,36 +7593,34 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 28rem;
   }
   .container-item .container-body .container-service-item__note {
-    bottom: 1.5rem;
-    left: 1rem;
+    bottom: 2rem;
+    left: 0;
   }
   .container-item .container-body .container-service-item__note--image {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
   }
   .container-item .container-body .container-service-item__note--desc {
     font-size: 1rem;
-    line-height: 2.5rem;
-    padding: 0 1rem 0 2rem;
-    min-width: 12rem;
-    margin-left: -2rem;
+    line-height: 3rem;
+    padding: 0;
+    min-width: 13rem;
+    margin-left: -1.1rem;
   }
   .system-introduction {
     margin-top: 9.45rem;
   }
   .system-introduction .introduction-image .introduction-image-1 {
-    width: 80%;
-    margin: 0 auto;
+    height: 35rem;
+    width: 66.5%;
+    margin-left: 56%;
   }
   .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
     height: 18.75rem;
   }
   .system-introduction .introduction-image .introduction-image-2 {
-
-    left: 0rem;
-    bottom: -3.6rem;
-
+    left: 9.2rem !important;
   }
   .system-introduction .introduction-image .introduction-image-3 {
     right: 6.5rem !important;
@@ -7633,6 +7640,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .system-introduction .introduction-info .introduction-info-desc {
     font-size: 1.4rem;
+    width: 78%;
     margin-left: 3rem;
   }
   .treatment-result {
@@ -7664,24 +7672,11 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 22rem;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
-
-    margin: 1.5rem 0;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
-    height: 4rem;
-
+    padding: 1.5rem 0 1.5rem 0;
+    min-width: 100%;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
     font-size: 1.4rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
-    height: 6rem;
   }
   .event .container-item .container-body .event-list .event-item .image-pseudo::after {
     height: 16.5rem;
@@ -7714,71 +7709,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 1024px) {
-  .header-main-nav__list--item-link .active,
-.header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: #000;
-  }
   .hide-pc {
     display: none;
   }
-  .container-item .container-body .container-service .container-service-item__note {
-    bottom: 1rem;
-    left: 1rem;
-  }
-  .container-item .container-body .container-service .container-service-item__note--image {
-    width: 6.8rem;
-    height: 6.8rem;
-  }
-  .container-item .container-body .container-service .container-service-item__note--desc {
-    font-size: 1.5rem;
-    line-height: 4.5rem;
-    padding: 0 1rem 0 3rem;
-    margin-left: -3.5rem;
-    min-width: 19rem;
-  }
-  .system-introduction .introduction-image .introduction-image-1 {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .system-introduction .introduction-image .introduction-image-2 {
-    width: 40%;
-    bottom: -5rem;
-    left: 0;
-  }
-  .system-introduction .introduction-image .introduction-image-3 {
-    width: 30%;
-    bottom: -10rem;
-    right: 7rem;
-  }
-  .system-introduction .introduction-info .introduction-info-title {
-    font-size: 3.4rem;
-    line-height: 3.6rem;
-  }
-  .system-introduction .introduction-info .introduction-info-desc {
-    padding-right: 22rem;
-  }
-  .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
-    margin: 1.5rem 0 1rem 0;
-  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-
-  .header-main-nav__list--item-link .active,
-.header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: #000;
-
   .content-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
-
   }
   .container-item .container-heading {
     padding-bottom: 4.5rem;
@@ -7831,8 +7769,9 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding-left: 1.5rem;
   }
   .system-introduction .introduction-image .introduction-image-1 {
+    height: 35rem;
     width: 66.5%;
-    margin: 0 auto;
+    margin-left: 56%;
   }
   .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
@@ -8121,9 +8060,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding-bottom: 1.5rem;
   }
   .event {
-
-    padding: 4.6rem 0rem;
-
+    padding: 4.6rem 0;
   }
   .container-body .treatment-category .category-nav .category-item {
     padding: 0rem 0.8rem !important;
@@ -8518,67 +8455,8 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
-  .header-main-nav__list--item-link .active,
-.header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: #000;
-  }
   .hide-tablet-small {
     display: none;
-  }
-  .container-body .container-service-item__note {
-    left: 1rem;
-    bottom: 1.5rem;
-  }
-  .container-body .container-service-item__note--image {
-    width: 4rem;
-    height: 4rem;
-  }
-  .container-body .container-service-item__note--desc {
-    font-size: 1rem;
-    line-height: 2.6rem;
-    padding: 0 1rem 0 2rem;
-    min-width: 11rem;
-    margin-left: -2rem;
-  }
-  .system-introduction .introduction-info .introduction-info-title {
-    font-size: 2.6rem;
-    line-height: 3.6rem;
-  }
-  .system-introduction .introduction-image .introduction-image-1 {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .system-introduction .introduction-image .introduction-image-2 {
-    width: 40%;
-    bottom: -3rem;
-    left: 0;
-  }
-  .system-introduction .introduction-image .introduction-image-3 {
-    width: 45%;
-    bottom: -12rem;
-    right: 3rem;
-  }
-  .event-item-text .event-title {
-    margin: 1.5rem 0 1rem 0;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
-    height: 4rem;
-  }
-  .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
-    height: 8rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    text-overflow: ellipsis;
   }
 }
 @media (min-width: 991px) and (max-width: 1024px) {
@@ -8679,6 +8557,17 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-right: 0 !important;
     background-color: #fff;
   }
+  .details-menu-mobile {
+    display: block;
+    padding-bottom: 4rem;
+  }
+  .details-menu-mobile .details-menu-list__item {
+    margin: 0 1rem 1rem 0;
+  }
+  .details-menu-mobile .details-menu-list__item--link {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
   .details-news {
     display: none;
   }
@@ -8689,10 +8578,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .details-graduate-outstanding .slick-next {
     top: 24%;
     right: -1rem;
-  }
-  #sidebar-training .details-menu-list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 @media (min-width: 1024px) {
@@ -8973,8 +8858,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 375px) and (max-width: 479px) {
@@ -9494,8 +9378,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -9512,43 +9395,46 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 8%;
     margin-bottom: 9.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro {
+    flex-direction: column-reverse;
+  }
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     height: 53.6rem;
     margin-top: 4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 32.1rem;
     height: 36.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     position: absolute;
     left: 1.2rem;
-    bottom: 7.5rem;
+    bottom: -9.5rem;
     width: 20.3rem;
     height: 19.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     position: absolute;
     right: 5.3rem;
-    bottom: 3rem;
+    bottom: -14rem;
     width: 14.2rem;
     height: 13.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     text-align: justify;
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.8rem;
     margin-top: 2.5rem;
     line-height: 1.25;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item span {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item span {
     font-family: Gilroy-XBold;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item:first-child {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item:first-child {
     margin-top: 0;
   }
   .main-device {
@@ -9556,66 +9442,71 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 203rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
+  .main-device .container-width {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about {
+    flex-direction: column-reverse;
+  }
+  .main-device .container-width .device-about .main-device-left {
+    height: 70%;
+  }
+  .main-device .container-width .device-about .main-device-left__list {
     position: relative;
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     position: absolute;
     top: -3.4rem;
     left: 3rem;
     height: 30.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     position: absolute;
     top: -7rem;
     left: 16.5rem;
     height: 20.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     position: absolute;
     top: 16.9rem;
     left: 6rem;
     width: 18.6rem;
     height: 18.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
     left: 23.8rem;
     width: 18.1rem;
     height: 32.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: auto;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -9669,8 +9560,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 305rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -9687,43 +9577,43 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0;
     margin-bottom: 4.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     height: 53.6rem;
     margin-top: 4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 28.1rem;
     height: 28.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     position: absolute;
-    left: 1rem;
-    bottom: 15.2rem;
+    left: 1.5rem;
+    bottom: -9.9rem;
     width: 16.3rem;
     height: 17.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     position: absolute;
     right: 3.6rem;
-    bottom: 12.1rem;
+    bottom: -13.8rem;
     width: 12.2rem;
     height: 12.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     text-align: justify;
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.8rem;
     margin-top: 2.5rem;
     line-height: 1.25;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item span {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item span {
     font-family: Gilroy-XBold;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item:first-child {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item:first-child {
     margin-top: 0;
   }
   .main-device {
@@ -9731,66 +9621,65 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 215rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
-    height: 100%;
+  .main-device .container-width .device-about .main-device-left {
+    height: 72%;
   }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about .main-device-left__list {
     position: relative;
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     position: absolute;
     top: -3.4rem;
     left: 1rem;
     height: 26.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     position: absolute;
     top: -7rem;
     left: 13.5rem;
     height: 20.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     position: absolute;
     top: 15.9rem;
     left: 2rem;
     width: 16.6rem;
     height: 16.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
     left: 18.7rem;
     width: 16.1rem;
     height: 27.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: 32rem;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -9861,29 +9750,29 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-left: 0;
     margin-right: 0;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 21.1rem;
     height: 21.6rem;
     margin: 0;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     left: 2.5rem;
-    bottom: 22.5rem;
+    bottom: -9.5rem;
     width: 14.3rem;
     height: 15.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     right: 6.3rem;
-    bottom: 21rem;
+    bottom: -11rem;
     width: 9.2rem;
     height: 10.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     line-height: 1.2em;
   }
   .main-info .main-inftras-content__heading {
@@ -9896,61 +9785,57 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 215rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
-    height: 100%;
-  }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about .main-device-left__list {
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     top: -3.4rem;
     left: 1rem;
     height: 24.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     top: -7rem;
     left: 13.5rem;
     height: 19.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     top: 15.9rem;
     left: 2rem;
     width: 15.6rem;
     height: 13.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     top: 5.2rem;
     left: 16.7rem;
     width: 16.1rem;
     height: 25.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: 32rem;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -10016,13 +9901,13 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .main-info-image .main-content-right__two {
     left: 1.2rem;
-    top: 23rem;
+    top: 28.5rem;
     width: 19.3rem;
     height: 19.4rem;
   }
   .main-info-image .main-content-right__three {
     right: 1.6rem;
-    bottom: 2rem;
+    bottom: -5rem;
     width: 13.8rem;
     height: 13.1rem;
   }
@@ -10064,35 +9949,35 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-bottom: 3.6rem;
     padding: 0 15%;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro {
+  .main-info .main-inftras-content .basis--intro {
     flex-direction: row;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     position: relative;
     margin-top: 2rem;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 90%;
     height: 35rem;
     margin-left: 50%;
     transform: translateX(-50%);
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     left: 0.5rem;
     top: 25rem;
     width: 50%;
     height: auto;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     right: 2rem;
     top: 36rem;
     width: 40%;
     height: auto;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.4rem;
     margin-top: 1.5rem;
   }
@@ -10100,45 +9985,44 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 53.2rem;
     margin-top: 110rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item {
+  .main-device .device-about .main-device-left__list--item {
     top: 10rem;
     height: 30.6rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item img {
+  .main-device .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item1 {
+  .main-device .device-about .main-device-left__list--item1 {
     top: -3rem;
     left: 13.5rem;
     height: 21.8rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item1 img {
+  .main-device .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item2 {
+  .main-device .device-about .main-device-left__list--item2 {
     top: 23rem;
     left: 3rem;
     width: 19.6rem;
     height: 17.8rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item2 img {
+  .main-device .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 2rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item3 {
+  .main-device .device-about .main-device-left__list--item3 {
     top: 10rem;
     left: 21.2rem;
     width: 15.1rem;
     height: 31.3rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item3 img {
+  .main-device .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-right img {
+  .main-device .device-about .main-device-right img {
     width: 100%;
   }
   .main-papers {
@@ -10229,20 +10113,20 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 10%;
     margin-bottom: 6rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--one {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 92%;
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--two {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--two {
     width: 50%;
     height: auto;
     left: 1.5rem;
     top: 36rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--three {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--three {
     width: 40%;
     height: auto;
     right: 3rem;
@@ -10355,26 +10239,26 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 10%;
     margin-bottom: 6rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--one {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 92%;
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--two {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--two {
     width: 50%;
     height: auto;
     left: 1.5rem;
     top: 36rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--three {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--three {
     width: 37%;
     height: auto;
     right: 3.3rem;
     top: 48rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__left--list-item {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     margin-top: 1.5rem;
     line-height: 1.1em;
   }
@@ -11196,8 +11080,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -11214,43 +11097,46 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 8%;
     margin-bottom: 9.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro {
+    flex-direction: column-reverse;
+  }
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     height: 53.6rem;
     margin-top: 4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 32.1rem;
     height: 36.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     position: absolute;
     left: 1.2rem;
-    bottom: 7.5rem;
+    bottom: -9.5rem;
     width: 20.3rem;
     height: 19.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     position: absolute;
     right: 5.3rem;
-    bottom: 3rem;
+    bottom: -14rem;
     width: 14.2rem;
     height: 13.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     text-align: justify;
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.8rem;
     margin-top: 2.5rem;
     line-height: 1.25;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item span {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item span {
     font-family: Gilroy-XBold;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item:first-child {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item:first-child {
     margin-top: 0;
   }
   .main-device {
@@ -11258,66 +11144,71 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 203rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
+  .main-device .container-width {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about {
+    flex-direction: column-reverse;
+  }
+  .main-device .container-width .device-about .main-device-left {
+    height: 70%;
+  }
+  .main-device .container-width .device-about .main-device-left__list {
     position: relative;
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     position: absolute;
     top: -3.4rem;
     left: 3rem;
     height: 30.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     position: absolute;
     top: -7rem;
     left: 16.5rem;
     height: 20.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     position: absolute;
     top: 16.9rem;
     left: 6rem;
     width: 18.6rem;
     height: 18.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
     left: 23.8rem;
     width: 18.1rem;
     height: 32.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: auto;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -11371,8 +11262,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 305rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -11389,43 +11279,43 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0;
     margin-bottom: 4.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     height: 53.6rem;
     margin-top: 4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 28.1rem;
     height: 28.6rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     position: absolute;
-    left: 1rem;
-    bottom: 15.2rem;
+    left: 1.5rem;
+    bottom: -9.9rem;
     width: 16.3rem;
     height: 17.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     position: absolute;
     right: 3.6rem;
-    bottom: 12.1rem;
+    bottom: -13.8rem;
     width: 12.2rem;
     height: 12.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     text-align: justify;
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.8rem;
     margin-top: 2.5rem;
     line-height: 1.25;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item span {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item span {
     font-family: Gilroy-XBold;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item:first-child {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item:first-child {
     margin-top: 0;
   }
   .main-device {
@@ -11433,66 +11323,65 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 215rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
-    height: 100%;
+  .main-device .container-width .device-about .main-device-left {
+    height: 72%;
   }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about .main-device-left__list {
     position: relative;
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     position: absolute;
     top: -3.4rem;
     left: 1rem;
     height: 26.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     position: absolute;
     top: -7rem;
     left: 13.5rem;
     height: 20.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     position: absolute;
     top: 15.9rem;
     left: 2rem;
     width: 16.6rem;
     height: 16.8rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
     left: 18.7rem;
     width: 16.1rem;
     height: 27.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: 32rem;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -11563,29 +11452,29 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-left: 0;
     margin-right: 0;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 21.1rem;
     height: 21.6rem;
     margin: 0;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     left: 2.5rem;
-    bottom: 22.5rem;
+    bottom: -9.5rem;
     width: 14.3rem;
     height: 15.4rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     right: 6.3rem;
-    bottom: 21rem;
+    bottom: -11rem;
     width: 9.2rem;
     height: 10.1rem;
   }
-  .main-info .main-inftras-content .main-mobile .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     line-height: 1.2em;
   }
   .main-info .main-inftras-content__heading {
@@ -11598,61 +11487,57 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 215rem;
     background-image: linear-gradient(#fffdf6, #ffe98c);
   }
-  .main-device .device-mobile {
-    height: 100%;
-  }
-  .main-device .device-mobile .main-device-left__list {
+  .main-device .container-width .device-about .main-device-left__list {
     top: 15rem;
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item {
+  .main-device .container-width .device-about .main-device-left__list--item {
     top: -3.4rem;
     left: 1rem;
     height: 24.6rem;
   }
-  .main-device .device-mobile .main-device-left__list--item img {
+  .main-device .container-width .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item1 {
+  .main-device .container-width .device-about .main-device-left__list--item1 {
     top: -7rem;
     left: 13.5rem;
     height: 19.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item1 img {
+  .main-device .container-width .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-mobile .main-device-left__list--item2 {
+  .main-device .container-width .device-about .main-device-left__list--item2 {
     top: 15.9rem;
     left: 2rem;
     width: 15.6rem;
     height: 13.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item2 img {
+  .main-device .container-width .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-  .main-device .device-mobile .main-device-left__list--item3 {
+  .main-device .container-width .device-about .main-device-left__list--item3 {
     top: 5.2rem;
     left: 16.7rem;
     width: 16.1rem;
     height: 25.3rem;
   }
-  .main-device .device-mobile .main-device-left__list--item3 img {
+  .main-device .container-width .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-mobile .main-device-right__image {
+  .main-device .container-width .device-about .main-device-right__image {
     position: relative;
     top: 5rem;
     width: 32rem;
     height: 100%;
     margin: 0 auto;
   }
-  .main-device .device-mobile .main-device-right__image img {
+  .main-device .container-width .device-about .main-device-right__image img {
     width: 100%;
     height: 100%;
   }
@@ -11718,13 +11603,13 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .main-info-image .main-content-right__two {
     left: 1.2rem;
-    top: 23rem;
+    top: 28.5rem;
     width: 19.3rem;
     height: 19.4rem;
   }
   .main-info-image .main-content-right__three {
     right: 1.6rem;
-    bottom: 2rem;
+    bottom: -5rem;
     width: 13.8rem;
     height: 13.1rem;
   }
@@ -11766,35 +11651,35 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-bottom: 3.6rem;
     padding: 0 15%;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro {
+  .main-info .main-inftras-content .basis--intro {
     flex-direction: row;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right {
     position: relative;
     margin-top: 2rem;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--one {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 90%;
     height: 35rem;
     margin-left: 50%;
     transform: translateX(-50%);
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--two {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--two {
     left: 0.5rem;
     top: 25rem;
     width: 50%;
     height: auto;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__right--three {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__right--three {
     right: 2rem;
     top: 36rem;
     width: 40%;
     height: auto;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__left {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left {
     line-height: 1.4em;
   }
-  .main-info .main-inftras-content .main-pc .basis--intro .main-inftras-content__left--list-item {
+  .main-info .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     font-size: 1.4rem;
     margin-top: 1.5rem;
   }
@@ -11802,45 +11687,44 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 53.2rem;
     margin-top: 110rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item {
+  .main-device .device-about .main-device-left__list--item {
     top: 10rem;
     height: 30.6rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item img {
+  .main-device .device-about .main-device-left__list--item img {
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item1 {
+  .main-device .device-about .main-device-left__list--item1 {
     top: -3rem;
     left: 13.5rem;
     height: 21.8rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item1 img {
+  .main-device .device-about .main-device-left__list--item1 img {
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item2 {
+  .main-device .device-about .main-device-left__list--item2 {
     top: 23rem;
     left: 3rem;
     width: 19.6rem;
     height: 17.8rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item2 img {
+  .main-device .device-about .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 2rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item3 {
+  .main-device .device-about .main-device-left__list--item3 {
     top: 10rem;
     left: 21.2rem;
     width: 15.1rem;
     height: 31.3rem;
   }
-  .main-device .device-pc .device-about .main-device-left__list--item3 img {
+  .main-device .device-about .main-device-left__list--item3 img {
     width: 100%;
     height: 100%;
   }
-  .main-device .device-pc .device-about .main-device-right img {
+  .main-device .device-about .main-device-right img {
     width: 100%;
   }
   .main-papers {
@@ -11931,20 +11815,20 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 10%;
     margin-bottom: 6rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--one {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 92%;
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--two {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--two {
     width: 50%;
     height: auto;
     left: 1.5rem;
     top: 36rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--three {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--three {
     width: 40%;
     height: auto;
     right: 3rem;
@@ -12057,26 +11941,26 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding: 0 10%;
     margin-bottom: 6rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--one {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--one {
     width: 92%;
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--two {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--two {
     width: 50%;
     height: auto;
     left: 1.5rem;
     top: 36rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__right--three {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__right--three {
     width: 37%;
     height: auto;
     right: 3.3rem;
     top: 48rem;
   }
-  .main-info .main-inftras-image .main-inftras-content .main-pc .main-inftras-content__left--list-item {
+  .main-info .main-inftras-image .main-inftras-content .basis--intro .main-inftras-content__left--list-item {
     margin-top: 1.5rem;
     line-height: 1.1em;
   }
@@ -12811,7 +12695,10 @@ form.cart button.button.alt {
 }
 
 .woocommerce-page .col2-set, .woocommerce .col2-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -12819,6 +12706,8 @@ form.cart button.button.alt {
 
 .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2, .woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2 {
   float: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
   width: 50%;
@@ -12842,7 +12731,9 @@ form.cart button.button.alt {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -webkit-box-sizing: border-box;
+  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  -webkit-box-shadow: none;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -13830,8 +13721,7 @@ body .select2-container--default .select2-selection--single {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .content-landing-device .pc-mobile .content-landing-device-left__list--item3 {
     position: absolute;
@@ -14034,8 +13924,7 @@ body .select2-container--default .select2-selection--single {
 }
 @media (min-width: 375px) and (max-width: 479px) {
   .content-landing {
-    height: 770rem !important;
-    margin-bottom: 35rem;
+    height: 706rem !important;
   }
   .content-landing-acne {
     height: 114rem;
@@ -14219,8 +14108,7 @@ body .select2-container--default .select2-selection--single {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .content-landing-device .pc-mobile .content-landing-device-left__list--item3 {
     position: relative;
@@ -14405,6 +14293,9 @@ body .select2-container--default .select2-selection--single {
     top: 0.3rem;
     width: 98%;
     height: 90%;
+  }
+  .footer {
+    margin-top: 20rem;
   }
 }
 @media (max-width: 360px) {
@@ -15442,68 +15333,6 @@ body .select2-container--default .select2-selection--single {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .header-container-heading__title {
-    height: 5.8rem;
-  }
-  .header-contact {
-    padding: 0 1.7rem;
-    margin-top: 7rem;
-  }
-  .header-contact-left form {
-    width: 100%;
-    float: left;
-  }
-  .header-contact-left__search {
-    height: 5rem !important;
-    font-size: 1.6rem !important;
-    padding: 0 2rem;
-  }
-  .header-contact-right__cart--btn {
-    width: 5rem !important;
-    height: 5rem !important;
-  }
-  .header-contact-right__cart--btn img {
-    width: 2rem;
-    height: 2rem;
-  }
-  .header-contact-right__cart--number {
-    top: -2rem !important;
-    right: -2rem !important;
-    font-size: 1.2rem !important;
-  }
-  .header-contact-right__tel {
-    height: 5rem !important;
-    width: calc(100% - 5rem);
-  }
-  .header-contact-right__tel--number {
-    padding: 0 1rem !important;
-    font-size: 1.3rem !important;
-    line-height: 5rem !important;
-  }
-  .header-main-nav__list--item {
-    padding: 1rem 1.5rem !important;
-  }
-  .header-main-nav__list--item a {
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 1024px) {
-  ul#primary-menu > li > ul.sub-menu {
-    position: absolute;
-    top: 5rem;
-    left: 5rem;
-    background-color: #fff;
-    min-width: 48rem;
-    z-index: 3;
-    padding: 2rem;
-    border-radius: 2rem;
-    border: 1px solid #ffd00f;
-    flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-
   ul#primary-menu > li:hover ul.sub-menu > li > ul.sub-menu {
     display: block;
   }
@@ -15519,10 +15348,7 @@ body .select2-container--default .select2-selection--single {
     float: left;
   }
   .header-contact-left__search {
-
-    width: 30.5rem;
-    height: 5rem !important;
-
+    height: 5rem;
     font-size: 1.6rem;
     padding: 0 2rem;
     width: 86%;
@@ -15534,8 +15360,8 @@ body .select2-container--default .select2-selection--single {
     justify-content: flex-end;
   }
   .header-contact-right__cart--btn {
-    width: 5rem !important;
-    height: 5rem !important;
+    width: 5rem;
+    height: 5rem;
   }
   .header-contact-right__cart--btn img {
     width: 2rem;
@@ -15546,18 +15372,16 @@ body .select2-container--default .select2-selection--single {
     right: -1rem;
   }
   .header-contact-right__tel {
-
-    height: 5rem !important;
-    min-width: 24rem;
+    height: 5rem;
+    min-width: 21rem;
   }
   .header-contact-right__tel--number {
-    padding: 0 1rem !important;
-    font-size: 1.4rem !important;
-    line-height: 5rem !important;
-
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    line-height: 5rem;
   }
   .header-main-nav__list--item {
-    padding: 1rem 1.5rem !important;
+    padding: 1rem 1.5rem;
   }
   .header-main-nav__list--item a {
     font-size: 1.8rem;
@@ -15872,8 +15696,7 @@ body .select2-container--default .select2-selection--single {
     left: 1.2rem;
     z-index: 3;
     display: none;
-    -webkit-animation: drop-down 0.2s ease-out;
-            animation: drop-down 0.2s ease-out;
+    animation: drop-down 0.2s ease-out;
     width: 80%;
   }
   .header-main-nav {
@@ -16002,7 +15825,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
     width: 100%;
   }
   .header-contact-left__search {
-    height: 3.65rem !important;
+    height: 3.65rem;
     padding: 0 1rem;
     font-size: 1.4rem;
   }
@@ -16015,8 +15838,8 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   }
   .header-contact-right__cart {
     background-color: #ffd00f;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     padding: 0.5rem;
   }
@@ -16035,18 +15858,15 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
     right: -0.8rem;
     padding: 0.2rem 0.4rem;
     font-size: 1.2rem;
-    width: 2.6rem;
-    height: 2.6rem;
   }
   .header-contact-right__tel {
-    height: 3.65rem !important;
+    height: 3.65rem;
     min-width: 20rem;
-    margin-left: 0 !important;
   }
   .header-contact-right__tel--number {
-    font-size: 1.4rem !important;
-    padding: 0 !important;
-    line-height: 3.65rem !important;
+    font-size: 1.4rem;
+    padding: 0;
+    line-height: 3.65rem;
   }
   .header-contact-right .header-cart--notify {
     width: 25rem;
@@ -16179,9 +15999,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .top-banner .top-banner-1 img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
+  object-fit: cover;
 }
 .top-banner .top-banner-training {
   width: 100%;
@@ -16190,8 +16008,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .top-banner .top-banner-training img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 
@@ -16275,7 +16092,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   position: relative;
   padding-bottom: 14rem;
 }
-
 .system-introduction .introduction-image .introduction-image-2 {
   left: 1.2rem;
   bottom: 10.4rem;
@@ -16286,7 +16102,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   right: 8.5rem;
   z-index: 1;
 }
-
 .system-introduction .introduction-info {
   text-align: center;
 }
@@ -16309,8 +16124,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 .top-banner-2 .top-banner-body {
@@ -16326,8 +16140,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top-banner-2 .top-banner-body__item--heading {
   position: relative;
@@ -16357,8 +16170,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 }
 
 .top-banner-3 {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top-banner-3 img {
   width: 100%;
@@ -16383,7 +16195,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   background-color: #f2f2f2;
   border-radius: 50rem;
   border: 1px solid #ffd00f;
-  margin: 0.2rem !important;
+  margin: 0.2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: 0.3s ease-in-out;
@@ -16422,6 +16234,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   position: absolute;
 }
 .event .container-item .container-body .event-list .event-item .event-title {
+  max-width: 23.4rem;
   text-transform: uppercase;
   font-family: Gilroy-Heavy;
   font-size: 1.6rem;
@@ -16432,6 +16245,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .event .container-item .container-body .event-list .event-item .event-desc {
   max-width: 23.4rem;
   font-size: 1.8rem;
+  text-align: justify;
 }
 .event .container-item .container-footer {
   text-align: center;
@@ -16645,8 +16459,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column {
@@ -16682,8 +16495,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   margin-top: 6.9rem;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading .contact__heading {
   width: 100%;
@@ -16878,8 +16690,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .modal--maps--address {
   min-height: 60.38rem;
   position: relative;
-  -webkit-animation: showModal ease 0.3s;
-          animation: showModal ease 0.3s;
+  animation: showModal ease 0.3s;
   border-radius: 1rem;
 }
 .modal--maps--address-close .close-icon {

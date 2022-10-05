@@ -58,74 +58,36 @@ global $ls_options;
                             <h2 class="main-inftras-content__heading text-center"><?php echo $ls_options['title-infra'] ?></h2>
 
                             <div class="container container-width">
-
-                                <div class="main-pc dp-none dp-blockPC">
-                                    <div class="basis--intro row">
-                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__right">
-                                            <img class="main-inftras-content__right--one"
-                                                 src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
-                                            <img class="main-inftras-content__right--two"
-                                                 src="<?php echo $ls_options['img-infra-1']['url']; ?>" alt="">
-                                            <img class="main-inftras-content__right--three"
-                                                 src="<?php echo $ls_options['img-infra-2']['url']; ?>" alt="">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__left">
-                                            <ul class="main-inftras-content__left--list">
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-1'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-2'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-3'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-4'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-5'] ?>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <div class="basis--intro row">
+                                    <div class="col-lg-6 col-md-6 col-12 main-inftras-content__right">
+                                        <img class="main-inftras-content__right--one"
+                                                src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
+                                        <img class="main-inftras-content__right--two"
+                                                src="<?php echo $ls_options['img-infra-1']['url']; ?>" alt="">
+                                        <img class="main-inftras-content__right--three"
+                                                src="<?php echo $ls_options['img-infra-2']['url']; ?>" alt="">
                                     </div>
-                                </div>
-
-                                <div class="main-mobile dp-block dp-nonePC">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12 main-inftras-content__left">
-                                            <ul class="main-inftras-content__left--list">
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-1'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-2'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-3'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-4'] ?>
-                                                </li>
-                                                <li class="main-inftras-content__left--list-item">
-                                                    <?php echo $ls_options['content-infra-5'] ?>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12 main-inftras-content__right">
-                                            <img class="main-inftras-content__right--one"
-                                                 src="<?php echo $ls_options['img-infra']['url']; ?>" alt="">
-                                            <img class="main-inftras-content__right--two"
-                                                 src="<?php echo $ls_options['img-infra-1']['url']; ?>" alt="">
-                                            <img class="main-inftras-content__right--three"
-                                                 src="<?php echo $ls_options['img-infra-2']['url']; ?>" alt="">
-                                        </div>
+                                    <div class="col-lg-6 col-md-6 col-12 main-inftras-content__left">
+                                        <ul class="main-inftras-content__left--list">
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra'] ?>
+                                            </li>
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra-1'] ?>
+                                            </li>
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra-2'] ?>
+                                            </li>
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra-3'] ?>
+                                            </li>
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra-4'] ?>
+                                            </li>
+                                            <li class="main-inftras-content__left--list-item">
+                                                <?php echo $ls_options['content-infra-5'] ?>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -136,51 +98,26 @@ global $ls_options;
         </div>
         <div class="main-device">
             <div class="container container-width">
-                <div class="device-pc dp-none dp-blockPC">
-                    <div class="device-about row wh-100 align-items-center">
-                        <div class="col-xl-6 col-lg-6 col-md-7 col-6 main-device-left">
-                            <ul class="main-device-left__list">
-                                <li class="main-device-left__list--item">
-                                    <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item1">
-                                    <img src="<?php echo $ls_options['Equipment-intro-1']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item2">
-                                    <img src="<?php echo $ls_options['Equipment-intro-2']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item3">
-                                    <img src="<?php echo $ls_options['Equipment-intro-3']['url']; ?>" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-5 col-6 main-device-right">
-                            <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
-                        </div>
+                <div class="device-about row wh-100 align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-7 main-device-left">
+                        <ul class="main-device-left__list">
+                            <li class="main-device-left__list--item">
+                                <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
+                            </li>
+                            <li class="main-device-left__list--item1">
+                                <img src="<?php echo $ls_options['Equipment-intro-1']['url']; ?>" alt="">
+                            </li>
+                            <li class="main-device-left__list--item2">
+                                <img src="<?php echo $ls_options['Equipment-intro-2']['url']; ?>" alt="">
+                            </li>
+                            <li class="main-device-left__list--item3">
+                                <img src="<?php echo $ls_options['Equipment-intro-3']['url']; ?>" alt="">
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="device-mobile dp-nonePC dp-block wh-100">
-                    <div class="row wh-100">
-                        <div class="col-lg-6 col-12 main-device-right">
-                            <div class="main-device-right__image">
-                                <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12 col-6 main-device-left wh-100">
-                            <ul class="main-device-left__list">
-                                <li class="main-device-left__list--item">
-                                    <img src="<?php echo $ls_options['Equipment-intro']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item1">
-                                    <img src="<?php echo $ls_options['Equipment-intro-1']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item2">
-                                    <img src="<?php echo $ls_options['Equipment-intro-2']['url']; ?>" alt="">
-                                </li>
-                                <li class="main-device-left__list--item3">
-                                    <img src="<?php echo $ls_options['Equipment-intro-3']['url']; ?>" alt="">
-                                </li>
-                            </ul>
+                    <div class="col-xl-6 col-lg-6 col-md-5 main-device-right">
+                        <div class="main-device-right__image">
+                            <img src="<?php echo $ls_options['Equipment-intro-4']['url']; ?>" alt="">
                         </div>
                     </div>
                 </div>

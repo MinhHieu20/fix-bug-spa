@@ -77,8 +77,8 @@
                         padding: 0 8%;    
                         margin-bottom: 9.6rem;
                     }
-
-                    .main-mobile {
+                    .basis--intro {
+                        flex-direction: column-reverse;
                         .main-inftras-content__right{
                             display: flex;
                             justify-content: center;
@@ -88,19 +88,19 @@
                                 width: 32.1rem;
                                 height: 36.6rem;
                             }
-
+    
                             &--two {
                                 position: absolute;
                                 left: 1.2rem;
-                                bottom: 7.5rem;
+                                bottom: -9.5rem;
                                 width: 20.3rem;
                                 height: 19.4rem;
                             }
-
+    
                             &--three {
                                 position: absolute;
                                 right: 5.3rem;
-                                bottom: 3rem;
+                                bottom: -14rem;
                                 width: 14.2rem;
                                 height: 13.1rem;
                             }
@@ -117,7 +117,7 @@
                                         font-family: Gilroy-XBold;
                                     }
                                 }
-
+    
                                 &-item:first-child {
                                     margin-top: 0;
                                 }
@@ -132,72 +132,76 @@
             height: 78.2rem;
             margin-top: 203rem;
             background-image: linear-gradient(#fffdf6,#ffe98c);
-            .device-mobile {
-                height:100%;
-                .main-device-left {
-                    &__list {
-                        position: relative;
-                        top: 15rem;
-                        width: 100%;
-                        height: 100%;
-                        &--item {
-                            position: absolute;
-                            top: -3.4rem;
-                            left: 3rem;
-                            height: 30.6rem;
-                            img {
-                                height: 100%;
+            .container-width {
+                height: 100%;
+                .device-about {
+                    flex-direction: column-reverse;
+                    .main-device-left {
+                        height: 70%;
+                        &__list {
+                            position: relative;
+                            top: 15rem;
+                            width: 100%;
+                            height: 100%;
+                            &--item {
+                                position: absolute;
+                                top: -3.4rem;
+                                left: 3rem;
+                                height: 30.6rem;
+                                img {
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item1{
-                            position: absolute;
-                            top: -7rem;
-                            left: 16.5rem;
-                            height: 20.8rem;
-                            img{
-                                height: 100%;
+        
+                            &--item1{
+                                position: absolute;
+                                top: -7rem;
+                                left: 16.5rem;
+                                height: 20.8rem;
+                                img{
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item2{
-                            position: absolute;
-                            top: 16.9rem;
-                            left: 6rem;
-                            width: 18.6rem;
-                            height: 18.8rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 3rem;
-                                object-fit: cover;
+        
+                            &--item2{
+                                position: absolute;
+                                top: 16.9rem;
+                                left: 6rem;
+                                width: 18.6rem;
+                                height: 18.8rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 3rem;
+                                    object-fit: cover;
+                                }
                             }
-                        }
-
-                        &--item3{
-                            position: absolute;
-                            top: 5.2rem;
-                            left: 23.8rem;
-                            width: 18.1rem;
-                            height: 32.3rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
+        
+                            &--item3{
+                                position: absolute;
+                                top: 5.2rem;
+                                left: 23.8rem;
+                                width: 18.1rem;
+                                height: 32.3rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
-                }
-                
-                .main-device-right {
-                    &__image {
-                        position: relative;
-                        top: 5rem;
-                        width: auto;
-                        height: 100%;
-                        margin: 0 auto;
-                        img {
-                            width: 100%;
+                    
+                    .main-device-right {
+                        &__image {
+                            position: relative;
+                            top: 5rem;
+                            width: auto;
                             height: 100%;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                     }
                 }
@@ -286,7 +290,7 @@
                         margin-bottom: 4.6rem;
                     }
 
-                    .main-mobile {
+                    .basis--intro {
                         .main-inftras-content__right{
                             display: flex;
                             justify-content: center;
@@ -299,8 +303,8 @@
 
                             &--two {
                                 position: absolute;
-                                left: 1rem;
-                                bottom: 15.2rem;
+                                left: 1.5rem;
+                                bottom: -9.9rem;
                                 width: 16.3rem;
                                 height: 17.4rem;
                             }
@@ -308,7 +312,7 @@
                             &--three {
                                 position: absolute;
                                 right: 3.6rem;
-                                bottom: 12.1rem;
+                                bottom: -13.8rem;
                                 width: 12.2rem;
                                 height: 12.1rem;
                             }
@@ -340,72 +344,74 @@
             height: 74.2rem;
             margin-top: 215rem;
             background-image: linear-gradient(#fffdf6,#ffe98c);
-            .device-mobile {
-                height:100%;
-                .main-device-left {
-                    &__list {
-                        position: relative;
-                        top: 15rem;
-                        width: 100%;
-                        height: 100%;
-                        &--item {
-                            position: absolute;
-                            top: -3.4rem;
-                            left: 1rem;
-                            height: 26.6rem;
-                            img {
-                                height: 100%;
+            .container-width {
+                .device-about {
+                    .main-device-left {
+                        height: 72%;
+                        &__list {
+                            position: relative;
+                            top: 15rem;
+                            width: 100%;
+                            height: 100%;
+                            &--item {
+                                position: absolute;
+                                top: -3.4rem;
+                                left: 1rem;
+                                height: 26.6rem;
+                                img {
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item1{
-                            position: absolute;
-                            top: -7rem;
-                            left: 13.5rem;
-                            height: 20.8rem;
-                            img{
-                                height: 100%;
+    
+                            &--item1{
+                                position: absolute;
+                                top: -7rem;
+                                left: 13.5rem;
+                                height: 20.8rem;
+                                img{
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item2{
-                            position: absolute;
-                            top: 15.9rem;
-                            left: 2rem;
-                            width: 16.6rem;
-                            height: 16.8rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 3rem;
-                                object-fit: cover;
+    
+                            &--item2{
+                                position: absolute;
+                                top: 15.9rem;
+                                left: 2rem;
+                                width: 16.6rem;
+                                height: 16.8rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 3rem;
+                                    object-fit: cover;
+                                }
                             }
-                        }
-
-                        &--item3{
-                            position: absolute;
-                            top: 5.2rem;
-                            left: 18.7rem;
-                            width: 16.1rem;
-                            height: 27.3rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
+    
+                            &--item3{
+                                position: absolute;
+                                top: 5.2rem;
+                                left: 18.7rem;
+                                width: 16.1rem;
+                                height: 27.3rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
-                }
-                
-                .main-device-right {
-                    &__image {
-                        position: relative;
-                        top: 5rem;
-                        width: 32rem;
-                        height: 100%;
-                        margin: 0 auto;
-                        img {
-                            width: 100%;
+                    
+                    .main-device-right {
+                        &__image {
+                            position: relative;
+                            top: 5rem;
+                            width: 32rem;
                             height: 100%;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                     }
                 }
@@ -481,7 +487,7 @@
                 &-content{
                     margin-left: 0;
                     margin-right: 0;
-                    .main-mobile{
+                    .basis--intro{
                         .main-inftras-content {
                             &__right{
                                 display: flex;
@@ -494,14 +500,14 @@
                                 }
                                 &--two {
                                     left: 2.5rem;
-                                    bottom: 22.5rem;
+                                    bottom: -9.5rem;
                                     width: 14.3rem;
                                     height: 15.4rem;
                                 }
         
                                 &--three {
                                     right: 6.3rem;
-                                    bottom: 21rem;
+                                    bottom: -11rem;
                                     width: 9.2rem;
                                     height: 10.1rem;
                                 }
@@ -527,67 +533,68 @@
             height: 74.2rem;
             margin-top: 215rem;
             background-image: linear-gradient(#fffdf6,#ffe98c);
-            .device-mobile {
-                height:100%;
-                .main-device-left {
-                    &__list {
-                        top: 15rem;
-                        width: 100%;
-                        height: 100%;
-                        &--item {
-                            top: -3.4rem;
-                            left: 1rem;
-                            height: 24.6rem;
-                            img {
-                                height: 100%;
+            .container-width {
+                .device-about {
+                    .main-device-left {
+                        &__list {
+                            top: 15rem;
+                            width: 100%;
+                            height: 100%;
+                            &--item {
+                                top: -3.4rem;
+                                left: 1rem;
+                                height: 24.6rem;
+                                img {
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item1{
-                            top: -7rem;
-                            left: 13.5rem;
-                            height: 19.3rem;
-                            img{
-                                height: 100%;
+    
+                            &--item1{
+                                top: -7rem;
+                                left: 13.5rem;
+                                height: 19.3rem;
+                                img{
+                                    height: 100%;
+                                }
                             }
-                        }
-
-                        &--item2{
-                            top: 15.9rem;
-                            left: 2rem;
-                            width: 15.6rem;
-                            height: 13.3rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 3rem;
-                                object-fit: cover;
+    
+                            &--item2{
+                                top: 15.9rem;
+                                left: 2rem;
+                                width: 15.6rem;
+                                height: 13.3rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 3rem;
+                                    object-fit: cover;
+                                }
                             }
-                        }
-
-                        &--item3{
-                            top: 5.2rem;
-                            left: 16.7rem;
-                            width: 16.1rem;
-                            height: 25.3rem;
-                            img {
-                                width: 100%;
-                                height: 100%;
+    
+                            &--item3{
+                                top: 5.2rem;
+                                left: 16.7rem;
+                                width: 16.1rem;
+                                height: 25.3rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
-                }
-                
-                .main-device-right {
-                    &__image {
-                        position: relative;
-                        top: 5rem;
-                        width: 32rem;
-                        height: 100%;
-                        margin: 0 auto;
-                        img {
-                            width: 100%;
+                    
+                    .main-device-right {
+                        &__image {
+                            position: relative;
+                            top: 5rem;
+                            width: 32rem;
                             height: 100%;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                     }
                 }
@@ -670,14 +677,14 @@
     
                         &__two {
                             left: 1.2rem;
-                            top: 23rem;
+                            top: 28.5rem;
                             width: 19.3rem;
                             height: 19.4rem;
                         }
     
                         &__three {
                             right: 1.6rem;
-                            bottom: 2rem;
+                            bottom: -5rem;
                             width: 13.8rem;
                             height: 13.1rem;
                         }
@@ -729,43 +736,41 @@
                         padding: 0 15%;
                     }
     
-                    .main-pc {
-                        .basis--intro{
-                            flex-direction: row;
-                            .main-inftras-content__right {
-                                position: relative;
-                                margin-top: 2rem;
-                                &--one {
-                                    width: 90%;
-                                    height: 35rem;
-                                  margin-left: 50%;
-                                  transform: translateX(-50%);
-                                }
-        
-                                &--two {
-                                    left: 0.5rem;
-                                    top: 25rem;
-                                    width: 50%;
-                                    height: auto;
-                                }
-        
-                                &--three {
-                                    right: 2rem;
-                                    top: 36rem;
-                                    width: 40%;
-                                    height: auto;
-                                }
+                    .basis--intro{
+                        flex-direction: row;
+                        .main-inftras-content__right {
+                            position: relative;
+                            margin-top: 2rem;
+                            &--one {
+                                width: 90%;
+                                height: 35rem;
+                                margin-left: 50%;
+                                transform: translateX(-50%);
                             }
-        
-                            .main-inftras-content__left {
-                                line-height: 1.4em;
-        
-                                &--list {
-                                    &-item {
-        
-                                        font-size: 1.4rem;
-                                        margin-top: 1.5rem;
-                                    }
+    
+                            &--two {
+                                left: 0.5rem;
+                                top: 25rem;
+                                width: 50%;
+                                height: auto;
+                            }
+    
+                            &--three {
+                                right: 2rem;
+                                top: 36rem;
+                                width: 40%;
+                                height: auto;
+                            }
+                        }
+    
+                        .main-inftras-content__left {
+                            line-height: 1.4em;
+    
+                            &--list {
+                                &-item {
+    
+                                    font-size: 1.4rem;
+                                    margin-top: 1.5rem;
                                 }
                             }
                         }
@@ -778,60 +783,58 @@
             height: 53.2rem;
             margin-top: 110rem;
     
-            .device-pc {
-                .device-about{
-                    .main-device-left {
-                        &__list {
-                            &--item {
-                                top: 10rem;
-                                height: 30.6rem;
-        
-                                img {
-                                    height: 100%;
-                                }
+            .device-about{
+                .main-device-left {
+                    &__list {
+                        &--item {
+                            top: 10rem;
+                            height: 30.6rem;
+    
+                            img {
+                                height: 100%;
                             }
-        
-                            &--item1 {
-                                top: -3rem;
-                                left: 13.5rem;
-                                height: 21.8rem;
-        
-                                img {
-                                    height: 100%;
-                                }
+                        }
+    
+                        &--item1 {
+                            top: -3rem;
+                            left: 13.5rem;
+                            height: 21.8rem;
+    
+                            img {
+                                height: 100%;
                             }
-        
-                            &--item2 {
-                                top: 23rem;
-                                left: 3rem;
-                                width: 19.6rem;
-                                height: 17.8rem;
-        
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                    border-radius: 2rem;
-                                }
+                        }
+    
+                        &--item2 {
+                            top: 23rem;
+                            left: 3rem;
+                            width: 19.6rem;
+                            height: 17.8rem;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 2rem;
                             }
-        
-                            &--item3 {
-                                top: 10rem;
-                                left: 21.2rem;
-                                width: 15.1rem;
-                                height: 31.3rem;
-        
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                        }
+    
+                        &--item3 {
+                            top: 10rem;
+                            left: 21.2rem;
+                            width: 15.1rem;
+                            height: 31.3rem;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
-                    .main-device-right {
-                        img {
-                            width: 100%;
-                        }
+                }
+                .main-device-right {
+                    img {
+                        width: 100%;
                     }
                 }
             }
@@ -941,7 +944,7 @@
                         padding: 0 10%;
                         margin-bottom: 6rem;
                     }
-                    .main-pc{
+                    .basis--intro{
                         .main-inftras-content__right{
                             &--one{
                                 width: 92%;
@@ -1090,7 +1093,7 @@
                         padding: 0 10%;
                         margin-bottom: 6rem;
                     }
-                    .main-pc{
+                    .basis--intro{
                         .main-inftras-content__right{
                             &--one{
                                 width: 92%;
