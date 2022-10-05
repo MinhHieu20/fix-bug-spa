@@ -4915,7 +4915,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   font-family: K2D-ExtraBold;
   text-align: center;
   text-transform: uppercase;
-  background-color: #fff6d2;
+  background-color: #fdf9e8;
   color: #a1710f;
   padding-top: 4.35rem;
   width: 45.5rem;
@@ -16305,6 +16305,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 
 .sale {
   position: relative;
+  margin-top: 12rem;
 }
 .sale .sale-heading {
   position: absolute;
