@@ -34,7 +34,7 @@ get_header();
                     $categories = get_categories(array( 'taxonomy'=>'service_main_cat', 'parent' => 70));
                     foreach ($categories as $category) {
                         ?>
-                        <div class="container-service-item col-lg-3 col-md-3 col-sm-3 col-6 pd-05">
+                        <div class="container-service-item col-lg-3 col-sm-3 col-6 pd-05">
                             <a href="!#">
                                 <?php $icon_image_bg = get_field('background_image', $category); ?>
                                 <img class="service-image" src="<?php echo esc_url($icon_image_bg['url']); ?>" alt="">
@@ -54,7 +54,7 @@ get_header();
             </div>
         </div>
         <div class="system-introduction row">
-            <div class="introduction-info col-xl-6 col-lg-6 col-md-5 col-12">
+            <div class="introduction-info col-lg-6 col-md-6 col-12">
                 <div class="introduction-info-logo">
                     <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" alt="" class="info-logo-img">
                 </div>
@@ -64,7 +64,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="introduction-image col-xl-6 col-lg-6 col-md-7">
+            <div class="introduction-image col-lg-6 col-md-6">
                 <img src="<?php echo $ls_options['intro-main-vc-img-1']['url']; ?>" alt="" class="introduction-image-1">
                 <img src="<?php echo $ls_options['intro-main-vc-img-2']['url']; ?>" alt="" class="introduction-image-2">
                 <img src="<?php echo $ls_options['intro-main-vc-img-3']['url']; ?>" alt="" class="introduction-image-3">
@@ -332,7 +332,7 @@ get_header();
                                                 </div>
                                             </div>
                                             <div class="card-content">
-                                                <p class="description height-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                                                <p class="description height-6"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                                 <div class="money">
                                                     <h4 class="price"><?php echo $product->get_regular_price(); ?>đ</h4>
                                                     <a href="<?php $add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]'); echo $add_to_cart; ?>" class="button add-to-cart">

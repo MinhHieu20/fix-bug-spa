@@ -134,8 +134,8 @@ $directoryURI = get_page_uri();
                 </div>
 
                 <div class="col-lg-3">
-                    <div id="sidebar-training">
-                        <div class="details-menu">
+                    <div id="sidebar-training" style="padding: 1.5rem;">
+                        <div class="details-menu dp-none dp-blockPC">
                             <ul class="details-menu-list">
                                 <?php
                                 $extension = get_term(65,'training_cat');
@@ -165,7 +165,21 @@ $directoryURI = get_page_uri();
                                 ?>
                             </ul>
                         </div>
-                
+                        <div class="details-menu details-menu-mobile dp-nonePC">
+                            <ul class="details-menu-list row">
+                                <?php
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post();
+                                    ?>
+                                    <li class="details-menu-list__item">
+                                        <a href="<?php the_permalink(); ?>" class="details-menu-list__item--link <?php echo ($directoryURI == $post->post_name) ? 'active' : '' ?>"><?php the_title();?></a>
+                                    </li>
+                                <?php
+                                endwhile;
+                                wp_reset_postdata();
+                                ?>
+                            </ul>
+                        </div>
                         <div class="details-news">
                             <h3 class="details-news-title">TIN TỨC MỚI NHẤT</h3>
 

@@ -148,11 +148,11 @@ a:hover {
   background-color: #FFD00F;
 }
 
-// .active {
-//   background-color: #FFD00F;
-//   display: block;
-//   color: #4d4d4d !important;
-// }
+.active {
+  background-color: #FFD00F;
+  display: block;
+  color: #4d4d4d !important;
+}
 .active-menu,
 .open-menu {
   display: block!important;
@@ -276,8 +276,8 @@ a:hover {
 .border-radius-5 {
   border-radius: 5rem;
 }
-.height-4 {
-  height: 4rem;
+.height-6 {
+  height: 6rem;
 }
 
 .dp-blockPC {
@@ -298,7 +298,14 @@ a:hover {
 .tips-beautify--category__list--item .active {
   color: $black  !important;
 }
-
+.header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+  border-radius: 1.6rem;
+  padding: 0.5rem 2.2rem;
+  font-family: UTM-AvoBold;
+  background-color: #ffd00f;
+  color: $black;
+}
 
 .show {
   display: block !important;

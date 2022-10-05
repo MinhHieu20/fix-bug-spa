@@ -1,12 +1,4 @@
 @include responsive_pclow {
-    .header-main-nav__list--item-link .active,
-    .header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: $black;
-    }
     .hide-pc{
         display: none;
     }
@@ -48,18 +40,18 @@
             .container-service {
                 &-item {
                     &__note {
-                        bottom: 1.5rem;
-                        left: 1rem;
+                        bottom: 2rem;
+                        left: 0;
                         &--image {
-                            width: 4rem;
-                            height: 4rem;
+                            width: 5rem;
+                            height: 5rem;
                         }
                         &--desc {
                             font-size: 1rem;
-                            line-height: 2.5rem;
-                            padding: 0 1rem 0 2rem;
-                            min-width: 12rem;
-                            margin-left: -2rem;
+                            line-height: 3rem;
+                            padding: 0 ;
+                            min-width: 13rem;
+                            margin-left: -1.1rem;
                         }
                     }
                 }
@@ -70,19 +62,16 @@
         margin-top: 9.45rem;
         .introduction-image {
             .introduction-image-1 {
-                // height: 35rem;
-                width: 80%;
-                margin: 0 auto;
+                height: 35rem;
+                width: 66.5%;
+                margin-left: 56%;
             }
             .introduction-image-2,
             .introduction-image-3 {
                 height: 18.75rem;
             }
             .introduction-image-2 {
-
-                left: 0rem;
-                bottom: -3.6rem;
-
+                left: 9.2rem !important;
             }
             .introduction-image-3 {
                 right: 6.5rem!important;
@@ -102,6 +91,7 @@
             }
             .introduction-info-desc {
                 font-size: 1.4rem;
+                width: 78%;
                 margin-left: 3rem;
             }
         }
@@ -155,24 +145,11 @@
                         }
                         .event-item-text {
                             .event-title {
-
-                                margin: 1.5rem 0;
-                                overflow: hidden;
-                                display: -webkit-box;
-                                -webkit-box-orient: vertical;
-                                -webkit-line-clamp: 2;
-                                text-overflow: ellipsis;
-                                height: 4rem;
-
+                                padding: 1.5rem 0 1.5rem 0;
+                                min-width: 100%;
                             }
                             .event-desc {
                                 font-size: 1.4rem;
-                                overflow: hidden;
-                                display: -webkit-box;
-                                -webkit-box-orient: vertical;
-                                -webkit-line-clamp: 3;
-                                text-overflow: ellipsis;
-                                height: 6rem;
                             }
                         }
                         .image-pseudo::after {
@@ -220,68 +197,12 @@
 }
 
 @include responsive_pcsmall {
-    .header-main-nav__list--item-link .active,
-    .header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: $black;
-    }
     .hide-pc{
         display: none;
     }
-    .container-item .container-body .container-service .container-service-item__note{
-        bottom: 1rem;
-        left: 1rem;
-    }
-    .container-item .container-body .container-service .container-service-item__note--image{
-        width: 6.8rem;
-        height: 6.8rem;
-    }
-    .container-item .container-body .container-service .container-service-item__note--desc{
-        font-size: 1.5rem;
-        line-height: 4.5rem;
-        padding: 0 1rem 0 3rem;
-        margin-left: -3.5rem;
-        min-width: 19rem;
-    }
-
-    .system-introduction .introduction-image .introduction-image-1{
-        width: 70%;
-        margin: 0 auto;
-    }
-    .system-introduction .introduction-image .introduction-image-2{
-        width: 40%;
-        bottom: -5rem;
-        left: 0;
-    }
-    .system-introduction .introduction-image .introduction-image-3{
-        width: 30%;
-        bottom: -10rem;
-        right: 7rem;
-    }
-    .system-introduction .introduction-info .introduction-info-title{
-        font-size: 3.4rem;
-        line-height: 3.6rem;
-    }
-    .system-introduction .introduction-info .introduction-info-desc{
-        padding-right: 22rem;
-    }
-    .event .container-item .container-body .event-list .event-item .event-item-text .event-title{
-        margin: 1.5rem 0 1rem 0;
-    }
-}   
+}
 
 @include responsive_tablet {
-    .header-main-nav__list--item-link .active,
-    .header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: $black;
-    }
     .hide-table{
         // display: none;
     }
@@ -350,10 +271,9 @@
         padding-left: 1.5rem;
         .introduction-image {
             .introduction-image-1 {
-                
+                height: 35rem;
                 width: 66.5%;
-                // margin-left: 56%;
-                margin: 0 auto;
+                margin-left: 56%;
             }
             .introduction-image-2,
             .introduction-image-3 {
@@ -705,9 +625,7 @@
         padding-bottom: 1.5rem;
     }
     .event {
-
-        padding: 4.6rem 0rem;
-
+        padding: 4.6rem 0;
     }
     .container-body{
         .treatment-category{
@@ -1001,7 +919,7 @@
 
 }
 
-@include responsive_mobile_small{
+@include responsive_mobile_small() {
     .container-item {
         .container-body {
             .container-service {
@@ -1206,74 +1124,7 @@
     } 
 }
 @include responsive_tablet_small{
-    .header-main-nav__list--item-link .active,
-    .header-main-nav__list .active {
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-family: UTM-AvoBold;
-    background-color: #ffd00f;
-    color: $black;
-    }
     .hide-tablet-small{
         display: none;
-    }
-    .container-body{
-        .container-service{
-            &-item{
-                &__note{
-                    left: 1rem;
-                    bottom: 1.5rem;
-                    &--image{
-                        width: 4rem;
-                        height: 4rem;
-                    }
-                    &--desc{
-                        font-size: 1rem;
-                        line-height: 2.6rem;
-                        padding: 0 1rem 0 2rem;
-                        min-width: 11rem;
-                        margin-left: -2rem;
-                    }
-                }
-            }
-        }
-    }
-    .system-introduction .introduction-info .introduction-info-title{
-        font-size: 2.6rem;
-        line-height: 3.6rem;
-    }
-    .system-introduction .introduction-image .introduction-image-1{
-        width: 70%;
-        height: auto;
-        margin: 0 auto;
-    }
-    .system-introduction .introduction-image .introduction-image-2{
-        width: 40%;
-        bottom: -3rem;
-        left: 0;
-    }
-    .system-introduction .introduction-image .introduction-image-3{
-        width: 45%;
-        bottom: -12rem;
-        right: 3rem;
-    }
-    .event-item-text {
-        .event-title{
-            margin: 1.5rem 0 1rem 0;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            text-overflow: ellipsis;
-            height: 4rem;
-        }
-    }
-    .event .container-item .container-body .event-list .event-item .event-item-text .event-desc{
-        height: 8rem;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
-        text-overflow: ellipsis;
     }
 }

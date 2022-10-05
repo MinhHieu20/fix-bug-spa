@@ -1,4 +1,8 @@
 .main {
+    .hide-pc, 
+    .hide-table {
+        display: none;
+    }
     &-logo {
         width: 100%;
         max-height: 116rem;
@@ -154,49 +158,47 @@
                     line-height: 1.2;
                 }
 
-                .main-pc {
-                    .main-inftras-content__right {
+                &__right {
 
-                        &--one {
-                            width: 53.7rem;
-                            height: 50.4rem;
-                        }
-
-                        &--two {
-                            position: absolute;
-                            left: -4.8rem;
-                            bottom: 12rem;
-                            width: 33.6rem;
-                            height: 30.4rem;
-                        }
-
-                        &--three {
-                            position: absolute;
-                            right: 4.8rem;
-                            bottom: 5rem;
-                            height: 23.2rem;
-                        }
+                    &--one {
+                        width: 53.7rem;
+                        height: 50.4rem;
                     }
 
-                    .main-inftras-content__left {
-                        text-align: justify;
-                        line-height: 1.4em;
+                    &--two {
+                        position: absolute;
+                        left: -4.8rem;
+                        bottom: 12rem;
+                        width: 33.6rem;
+                        height: 30.4rem;
+                    }
 
-                        &--list {
-                            &-item {
+                    &--three {
+                        position: absolute;
+                        right: 4.8rem;
+                        bottom: 5rem;
+                        height: 23.2rem;
+                    }
+                }
 
-                                font-size: 1.8rem;
-                                margin-top: 2.5rem;
-                                line-height: 1.25;
+                &__left {
+                    text-align: justify;
+                    line-height: 1.4em;
 
-                                span {
-                                    font-family: Gilroy-XBold;
-                                }
+                    &--list {
+                        &-item {
+
+                            font-size: 1.8rem;
+                            margin-top: 2.5rem;
+                            line-height: 1.25;
+
+                            span {
+                                font-family: Gilroy-XBold;
                             }
+                        }
 
-                            &-item:first-child {
-                                margin-top: 0;
-                            }
+                        &-item:first-child {
+                            margin-top: 0;
                         }
                     }
                 }
@@ -207,59 +209,56 @@
     &-device {
         margin-top: 131.8rem;
         height: 55rem;
-        .device-pc {
-            height: 100%;
+        &-left {
 
-            .main-device-left {
+            &__list {
+                position: relative;
+                width: 100%;
 
-                &__list {
-                    position: relative;
-                    width: 100%;
-
-                    &--item {
-                        top: 10rem;
-
-                        img {
-                            height: 37.6rem;
-                        }
+                &--item {
+                    top: 10rem;
+                    img {
+                        height: 37.6rem;
                     }
+                }
 
-                    &--item1 {
-                        position: absolute;
-                        img {
-                            height: 25.8rem
-                        }
+                &--item1 {
+                    position: absolute;
+                    top: 0;
+                    right: 16rem;
+                    img {
+                        height: 25.8rem
                     }
+                }
 
-                    &--item2 {
-                        position: absolute;
-                        top: 26.9rem;
-                        left: 4rem;
+                &--item2 {
+                    position: absolute;
+                    top: 26.9rem;
+                    left: 4rem;
 
-                        img {
-                            width: 26.6rem;
-                            height: 22.8rem;
-                        }
+                    img {
+                        width: 26.6rem;
+                        height: 22.8rem;
                     }
+                }
 
-                    &--item3 {
-                        position: absolute;
-                        top: 11.2rem;
-                        left: 28.8rem;
+                &--item3 {
+                    position: absolute;
+                    top: 11.2rem;
+                    left: 28.8rem;
 
-                        img {
-                            width: 23.1rem;
-                            height: 40.3rem;
-                        }
+                    img {
+                        width: 23.1rem;
+                        height: 40.3rem;
                     }
                 }
             }
+        }
 
-            .main-device-right {
-                text-align: right;
-                img {
-                    width: 100%;
-                }
+        &-right {
+            text-align: right;
+            img {
+                width: 100%;
             }
         }
     }
