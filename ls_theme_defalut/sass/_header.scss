@@ -1,8 +1,6 @@
 @import 'variables';
 
-.search-mobile-form {
-    display: none;
-}
+
 .header-container {
     &-heading {
         position: relative;
@@ -156,7 +154,10 @@
 .search-mobile-form {
     padding: 0.5rem 3rem 0 3rem;
     animation: showModal linear 0.3s;
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
     .form-group {
         display: flex;
         flex-wrap: wrap;

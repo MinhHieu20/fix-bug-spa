@@ -27,39 +27,43 @@
     }
     .header-contact{
         padding: 0 1.7rem;
+        margin-top: 7rem;
         &-left{
             form {
                 width: 100%;
                 float: left;
             }
             &__search {
-                height: 5rem;
-                font-size: 1.6rem;
+                height: 5rem!important;
+                font-size: 1.6rem!important;
                 padding: 0 2rem;
             }
         }
         &-right{
             &__cart {
                 &--btn {
-                    width: 5rem;
-                    height: 5rem;
+                    width: 5rem!important;
+                    height: 5rem!important;
                     img {
                         width: 2rem;
                         height: 2rem;
                     }
                 }
                 &--number {
-                    top: -1.7rem;
-                    right: -1rem;
+                    top: -2rem!important;
+                    right: -2rem!important;
+                    font-size: 1.2rem!important;
+
                 }
 
             }
             &__tel {
-                height: 5rem;
+                height: 5rem!important;
+                width: calc(100% - 5rem);
                 &--number {
-                    padding: 0 1rem;
-                    font-size: 1.3rem;
-                    line-height: 5rem;
+                    padding: 0 1rem!important;
+                    font-size: 1.3rem!important;
+                    line-height: 5rem!important;
                 }
             }
         }
@@ -68,7 +72,7 @@
         &-nav {
             &__list {
                 &--item {
-                    padding: 1rem 1.5rem;
+                    padding: 1rem 1.5rem!important;
                     a {
                         font-size: 1.8rem;
                     }
@@ -116,7 +120,7 @@
             }
             &__search {
                 width: 30.5rem;
-                height: 5rem;
+                height: 5rem!important;
                 font-size: 1.6rem;
                 padding: 0 2rem;
                 float: right;
@@ -125,8 +129,8 @@
         &-right{
             &__cart {
                 &--btn {
-                    width: 5rem;
-                    height: 5rem;
+                    width: 5rem!important;
+                    height: 5rem!important;
                     img {
                         width: 2rem;
                         height: 2rem;
@@ -139,12 +143,12 @@
 
             }
             &__tel {
-                height: 5rem;
-                min-width: 22rem;
+                height: 5rem!important;
+                min-width: 24rem;
                 &--number {
-                    padding: 0 1rem;
-                    font-size: 1.4rem;
-                    line-height: 5rem;
+                    padding: 0 1rem!important;
+                    font-size: 1.4rem!important;
+                    line-height: 5rem!important;
                 }
             }
         }
@@ -153,7 +157,7 @@
         &-nav {
             &__list {
                 &--item {
-                    padding: 1rem 1.5rem;
+                    padding: 1rem 1.5rem!important;
                     a {
                         font-size: 1.8rem;
                     }
@@ -705,7 +709,7 @@
                 }
 
                 &__search{
-                    height: 3.65rem;
+                    height: 3.65rem!important;
                     padding: 0 1rem;
                     font-size: 1.4rem;
                 }
@@ -722,8 +726,8 @@
                 align-items: center;
                 &__cart {
                     background-color: #ffd00f;
-                    width: 4.5rem;
-                    height: 4.5rem;
+                    width: 4rem;
+                    height: 4rem;
                     border-radius: 50%;
                     padding: 0.5rem;
                     .header-cart-pc {
@@ -743,19 +747,21 @@
                             right: -0.8rem;
                             padding: 0.2rem 0.4rem;
                             font-size: 1.2rem;
+                            width: 2.6rem;
+                            height: 2.6rem;
                         }
 
                     }
                 }
 
                 &__tel {
-                    height: 3.65rem;
+                    height: 3.65rem!important;
                     min-width: 20rem;
-
+                    margin-left: 0!important;
                     &--number {
-                        font-size: 1.4rem;
-                        padding: 0;
-                        line-height: 3.65rem;
+                        font-size: 1.4rem!important;
+                        padding: 0!important;
+                        line-height: 3.65rem!important;
                     }
                 }
 

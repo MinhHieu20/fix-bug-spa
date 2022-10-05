@@ -218,12 +218,6 @@ a:hover {
   background-color: #FFD00F;
 }
 
-.active {
-  background-color: #FFD00F;
-  display: block;
-  color: #4d4d4d !important;
-}
-
 .active-menu,
 .open-menu {
   display: block !important;
@@ -355,8 +349,8 @@ a:hover {
   border-radius: 5rem;
 }
 
-.height-6 {
-  height: 6rem;
+.height-4 {
+  height: 4rem;
 }
 
 .dp-blockPC {
@@ -377,15 +371,6 @@ a:hover {
 
 .tips-beautify--category__list--item .active {
   color: #000 !important;
-}
-
-.header-main-nav__list--item-link .active,
-.header-main-nav__list .active {
-  border-radius: 1.6rem;
-  padding: 0.5rem 2.2rem;
-  font-family: UTM-AvoBold;
-  background-color: #ffd00f;
-  color: #000;
 }
 
 .show {
@@ -994,10 +979,6 @@ a:hover {
     width: 644px;
   }
 }
-.search-mobile-form {
-  display: none;
-}
-
 .header-container-heading {
   position: relative;
   height: 5.1rem;
@@ -1131,7 +1112,13 @@ a:hover {
 
 .search-mobile-form {
   padding: 0.5rem 3rem 0 3rem;
-  animation: showModal linear 0.3s;
+  -webkit-animation: showModal linear 0.3s;
+          animation: showModal linear 0.3s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
 }
 .search-mobile-form .form-group {
   display: flex;
@@ -1525,21 +1512,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .container-item .container-body .container-service-item {
   margin-bottom: 2rem;
 }
-.container-item .container-body .container-service-item__note {
-  bottom: 2.5rem;
-  left: 1.5rem;
-}
-.container-item .container-body .container-service-item__note--image {
-  width: 8rem;
-  height: 8rem;
-}
-.container-item .container-body .container-service-item__note--desc {
-  font-size: 1.6rem;
-  line-height: 5rem;
-  padding: 0 3rem;
-  min-width: 22rem;
-  margin-left: -3.5rem;
-}
 .container-item .container-body .container-service-item .service-information {
   position: absolute;
   left: 1.2rem;
@@ -1578,19 +1550,9 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .system-introduction .introduction-image {
   display: flex;
 }
-.system-introduction .introduction-image .introduction-image-1 {
-  height: 60rem;
-  width: 64.5%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
 .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
-  height: 26.75rem;
   position: absolute;
-}
-.system-introduction .introduction-info {
-  padding-left: 8rem;
 }
 .system-introduction .introduction-info .introduction-info-logo {
   height: 7.1rem;
@@ -1599,13 +1561,10 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   margin-bottom: 3.2rem;
 }
 .system-introduction .introduction-info .introduction-info-title {
-  font-size: 3.4rem;
-  line-height: 4.9rem;
   text-align: left;
 }
 .system-introduction .introduction-info .introduction-info-desc {
   font-size: 1.6rem;
-  width: 57%;
 }
 
 .top-banner-2 {
@@ -1684,8 +1643,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
   font-size: 1.6rem;
-  max-width: 23.4rem;
-  padding: 3.5rem 0 1.5rem 0;
 }
 .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
   max-width: 23.4rem;
@@ -7590,6 +7547,14 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 991px) and (max-width: 1023px) {
+  .header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+    border-radius: 1.6rem;
+    padding: 0.5rem 2.2rem;
+    font-family: UTM-AvoBold;
+    background-color: #ffd00f;
+    color: #000;
+  }
   .hide-pc {
     display: none;
   }
@@ -7625,34 +7590,33 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 28rem;
   }
   .container-item .container-body .container-service-item__note {
-    bottom: 2rem;
-    left: 0;
+    bottom: 1.5rem;
+    left: 1rem;
   }
   .container-item .container-body .container-service-item__note--image {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
   .container-item .container-body .container-service-item__note--desc {
     font-size: 1rem;
-    line-height: 3rem;
-    padding: 0;
-    min-width: 13rem;
-    margin-left: -1.1rem;
+    line-height: 2.5rem;
+    padding: 0 1rem 0 2rem;
+    min-width: 12rem;
+    margin-left: -2rem;
   }
   .system-introduction {
     margin-top: 9.45rem;
   }
   .system-introduction .introduction-image .introduction-image-1 {
-    height: 35rem;
-    width: 66.5%;
-    margin-left: 56%;
+    width: 80%;
+    margin: 0 auto;
   }
   .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
     height: 18.75rem;
   }
   .system-introduction .introduction-image .introduction-image-2 {
-    left: 1.2rem;
+    left: 0rem;
     bottom: -3.6rem;
   }
   .system-introduction .introduction-image .introduction-image-3 {
@@ -7673,7 +7637,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .system-introduction .introduction-info .introduction-info-desc {
     font-size: 1.4rem;
-    width: 78%;
     margin-left: 3rem;
   }
   .treatment-result {
@@ -7705,10 +7668,22 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     height: 22rem;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
-    padding: 1.5rem 0 1.5rem 0;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    height: 4rem;
   }
   .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
     font-size: 1.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    height: 6rem;
   }
   .event .container-item .container-body .event-list .event-item .image-pseudo::after {
     height: 16.5rem;
@@ -7741,11 +7716,66 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 1024px) {
+  .header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+    border-radius: 1.6rem;
+    padding: 0.5rem 2.2rem;
+    font-family: UTM-AvoBold;
+    background-color: #ffd00f;
+    color: #000;
+  }
   .hide-pc {
     display: none;
   }
+  .container-item .container-body .container-service .container-service-item__note {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .container-item .container-body .container-service .container-service-item__note--image {
+    width: 6.8rem;
+    height: 6.8rem;
+  }
+  .container-item .container-body .container-service .container-service-item__note--desc {
+    font-size: 1.5rem;
+    line-height: 4.5rem;
+    padding: 0 1rem 0 3rem;
+    margin-left: -3.5rem;
+    min-width: 19rem;
+  }
+  .system-introduction .introduction-image .introduction-image-1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .system-introduction .introduction-image .introduction-image-2 {
+    width: 40%;
+    bottom: -5rem;
+    left: 0;
+  }
+  .system-introduction .introduction-image .introduction-image-3 {
+    width: 30%;
+    bottom: -10rem;
+    right: 7rem;
+  }
+  .system-introduction .introduction-info .introduction-info-title {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+  }
+  .system-introduction .introduction-info .introduction-info-desc {
+    padding-right: 22rem;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
+    margin: 1.5rem 0 1rem 0;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+    border-radius: 1.6rem;
+    padding: 0.5rem 2.2rem;
+    font-family: UTM-AvoBold;
+    background-color: #ffd00f;
+    color: #000;
+  }
   .container-item .container-heading {
     padding-bottom: 4.5rem;
   }
@@ -7796,9 +7826,8 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 9.45rem;
   }
   .system-introduction .introduction-image .introduction-image-1 {
-    height: 35rem;
     width: 66.5%;
-    margin-left: 56%;
+    margin: 0 auto;
   }
   .system-introduction .introduction-image .introduction-image-2,
 .system-introduction .introduction-image .introduction-image-3 {
@@ -8080,7 +8109,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     padding-bottom: 1.5rem;
   }
   .event {
-    padding: 4.6rem 3rem;
+    padding: 4.6rem 0rem;
   }
   .container-body .treatment-category .category-nav .category-item {
     padding: 0rem 0.8rem !important;
@@ -8476,8 +8505,67 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
+  .header-main-nav__list--item-link .active,
+.header-main-nav__list .active {
+    border-radius: 1.6rem;
+    padding: 0.5rem 2.2rem;
+    font-family: UTM-AvoBold;
+    background-color: #ffd00f;
+    color: #000;
+  }
   .hide-tablet-small {
     display: none;
+  }
+  .container-body .container-service-item__note {
+    left: 1rem;
+    bottom: 1.5rem;
+  }
+  .container-body .container-service-item__note--image {
+    width: 4rem;
+    height: 4rem;
+  }
+  .container-body .container-service-item__note--desc {
+    font-size: 1rem;
+    line-height: 2.6rem;
+    padding: 0 1rem 0 2rem;
+    min-width: 11rem;
+    margin-left: -2rem;
+  }
+  .system-introduction .introduction-info .introduction-info-title {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
+  .system-introduction .introduction-image .introduction-image-1 {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .system-introduction .introduction-image .introduction-image-2 {
+    width: 40%;
+    bottom: -3rem;
+    left: 0;
+  }
+  .system-introduction .introduction-image .introduction-image-3 {
+    width: 45%;
+    bottom: -12rem;
+    right: 3rem;
+  }
+  .event-item-text .event-title {
+    margin: 1.5rem 0 1rem 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    height: 4rem;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
+    height: 8rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
   }
 }
 @media (min-width: 991px) and (max-width: 1023px) {
@@ -15508,38 +15596,41 @@ body .select2-container--default .select2-selection--single {
   }
   .header-contact {
     padding: 0 1.7rem;
+    margin-top: 7rem;
   }
   .header-contact-left form {
     width: 100%;
     float: left;
   }
   .header-contact-left__search {
-    height: 5rem;
-    font-size: 1.6rem;
+    height: 5rem !important;
+    font-size: 1.6rem !important;
     padding: 0 2rem;
   }
   .header-contact-right__cart--btn {
-    width: 5rem;
-    height: 5rem;
+    width: 5rem !important;
+    height: 5rem !important;
   }
   .header-contact-right__cart--btn img {
     width: 2rem;
     height: 2rem;
   }
   .header-contact-right__cart--number {
-    top: -1.7rem;
-    right: -1rem;
+    top: -2rem !important;
+    right: -2rem !important;
+    font-size: 1.2rem !important;
   }
   .header-contact-right__tel {
-    height: 5rem;
+    height: 5rem !important;
+    width: calc(100% - 5rem);
   }
   .header-contact-right__tel--number {
-    padding: 0 1rem;
-    font-size: 1.3rem;
-    line-height: 5rem;
+    padding: 0 1rem !important;
+    font-size: 1.3rem !important;
+    line-height: 5rem !important;
   }
   .header-main-nav__list--item {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem !important;
   }
   .header-main-nav__list--item a {
     font-size: 1.8rem;
@@ -15580,14 +15671,14 @@ body .select2-container--default .select2-selection--single {
   }
   .header-contact-left__search {
     width: 30.5rem;
-    height: 5rem;
+    height: 5rem !important;
     font-size: 1.6rem;
     padding: 0 2rem;
     float: right;
   }
   .header-contact-right__cart--btn {
-    width: 5rem;
-    height: 5rem;
+    width: 5rem !important;
+    height: 5rem !important;
   }
   .header-contact-right__cart--btn img {
     width: 2rem;
@@ -15598,16 +15689,16 @@ body .select2-container--default .select2-selection--single {
     right: -1rem;
   }
   .header-contact-right__tel {
-    height: 5rem;
-    min-width: 22rem;
+    height: 5rem !important;
+    min-width: 24rem;
   }
   .header-contact-right__tel--number {
-    padding: 0 1rem;
-    font-size: 1.4rem;
-    line-height: 5rem;
+    padding: 0 1rem !important;
+    font-size: 1.4rem !important;
+    line-height: 5rem !important;
   }
   .header-main-nav__list--item {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem !important;
   }
   .header-main-nav__list--item a {
     font-size: 1.8rem;
@@ -16051,7 +16142,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
     width: 100%;
   }
   .header-contact-left__search {
-    height: 3.65rem;
+    height: 3.65rem !important;
     padding: 0 1rem;
     font-size: 1.4rem;
   }
@@ -16064,8 +16155,8 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   }
   .header-contact-right__cart {
     background-color: #ffd00f;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     padding: 0.5rem;
   }
@@ -16084,15 +16175,18 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
     right: -0.8rem;
     padding: 0.2rem 0.4rem;
     font-size: 1.2rem;
+    width: 2.6rem;
+    height: 2.6rem;
   }
   .header-contact-right__tel {
-    height: 3.65rem;
+    height: 3.65rem !important;
     min-width: 20rem;
+    margin-left: 0 !important;
   }
   .header-contact-right__tel--number {
-    font-size: 1.4rem;
-    padding: 0;
-    line-height: 3.65rem;
+    font-size: 1.4rem !important;
+    padding: 0 !important;
+    line-height: 3.65rem !important;
   }
   .header-contact-right .header-cart--notify {
     width: 25rem;
@@ -16221,7 +16315,13 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .top-banner .top-banner-1 img {
   width: 100%;
   height: auto;
+<<<<<<< Updated upstream
   object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+>>>>>>> Stashed changes
 }
 .top-banner .top-banner-training {
   width: 100%;
@@ -16312,16 +16412,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 }
 .system-introduction .introduction-image {
   position: relative;
-}
-.system-introduction .introduction-image .introduction-image-2 {
-  left: 1.2rem;
-  bottom: -3.6rem;
-  z-index: 1;
-}
-.system-introduction .introduction-image .introduction-image-3 {
-  bottom: -9.7rem;
-  right: 8.5rem;
-  z-index: 1;
 }
 .system-introduction .introduction-info {
   text-align: center;
@@ -16416,7 +16506,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   background-color: #f2f2f2;
   border-radius: 50rem;
   border: 1px solid #ffd00f;
-  margin: 0.2rem;
+  margin: 0.2rem !important;
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: 0.3s ease-in-out;
@@ -16455,7 +16545,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   position: absolute;
 }
 .event .container-item .container-body .event-list .event-item .event-title {
-  max-width: 23.4rem;
   text-transform: uppercase;
   font-family: Gilroy-Heavy;
   font-size: 1.6rem;
@@ -16466,7 +16555,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
 .event .container-item .container-body .event-list .event-item .event-desc {
   max-width: 23.4rem;
   font-size: 1.8rem;
-  text-align: justify;
 }
 .event .container-item .container-footer {
   text-align: center;
