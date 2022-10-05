@@ -542,7 +542,8 @@
                     // height: 26.5rem;
                     margin: 1.5rem 0;
                     text-align: center;
-
+                    background-image: url(../images/contact/_Path_.png);
+                    @include backgroundImage();
                     .contact-logo {
                         // width: 6.55rem;
                         // height: 6.55rem;
