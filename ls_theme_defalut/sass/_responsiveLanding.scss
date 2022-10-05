@@ -498,7 +498,8 @@
 
 @include responsive_mobile_small {
     .content-landing {
-        height: 706rem !important;
+        height: 770rem!important;
+        margin-bottom: 35rem;
         &-acne {
             height: 114rem;
             &__left {
@@ -946,9 +947,7 @@
             }
         }
     }
-    .footer {
-        margin-top: 20rem;
-    }
+ 
 }
 @include responsive_mobile_low {
     .content-landing {

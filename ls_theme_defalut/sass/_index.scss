@@ -83,18 +83,17 @@
                 &-item {
                     margin-bottom: 2rem;
                     &__note{
-                        bottom: 2.5rem;
-                        left: 1.5rem;
+                        // bottom: 2.5rem;
+                        // left: 1.5rem;
                         &--image{
-                            width: 8rem;
-                            height: 8rem;
+                            // width: 8rem;
+                            // height: 8rem;
                         }
                         &--desc{
-                            font-size: 1.6rem;
-                            line-height: 5rem;
-                            padding: 0 3rem;
-                            min-width: 22rem;
-                            margin-left: -3.5rem;
+                            // line-height: 5rem;
+                            // padding: 0 3rem;
+                            // min-width: 22rem;
+                            // margin-left: -3.5rem;
                         }
                     }
                     .service-information {
@@ -140,20 +139,20 @@
             display: flex;
 
             .introduction-image-1 {
-                height: 60rem;
-                width: 64.5%;
-                margin-left: 50%;
-                transform: translateX(-50%);
+                // height: 60rem;
+                // width: 64.5%;
+                // margin-left: 50%;
+                // transform: translateX(-50%);
             }
 
             .introduction-image-2,
             .introduction-image-3 {
-                height: 26.75rem;
+                // height: 26.75rem;
                 position: absolute;
             }
         }
         .introduction-info {
-            padding-left: 8rem;
+            // padding-left: 8rem;
             .introduction-info-logo {
                 height: 7.1rem;
                 text-align: left;
@@ -161,13 +160,12 @@
                 margin-bottom: 3.2rem;
             }
             .introduction-info-title {
-                font-size: 3.4rem;
-                line-height: 4.9rem;
+                // font-size: 3.4rem;
+                // line-height: 4.9rem;
                 text-align: left;
             }
             .introduction-info-desc {
                 font-size: 1.6rem;
-                width: 57%;
             }
         }
     }
@@ -256,8 +254,8 @@
                         .event-item-text {
                             .event-title {
                                 font-size: 1.6rem;
-                                max-width: 23.4rem;
-                                padding: 3.5rem 0 1.5rem 0;
+                                // max-width: 23.4rem;
+                                // padding: 3.5rem 0 1.5rem 0;
                             }
                             .event-desc {
                                 max-width: 23.4rem;

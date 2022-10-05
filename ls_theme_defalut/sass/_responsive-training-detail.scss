@@ -132,22 +132,6 @@
        margin-right: 0!important;
         background-color: #fff;
     }
-    .details-menu-mobile {
-        display: block;
-        padding-bottom: 4rem;
-
-        .details-menu-list {
-            &__item {
-                margin: 0 1rem 1rem 0;
-    
-                &--link {
-                    padding: 0.5rem 1rem;
-                    font-size: 1.6rem;
-                }
-            }
-        }
-    }
-
     .details-news {
         display: none;
     }
@@ -158,5 +142,13 @@
     .details-graduate-outstanding .slick-next {
         top: 24%;
         right: -1rem;
+    }
+    #sidebar-training{
+        .details-menu{
+            &-list{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
     }
 }
