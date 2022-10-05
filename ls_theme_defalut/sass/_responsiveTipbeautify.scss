@@ -216,3 +216,12 @@
     
     }
 }
+@include responsive_mobile_medium {
+    .beautify-program-list {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .beautify-program-list__item {
+        width: 100%;
+    }
+}
