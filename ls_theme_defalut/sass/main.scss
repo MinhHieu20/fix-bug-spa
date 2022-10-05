@@ -56,6 +56,9 @@
 .seemore-mobile {
     display: none;
 }
+.content-result {
+    padding-bottom: 15rem;
+}
 .top-banner {
     .top-banner-1 {
         width: 100%;
@@ -166,21 +169,24 @@
         position: relative;
 
         // overflow: hidden;
+        padding-bottom: 14rem;
         .introduction-image-1 {
          
         }
 
 
-        // .introduction-image-2 {
-        //     left: 1.2rem;
-        //     bottom: -3.6rem;
-        //     z-index: 1;
-        // }
-        // .introduction-image-3 {
-        //     bottom: -9.7rem;
-        //     right: 8.5rem;
-        //     z-index: 1;
-        // }
+
+        .introduction-image-2 {
+            left: 1.2rem;
+            bottom: 10.4rem;
+            z-index: 1;
+        }
+        .introduction-image-3 {
+            bottom: 4.3rem;
+            right: 8.5rem;
+            z-index: 1;
+        }
+
 
     }
     .introduction-info {
@@ -765,7 +771,6 @@
             height: 92%;
             width: 1rem;
             border-right: 0.1rem solid #A1710F;
-            display: none;
         }
     }
 

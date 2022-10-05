@@ -79,12 +79,14 @@
                 height: 18.75rem;
             }
             .introduction-image-2 {
+
                 left: 0rem;
                 bottom: -3.6rem;
+
             }
             .introduction-image-3 {
-                right: -2.5rem!important;
-                bottom: -9.7rem!important;
+                right: 6.5rem!important;
+                bottom: -4.3rem!important;
             }
         }
         .introduction-info {
@@ -147,12 +149,13 @@
                         .event-item-image {
                             height: 22rem;
                             a {
-                                display: inline-block;
+                                display: block;
                                 height: 22rem;
                             }
                         }
                         .event-item-text {
                             .event-title {
+
                                 margin: 1.5rem 0;
                                 overflow: hidden;
                                 display: -webkit-box;
@@ -160,6 +163,7 @@
                                 -webkit-line-clamp: 2;
                                 text-overflow: ellipsis;
                                 height: 4rem;
+
                             }
                             .event-desc {
                                 font-size: 1.4rem;
@@ -281,6 +285,10 @@
     .hide-table{
         // display: none;
     }
+    .content-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .container-item {
         .container-heading {
             padding-bottom: 4.5rem;
@@ -339,6 +347,7 @@
     }
     .system-introduction {
         margin-top: 9.45rem;
+        padding-left: 1.5rem;
         .introduction-image {
             .introduction-image-1 {
                 
@@ -356,7 +365,7 @@
             }
             .introduction-image-3 {
                 right: 0.5rem!important;
-                bottom: -7rem!important;
+                bottom: 4rem!important;
             }
         }
         .introduction-info {
@@ -499,6 +508,8 @@
         margin: 1rem auto 0;
     }
     .container-item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         .container-body {
             .container-service {
                 .container-service-item {
@@ -554,7 +565,7 @@
         }
     }
     .content-container {
-        padding: 1.6rem 1.5rem;
+        padding: 1.6rem 0;
     }
     .container-item {
         .container-heading {
@@ -574,6 +585,7 @@
         display: block;
 
         .introduction-image {
+            padding-bottom: 0!important;
             .introduction-image-1,
             .introduction-image-2,
             .introduction-image-3 {
@@ -693,7 +705,9 @@
         padding-bottom: 1.5rem;
     }
     .event {
+
         padding: 4.6rem 0rem;
+
     }
     .container-body{
         .treatment-category{
