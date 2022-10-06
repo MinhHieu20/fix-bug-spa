@@ -40,7 +40,6 @@ if(get_query_var('paged')) {
                                     <img src="<?php echo $image[0]; ?>" alt="" class="beautify-program-list__item--image--product">
                                 </div>
                                 <div class="beautify-program-list__item--text">
-                                    <h1 style="display: none;"><?php the_title(); ?></h1>
                                     <h2 class="beautify-program-list__item--text--title"><?php the_title(); ?></h2>
                                     <p class="beautify-program-list__item--text--desc">
                                     <?php
