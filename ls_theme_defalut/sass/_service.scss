@@ -516,6 +516,22 @@
 
 .tab-pane-content {
     display: none;
+    .address {
+        &-info {
+            &-title {
+                color: $black;
+            }
+        }
+        &-nav {
+            &-location {
+                &__item {
+                    &--link {
+                        color: #1a1a1a;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .tab-pane-content.active {
@@ -563,17 +579,20 @@
         background-position: center;
         background-repeat: no-repeat;
         object-fit: cover;
-        // height: 63.8rem;
-        margin-left: 50%;
-        transform: translateX(-50%);
         overflow: hidden;
         animation: showModal linear 0.3s;
+        margin-left: 50%;
         position: relative;
-
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 22rem;
+        padding-bottom: 3rem;
+        border-radius: 6rem;
         &--logo {
-            padding-top: 1.3rem;
-           
-            margin-left: 50%;
+            position: absolute;
+            width: 20%;
+            top: 1rem;
+            left: 50%;
             transform: translateX(-50%);
 
             &--image {
@@ -583,7 +602,7 @@
         }
 
         &--contact {
-            padding: 0 3rem;
+            padding: 0 8rem;
 
             &--form {
                 &-group {
@@ -637,6 +656,8 @@
                 font-weight: bold;
                 text-align: center;
                 font-style: italic;
+                font-size: 2rem;
+                color: $black;
                 .phone-number {
                     color: $more-color;
                 }

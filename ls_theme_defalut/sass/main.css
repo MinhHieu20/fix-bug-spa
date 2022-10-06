@@ -4303,6 +4303,12 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .tab-pane-content {
   display: none;
 }
+.tab-pane-content .address-info-title {
+  color: #000;
+}
+.tab-pane-content .address-nav-location__item--link {
+  color: #1a1a1a;
+}
 
 .tab-pane-content.active {
   display: contents;
@@ -4348,16 +4354,22 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-  margin-left: 50%;
-  transform: translateX(-50%);
   overflow: hidden;
   animation: showModal linear 0.3s;
+  margin-left: 50%;
   position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 22rem;
+  padding-bottom: 3rem;
+  border-radius: 6rem;
 }
 .form--register__inner--logo,
 .form--contact__inner--logo {
-  padding-top: 1.3rem;
-  margin-left: 50%;
+  position: absolute;
+  width: 20%;
+  top: 1rem;
+  left: 50%;
   transform: translateX(-50%);
 }
 .form--register__inner--logo--image,
@@ -4367,7 +4379,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 }
 .form--register__inner--contact,
 .form--contact__inner--contact {
-  padding: 0 3rem;
+  padding: 0 8rem;
 }
 .form--register__inner--contact--form-group .form-control,
 .form--contact__inner--contact--form-group .form-control {
@@ -4438,6 +4450,8 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   font-weight: bold;
   text-align: center;
   font-style: italic;
+  font-size: 2rem;
+  color: #000;
 }
 .form--register__inner--contact--text .phone-number,
 .form--contact__inner--contact--text .phone-number {
@@ -6196,7 +6210,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .advise-contact__body .contact-body__right-info .form-group .form-control {
     position: relative;
     margin: 0 auto;
-    width: 34.8rem;
+    width: 100%;
   }
   .advise-contact__body .contact-body__right-info .btn-exception {
     margin-top: 1.5rem;
@@ -6205,6 +6219,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .advise-contact__body .contact-body__left {
     display: flex;
     justify-content: space-around;
+    padding: 0;
   }
   .advise-contact__body .contact-body__left .contact-body__column {
     width: 21.6rem;
@@ -6329,7 +6344,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     margin-top: 1.9rem;
   }
   .advise-contact__body .contact-body__left .contact-body__column .contact__name {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     padding: 1rem;
   }
   .advise-contact__body .contact-body__left .contact-body__column .contact__desc {
@@ -8195,7 +8210,6 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .advise-contact__body .contact-body__right-info .form-group .form-control {
     position: relative;
     margin: 0 auto;
-    width: 34.8rem !important;
   }
   .advise-contact__body .contact-body__right-info .btn-exception {
     margin-top: 1.5rem;
@@ -8464,6 +8478,32 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .advise-contact__body .contact-body__right-info .form-group .form-control {
     width: 31.8rem !important;
+  }
+  .container-item .container-body .container-service .container-service-item .container-service-item__note--image {
+    width: 4rem;
+    height: 4rem;
+  }
+  .container-item .container-body .container-service .container-service-item .container-service-item__note--desc {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    min-width: 14rem;
+    margin-left: -2.8rem;
+    padding: 0 0 0 2rem;
+  }
+  .top-banner-2 .top-banner-body__item--heading {
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+  .top-banner-2 .top-banner-body__item:last-child .top-banner-body__item--heading {
+    margin-top: 5rem;
+  }
+  .top-banner-2 .top-banner-body__item--desc {
+    font-size: 1.1rem;
+    line-height: 1.1em;
+  }
+  .top-banner-3 {
+    height: 13.9rem;
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
@@ -9676,7 +9716,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
-    left: 18.7rem;
+    left: 17.7rem;
     width: 16.1rem;
     height: 27.3rem;
   }
@@ -11378,7 +11418,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .main-device .container-width .device-about .main-device-left__list--item3 {
     position: absolute;
     top: 5.2rem;
-    left: 18.7rem;
+    left: 17.7rem;
     width: 16.1rem;
     height: 27.3rem;
   }
@@ -13068,7 +13108,7 @@ body .select2-container--default .select2-selection--single {
 }
 .content-landing-outside {
   position: relative;
-  height: 171rem;
+  height: 164rem;
 }
 .content-landing-outside > img {
   width: 100%;
@@ -16015,6 +16055,15 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   ul#primary-menu > li:hover ul.sub-menu {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 360px) {
+  .header-contact {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .header-contact-right {
+    padding-left: 6.5rem;
   }
 }
 .seemore-mobile {

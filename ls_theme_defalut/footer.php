@@ -200,7 +200,6 @@ global $ls_options;
                 <p class="address-info-title">Hệ thống hơn 50 chi nhánh</p>
             </div>
             <?php echo do_shortcode( '[get_location]' ); ?>
-
         </div>
     </div>
     <div class="tab-pane-content">

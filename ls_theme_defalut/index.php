@@ -26,7 +26,7 @@ get_header();
                 <div class="container-item-logo">
                     <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
                 </div>
-                <h2 class="container-item-title">Dịch vụ nổi bật</h2>
+                <p class="container-item-title">Dịch vụ nổi bật</p>
             </div>
             <div class="container-body">
                 <div class="container-service row">
@@ -75,13 +75,13 @@ get_header();
     <div class="top-banner-2">
         <div class="top-banner-body">
             <div class="top-banner-body__item">
-                <h2 class="top-banner-body__item--heading"><?php echo $ls_options['intro-main-vc-detail-title']; ?></h2>
+                <p class="top-banner-body__item--heading"><?php echo $ls_options['intro-main-vc-detail-title']; ?></p>
                 <p class="top-banner-body__item--desc">
                     <?php echo $ls_options['intro-main-vc-detail-content']; ?>
                 </p>
             </div>
             <div class="top-banner-body__item">
-                <h2 class="top-banner-body__item--heading"><?php echo $ls_options['intro-main-vc-detail-title-1']; ?></h2>
+                <p class="top-banner-body__item--heading"><?php echo $ls_options['intro-main-vc-detail-title-1']; ?></p>
                 <p class="top-banner-body__item--desc"><?php echo $ls_options['intro-main-vc-detail-content-1']; ?></p>
             </div>
         </div>
@@ -95,7 +95,7 @@ get_header();
                 <div class="container-item-logo pd-5">
                     <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
                 </div>
-                <h2 class="container-item-title">Kết quả điều trị</h2>
+                <p class="container-item-title">Kết quả điều trị</p>
             </div>
             <div class="container-body">
                 <div class="treatment-category">
@@ -160,7 +160,7 @@ get_header();
             <div class="container-item-logo pd-1 ">
                 <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
             </div>
-            <h2 class="container-item-title">Sự kiện</h2>
+            <p class="container-item-title">Sự kiện</p>
 
         </div>
         <div class="container-body">
@@ -199,7 +199,7 @@ get_header();
                         <a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>" alt="" class="event-image"></a>
                     </div>
                     <div class="event-item-text ">
-                        <h2 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
+                        <p class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></p>
                         <p class="event-desc">
                             <?php
                             $the_excerpt_custom = get_field('the_excerpt_custom');
@@ -225,7 +225,7 @@ get_header();
             <div class="container-item-logo">
                 <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
             </div>
-            <h2 class="container-item-title">ưu đãi</h2>
+            <p class="container-item-title">ưu đãi</p>
         </div>
     </div>
     <div class="content-container event sale-container">
@@ -267,7 +267,7 @@ get_header();
                         <a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>" alt="" class="event-image"></a>
                         </div>
                         <div class="event-item-text ">
-                            <h2 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
+                            <p class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></p>
                             <p class="event-desc">
                                 <?php
                                 $the_excerpt_custom = get_field('the_excerpt_custom');
@@ -294,7 +294,7 @@ get_header();
                 <div class="container-item-logo">
                     <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="container-item-logo-image" alt="">
                 </div>
-                <h2 class="container-item-title">shynh beauty store</h2>
+                <p class="container-item-title">shynh beauty store</p>
 
             </div>
             <div class="container-body">
@@ -400,7 +400,7 @@ get_header();
             <div class="address-image">
                 <img src="<?php bloginfo('template_directory'); ?>/images/butterfly-wings.png" class="w-100" alt="">
             </div>
-            <h2 class="address-info-title">Hệ thống hơn 50 chi nhánh</h2>
+            <p class="address-info-title">Hệ thống hơn 50 chi nhánh</p>
             <p class="address-info-caption pd-6">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn ghé thăm</p>
         </div>
         <?php echo do_shortcode( '[get_location]' ); ?>
