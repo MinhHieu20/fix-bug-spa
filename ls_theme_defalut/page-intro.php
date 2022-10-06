@@ -188,6 +188,7 @@ global $ls_options;
                     ghé thăm</p>
             </div>
             <?php echo do_shortcode( '[get_location]' ); ?>
+            <div class="address-near dp-none"><button class="btn address-near-btn">Tìm chi nhánh gần bạn</button></div>
         </div>
     </div>
 <?php

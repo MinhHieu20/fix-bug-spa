@@ -645,13 +645,11 @@
     }
     .tab-pane-content{
         .address{
-           
-            // height: 63.8rem;
             margin-top: calc((100vh - 63.8rem) / 2);
             animation: showModal linear 0.3s;
             
-            padding: 2rem 1rem;
-            background-color: $background-address-mobile;
+            padding: 3rem 2rem;
+            background-image: linear-gradient(to bottom right, #f5e28a, #fdd429);
             margin-left: 50%;
             transform: translateX(-50%);
             border-radius: 3rem;
@@ -660,7 +658,7 @@
                 .container-width{
                     .address-nav-location{
                         &__item{
-                            padding: 0.5rem 1.5rem;
+                            padding: 0.7rem 1.5rem 0.2rem 1.5rem;
                         }
                     }
                 }

@@ -404,6 +404,7 @@ get_header();
             <p class="address-info-caption pd-6">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn ghé thăm</p>
         </div>
         <?php echo do_shortcode( '[get_location]' ); ?>
+        <div class="address-near dp-none"><button class="btn address-near-btn">Tìm chi nhánh gần bạn</button></div>
     </div>
 <?php
 get_footer();

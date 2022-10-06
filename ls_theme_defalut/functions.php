@@ -911,7 +911,6 @@ function get_location_data() {
         $html .= '</div></div></div>';
     }
     $html .= '</div>';
-    $html .= '<div class="address-near dp-none"><button class="btn address-near-btn">Tìm chi nhánh gần bạn</button></div>';
     return $html;
 }
 add_shortcode('get_location','get_location_data');

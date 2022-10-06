@@ -654,6 +654,7 @@
             text-transform: uppercase;
             font-size: 2rem;
             font-family: UTM-AvoBold;
+            color: black;
         }
 
         &-caption {
@@ -681,7 +682,7 @@
                 border-radius: 1.6rem;
                 cursor: pointer;
                 &--link {
-                    color: #808080;
+                    color: #000;
                     font-size: 1.8rem;
                     font-family: Gilroy-Bold;
                     text-transform: uppercase;

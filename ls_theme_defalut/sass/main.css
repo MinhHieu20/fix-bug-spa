@@ -4448,15 +4448,15 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
 .form--contact .tab-pane-content .address {
   margin-top: calc((100vh - 63.8rem) / 2);
   animation: showModal linear 0.3s;
-  padding: 2rem 1rem;
-  background-color: #f5e28b;
+  padding: 3rem 2rem;
+  background-image: linear-gradient(to bottom right, #f5e28a, #fdd429);
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 3rem;
 }
 .form--register .tab-pane-content .address-nav .container-width .address-nav-location__item,
 .form--contact .tab-pane-content .address-nav .container-width .address-nav-location__item {
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem 0.2rem 1.5rem;
 }
 .form--register .tab-pane-content .address .location-details,
 .form--contact .tab-pane-content .address .location-details {
@@ -16591,6 +16591,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   text-transform: uppercase;
   font-size: 2rem;
   font-family: UTM-AvoBold;
+  color: black;
 }
 .address-info-caption {
   margin-bottom: 2.6rem;
@@ -16615,7 +16616,7 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   cursor: pointer;
 }
 .address-nav-location__item--link {
-  color: #808080;
+  color: #000;
   font-size: 1.8rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
@@ -16818,4 +16819,6 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   transform: scaleX(1.4);
   opacity: 0;
   transition: all 0.4s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
