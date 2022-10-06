@@ -14,9 +14,9 @@ $directoryURI = get_page_uri();
     <div class="container-max training-detail pdb-6">
         <div class="container grid wide">
             <div class="row details training-detail-container">
-                <div class="col-lg-9 home-training" id="post-<?php the_ID(); ?>">
+                <div class="col-xl-9 col-lg-9 col-md-9 home-training" id="post-<?php the_ID(); ?>">
 
-                    <h3 class="single-training-title"><?php echo get_the_title(); ?></h3>
+                    <p class="single-training-title"><?php echo get_the_title(); ?></p>
 
                     <div class="details-header">
                         <p class="details-header__text">
@@ -133,9 +133,9 @@ $directoryURI = get_page_uri();
                     </div>
                 </div>
 
-                <div class="col-lg-3">
-                    <div id="sidebar-training" style="padding: 1.5rem;">
-                        <div class="details-menu dp-none dp-blockPC">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div id="sidebar-training">
+                        <div class="details-menu">
                             <ul class="details-menu-list">
                                 <?php
                                 $extension = get_term(65,'training_cat');
@@ -165,23 +165,8 @@ $directoryURI = get_page_uri();
                                 ?>
                             </ul>
                         </div>
-                        <div class="details-menu details-menu-mobile dp-nonePC">
-                            <ul class="details-menu-list row">
-                                <?php
-                                $loop = new WP_Query( $args );
-                                while ( $loop->have_posts() ) : $loop->the_post();
-                                    ?>
-                                    <li class="details-menu-list__item">
-                                        <a href="<?php the_permalink(); ?>" class="details-menu-list__item--link <?php echo ($directoryURI == $post->post_name) ? 'active' : '' ?>"><?php the_title();?></a>
-                                    </li>
-                                <?php
-                                endwhile;
-                                wp_reset_postdata();
-                                ?>
-                            </ul>
-                        </div>
                         <div class="details-news">
-                            <h3 class="details-news-title">TIN TỨC MỚI NHẤT</h3>
+                            <p class="details-news-title">TIN TỨC MỚI NHẤT</p>
 
                             <div class="detail-news--menu">
                                 <div class="detail-news--menu__list row">

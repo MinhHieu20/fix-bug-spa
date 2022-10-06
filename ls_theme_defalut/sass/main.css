@@ -8520,17 +8520,7 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
     border-radius: 2rem;
   }
   .home-training .single-training-title {
-    padding: 0 7rem;
-    font-size: 4rem;
-  }
-  .home-training .details-header,
-.home-training .details-content,
-.home-training .details-reason,
-.home-training .details-expert,
-.home-training .details-courses,
-.home-training .details-graduate,
-.home-training .details-rated {
-    padding: 0 7rem;
+    font-size: 3rem;
   }
   .home-training .details-expert {
     margin-top: 3rem;
@@ -8547,6 +8537,23 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .home-training .details-graduate-outstanding__list--item--text {
     font-size: 1.8rem;
+  }
+  .details-menu-list__item--link {
+    font-size: 1.4rem;
+  }
+  .details-menu-list__item--link.active {
+    font-size: 1.3rem;
+  }
+  .details-news .detail-news--menu__list--item--images {
+    width: 8.7rem;
+  }
+  .details-news .detail-news--menu__list--item--desc > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
   }
   .address-training {
     display: none;
@@ -8604,22 +8611,32 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   }
   .training-detail {
     background: #fdf9e8;
+    margin-bottom: 0;
+    padding-bottom: 10rem;
   }
   .address-training {
     margin-left: 0 !important;
     margin-right: 0 !important;
     background-color: #fff;
   }
-  .details-menu-mobile {
+  .details-menu {
     display: block;
     padding-bottom: 4rem;
   }
-  .details-menu-mobile .details-menu-list__item {
+  .details-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .details-menu-list__item {
     margin: 0 1rem 1rem 0;
   }
-  .details-menu-mobile .details-menu-list__item--link {
+  .details-menu-list__item--link {
     padding: 0.5rem 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  .details-menu-list__item--link.active {
+    font-size: 1.5rem;
   }
   .details-news {
     display: none;
@@ -8631,6 +8648,25 @@ ul#primary-menu > li > ul.sub-menu > li > ul.sub-menu > li.active {
   .details-graduate-outstanding .slick-next {
     top: 24%;
     right: -1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .details-news-title {
+    font-size: 1.4rem;
+  }
+  .details-menu-list__item--link {
+    font-size: 1.4rem;
+  }
+  .details-menu-list__item--link.active {
+    font-size: 1.4rem;
+  }
+  .details-news .detail-news--menu__list--item--desc > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
   }
 }
 @media (min-width: 1024px) {
@@ -16868,6 +16904,4 @@ ul#primary-menu > li > ul.sub-menu > li:nth-child(8) > a::before {
   transform: scaleX(1.4);
   opacity: 0;
   transition: all 0.4s;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
