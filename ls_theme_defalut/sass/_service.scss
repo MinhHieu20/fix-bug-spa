@@ -885,3 +885,17 @@
         }
     }
 }
+.form--appointment__inner--appointment---time{
+    .form--appointment__inner--appointment--time-day{
+        input {
+            width: 100%;
+            height: 4.2rem;
+            font-size: 1.8rem;
+            font-family: UTM-Avo;
+            border: 1px solid #a1710f;
+            border-radius: 1rem;
+            outline: none;
+            padding: 0 1.5rem;
+        }
+    }
+}
