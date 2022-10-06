@@ -875,7 +875,7 @@ function get_location_data() {
         );
         $count = 0;
         $loop_child = new WP_Query( $args_child );
-        $html .= '<ul class="location-details-list col-lg-6">';
+        $html .= '<ul class="location-details-list col-lg-6"  id="scrollbar-location">';
         while ( $loop_child->have_posts() ) : $loop_child->the_post();
             $post_child_id = $loop_child->ID;
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_child_id ), 'single-post-thumbnail' );
@@ -890,7 +890,7 @@ function get_location_data() {
         endwhile;
         wp_reset_postdata();
         $html .= '</ul>';
-        $html .= '<ul class="location-details-list col-lg-6">';
+        $html .= '<ul class="location-details-list col-lg-6"  id="scrollbar-location">';
         while ( $loop_child->have_posts() ) : $loop_child->the_post();
             $post_child_id = $loop_child->ID;
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_child_id ), 'single-post-thumbnail' );

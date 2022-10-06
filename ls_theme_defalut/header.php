@@ -73,7 +73,7 @@ global $ls_options;
                         </button>
                         <div class="header-cart--notify border-1 dp-none">
                             <div class="header-cart--notify__info">
-                                <div class="row header-cart--notify__info--top">
+                                <div class="row header-cart--notify__info--top" id="scrollbar">
                                     <?php
                                         $total = WC()->cart->get_cart_total();
                                         foreach ( WC()->cart->get_cart() as $cart_item ) {

@@ -710,7 +710,7 @@
             border-radius: 2.6rem;
             margin-bottom: 4rem;
         }
-
+        
         &-list {
             list-style: none;
             &__item {
@@ -739,8 +739,12 @@
                     &__info {
                         text-align: left;
                         font-size: 1.6rem;
-                        padding-bottom: 1rem;
                         color: #000;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        margin-bottom: 1rem;
                     }
 
                     .location-view {
