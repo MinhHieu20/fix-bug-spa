@@ -56,6 +56,7 @@ if(get_query_var('paged')) {
         <div class="paging-promotion">
             <div class="pagination product-pagination paging">
                 <?php
+                
                 $big = 999999999; // need an unlikely integer
                 $get_blog_info= get_bloginfo('template_directory');
                 echo paginate_links( array(
