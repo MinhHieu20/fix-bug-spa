@@ -831,3 +831,12 @@
     //     display: block;
     // }
 }
+@include responsive_mobile_low {
+    .header-contact {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .header-contact-right {
+        padding-left: 6.5rem;
+    }
+}
