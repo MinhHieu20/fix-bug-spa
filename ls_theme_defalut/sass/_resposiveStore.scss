@@ -288,6 +288,7 @@
                     &-item {
                         // max-width: 17.2rem;
                         // height: 33rem;
+                        margin: 0 -1.5rem 3rem;
 
                         &__image {
                             // height: 19rem;
@@ -380,5 +381,8 @@
                 }
             }
         }
+    }
+    .main .product-details .product-list-item {
+        margin: 0 -1.5rem 3rem;
     }
 }

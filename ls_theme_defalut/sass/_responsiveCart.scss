@@ -7,13 +7,18 @@
         margin: 0 2rem;
 
         .cart-two {
-            margin-top: 25.5rem;
-            margin-left: -20.5rem;
-            width: 19rem;
+            width: 16rem;
             padding: 1.3rem 0.6rem;
+            margin-left: 17rem;
+            font-size: 1.4rem;
         }
         &-product{
             width: 50%;
+            &-store {
+                margin-left: -1.5rem;
+                font-size: 1.4rem;
+                width: 16rem;
+            }
             .title-left{
                 margin-left: -10rem;
             }
@@ -38,11 +43,9 @@
                 }
             }
             &-header__text{
-                width: 14rem;
-                margin-top: -6rem;
-                margin-left: 11rem;
+                width: 100%;
                 font-size: 1.4rem;
-                text-align: start;
+                text-align: center;
             }
             &-header__prices{
                 width: 15rem;
@@ -72,19 +75,78 @@
             &-border{
                 width: 90%;
                 margin: 0 auto;
-                margin-bottom: 12rem;
-                margin-top: 21rem;
+                margin-top: 10rem;
             }
         }
     }
     .none{
-        display: none;
+        display: flex !important;
     }
     .store-mobile{
         margin: 6rem 0;
     }
     .store-mobiles{
         display: none;
+    }
+}
+@include responsive_mobile_small {
+    .cart-pd {
+        padding: 0;
+    }
+    .cart {
+        margin: 0;
+    }
+    .cart .cart-two {
+        width: 12rem;
+        padding: 1rem 0.5rem;
+        margin-left: 13rem;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .cart-product-store {
+        margin-left: -1.5rem;
+        padding: 1.1rem 0;
+        font-size: 1rem;
+        width: 13rem;
+        justify-content: center;
+    }
+    .cart-product-border {
+        width: 100%;
+    }
+}
+@include responsive_mobile_medium {
+    .cart-product-store {
+        margin-left: -1.5rem;
+        font-size: 1.4rem;
+        width: 14rem;
+    }
+    .cart .cart-two {
+        width: 16rem;
+        padding: 1rem 0.6rem;
+        margin-left: 14.5em;
+        font-size: 1.4rem;
+    }
+}
+@include responsive_mobile_low {
+    .cart-pd {
+        padding: 0;
+    }
+    .cart-product-border {
+        width: 100%;
+    }
+    .cart .cart-two {
+        width: 13rem;
+        padding: 1rem 0.5rem;
+        margin-left: 14rem;
+        font-size: 1.1rem;
+        justify-content: center;
+    }
+    .cart-product-store {
+        margin-left: -1.5rem;
+        padding: 1.1rem 0;
+        font-size: 1.2rem;
+        width: 13rem;
+        justify-content: center;
     }
 }
 

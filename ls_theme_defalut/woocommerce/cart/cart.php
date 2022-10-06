@@ -19,9 +19,9 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
 <div class="container-max mb-15">
-    <div class="container">
+    <div class="container cart-pd">
         <div class="row cart">
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-8 col-12 cart-pd">
                 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
                     <?php do_action( 'woocommerce_before_cart_table' ); ?>
                     <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
@@ -64,7 +64,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-12 col-12">
+                                                <div class="col-lg-12 col-12 cart-pd">
                                                     <?php
                                                     $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -75,7 +75,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                                     }
                                                     ?>
                                                 </div>
-                                                <div class="col-lg-12 col-12">
+                                                <div class="col-lg-12 col-12 cart-pd">
                                                     <p class="cart-product-header__text">
                                                         <?php
                                                         if ( ! $product_permalink ) {
@@ -143,11 +143,9 @@ do_action( 'woocommerce_before_cart' ); ?>
                 </table>
                     <?php do_action( 'woocommerce_cart_contents' ); ?>
                     <div class="col-lg-8 col-12">
-                        <a href="<?php echo home_url() ?>/cua-hang">
-                            <button class="cart-product-store none">
-                                <i class='bx bx-arrow-back'></i>
-                                <h3>QUAY LẠI STORE</h3>
-                            </button>
+                        <a href="<?php echo home_url() ?>/cua-hang" class="cart-product-store none">
+                            <i class='bx bx-arrow-back'></i>
+                            <p>QUAY LẠI STORE</p>
                         </a>
                         <button type="submit" class="cart-product-store__one cart-two product-cart-update-cart none" name="update_cart"
                                 value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>">
@@ -160,7 +158,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     <?php do_action( 'woocommerce_after_cart_table' ); ?>
                 </form>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12 cart-pd">
                 <div class="cart-product-border">
                     <?php do_action('woocommerce_before_cart_collaterals'); ?>
                     <div class="cart-collaterals">

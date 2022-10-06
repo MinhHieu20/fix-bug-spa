@@ -249,8 +249,26 @@ body .select2-container--default .select2-selection--single {
 }
 .woocommerce .quantity .qty {
     background: transparent;
-    width: 2rem !important;
 }
 .woocommerce-cart-form__cart-item .minus {
     margin-left: 2rem;
+}
+@include responsive_tablet {
+    .woocommerce .quantity .qty {
+        width: 2rem !important;
+    }
+}
+@include responsive_mobile {
+    .woocommerce-cart table.cart a {
+        display: inline-block;
+        text-align: center;
+    }
+    .woocommerce-cart table.cart img {
+        width: 70% !important;
+    }
+}
+@include responsive_mobile_low { 
+    .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+        font-size: 1.9rem !important;
+    }
 }
