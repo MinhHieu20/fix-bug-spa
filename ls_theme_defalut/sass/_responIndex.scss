@@ -846,10 +846,10 @@
         .location-details {
             &-border {
                 position: relative;
-                border: 0.1rem solid $orange;
-                padding-top: 1.5rem;
+                border: none !important;
+                padding-top: 0 !important;
                 border-radius: 2.6rem;
-                margin-bottom: 4rem;
+                margin-bottom: 2rem !important;
                 max-height: 47vh !important;
                 overflow-y: scroll;
             }
@@ -857,6 +857,7 @@
             &-list {
                 list-style: none;
                 margin-top: 2rem;
+                padding: 0 0.4rem;
 
                 &__item {
                     align-items: center;
@@ -919,7 +920,7 @@
 }
 @include responsive_mobile_medium {
     .address .location-details-border {
-        max-height: 45vh !important;
+        max-height: 40vh !important;
     }
 }
 @include responsive_mobile_small() {

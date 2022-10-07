@@ -66,12 +66,20 @@
 }
 
 @include responsive_mobile {
+    .scroll-pd {
+        padding: 0 0.9rem;
+    }
     .address {
         &-nav,
         .location-details {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
         }
+    }
+    .address .location-details {
+        border: 0.1rem solid #ffd00f;
+        border-radius: 2.6rem;
+        padding-top: 2rem;
     }
     .training-detail-container {
         flex-direction: column-reverse;

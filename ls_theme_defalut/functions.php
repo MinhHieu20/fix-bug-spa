@@ -857,7 +857,7 @@ function get_location_data() {
     $html .= '</ul></div></div>';
     $html .= '<div id="location_list">';
     foreach ($terms as $index => $term) {
-        $html .= '<div class="location-details"><div class="container container-width"><div class="row location-details-border location-details-mobile">';
+        $html .= '<div class="location-details"><div class="container container-width scroll-pd"><div class="row location-details-border location-details-mobile">';
         $extension_child = get_term($term->term_id, 'extension_cat');
         $args_child = array(
             'post_type' => 'extension',
